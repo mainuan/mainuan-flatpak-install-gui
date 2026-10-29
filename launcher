@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=/usr/bin/flatpak-install-gui %F
+Name=Instalar programa
+X-KDE-StartupNotify=true
+Icon=mintinstall
+Terminal=false
+Categories=Development;IDE;Qt;
+MimeType=application/vnd.flatpak.ref;
+NoDisplay=true
