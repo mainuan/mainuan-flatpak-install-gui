@@ -1,10 +1,12 @@
 [Desktop Entry]
 Type=Application
-Exec=/usr/bin/flatpak-install-gui %F
-Name=Instalar programa
-X-KDE-StartupNotify=true
-Icon=mintinstall
+Name=Mainuan Instalador Flatpak
+Comment=Instale aplicativos a partir de arquivos de referência Flatpak
+Exec=mainuan-flatpak-install-gui %f
+TryExec=mainuan-flatpak-install-gui
+Icon=system-software-install
 Terminal=false
-Categories=Development;IDE;Qt;
+Categories=Settings;PackageManager;Qt;
 MimeType=application/vnd.flatpak.ref;
+StartupNotify=true
 NoDisplay=true

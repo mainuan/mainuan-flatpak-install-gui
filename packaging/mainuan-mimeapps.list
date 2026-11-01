@@ -1,0 +1,5 @@
+# Distribution integration seed: merge into /etc/xdg/kde-mimeapps.list (Plasma)
+# or /etc/xdg/mimeapps.list in the Mainuan image configuration package.
+# User mimeapps.list preferences take precedence. Do not copy into user homes.
+[Default Applications]
+application/vnd.flatpak.ref=mainuan-flatpak-install-gui.desktop;

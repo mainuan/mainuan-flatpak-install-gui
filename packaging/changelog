@@ -1,0 +1,66 @@
+mainuan-flatpak-install-gui (1.0) unstable; urgency=medium
+
+  * Promote the approved release candidate to version 1.0 without functional
+    or visual changes; update version metadata and documentation.
+  * Record the user's repeated RC1 VM test approval and prepare release notes.
+  * Define local .flatpakref files as product scope; bare IDs and URLs are
+    outside scope, not outstanding release work.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Thu, 29 Oct 2026 19:00:00 -0300
+
+mainuan-flatpak-install-gui (1.0~rc1) unstable; urgency=medium
+
+  * Prepare release candidate, retaining the approved Qt presentation.
+  * Check cancellation before reporting completed actions and retain callback
+    identity errors when the transaction aborts.
+  * Join the worker on process exit and honor the initial inspection scope.
+  * Clarify retired Bash helpers, demo isolation and legacy CLI limits.
+  * Install a deterministic launcher and consolidate current documentation.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Thu, 29 Oct 2026 18:00:00 -0300
+
+mainuan-flatpak-install-gui (0.1.0~dev5) unstable; urgency=medium
+
+  * Separate display names and localized AppStream summaries, recognizing
+    acronym expansions without app-specific exceptions.
+  * Keep origin information in initially collapsed installation details.
+  * Size the window to content and keep actions and keyboard focus accessible
+    with large fonts, fractional scaling and scrollable details.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Thu, 29 Oct 2026 17:00:00 -0300
+
+mainuan-flatpak-install-gui (0.1.0~dev4) unstable; urgency=medium
+
+  * Prefer matching local AppStream presentation names using streaming XML.
+  * Handle technical flatpakref titles and preserve ID component capitalization
+    as a presentation fallback without changing operation identity.
+  * Refresh the presentation name from installed metadata after installation.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Thu, 29 Oct 2026 16:00:00 -0300
+
+mainuan-flatpak-install-gui (0.1.0~dev3) unstable; urgency=medium
+
+  * Authorize required signed origins with Install, retaining identity checks.
+  * Detect exact installed references and add confirmed, scoped removal.
+  * Resolve presentation names from local AppStream and support name override.
+  * Refresh desktop registration and ship distribution MIME default seed.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Thu, 29 Oct 2026 15:00:00 -0300
+
+mainuan-flatpak-install-gui (0.1.0~dev2) unstable; urgency=medium
+
+  * Simplify installation to one action with visible user/system radio buttons.
+  * Group new origins for consent and validate configured repository
+    identities.
+  * Keep operations in collapsed details and prevent unintended
+    duplicate copies.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Thu, 29 Oct 2026 13:00:00 -0300
+
+mainuan-flatpak-install-gui (0.1.0~dev1) unstable; urgency=medium
+
+  * Initial development build with Qt 6, Kirigami and libflatpak transactions.
+  * Require explicit scope, repository consent and operation confirmation.
+  * Replace the legacy Bash installer and retain its command as an alias.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Thu, 29 Oct 2026 12:00:00 -0300

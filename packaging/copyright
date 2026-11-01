@@ -1,0 +1,23 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Mainuan Instalador Flatpak
+Source: https://github.com/mainuan/mainuan-flatpak-install-gui
+
+Files: *
+Copyright: 2026 Mainuan contributors
+License: GPL-3
+ This distribution retains the GPL version 3 license of the Mainuan port.
+ The full license is installed alongside this file as LICENSE.gz.
+ On Debian systems it is also in /usr/share/common-licenses/GPL-3.
+
+Files: qt/Main.qml
+Copyright: 2026 Mainuan contributors
+License: GPL-3
+ Visual structure and palette adapted from Mainuan Welcome:
+ https://github.com/mainuan/welcome/blob/main/qml/components/InstallDialog.qml
+ https://github.com/mainuan/welcome/blob/main/qml/Main.qml
+
+Comment:
+ The project originated in Tiger-OperatingSystem/flatpak-install-gui by
+ Natanael Barbosa Santos. The original Bash implementation was MIT licensed;
+ it is replaced in this package. Its license and attribution are retained in
+ docs/LICENSE-original-MIT.

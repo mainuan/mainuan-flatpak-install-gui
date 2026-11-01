@@ -1,0 +1,67 @@
+.TH MAINUAN-FLATPAK-INSTALL-GUI 1 "October 2026" "1.0" "User Commands"
+.SH NAME
+mainuan-flatpak-install-gui \- Mainuan Instalador Flatpak
+.SH SYNOPSIS
+.B mainuan-flatpak-install-gui
+.RB [ --scope " user|system|system:ID" ]
+.RB [ --override-appname " name" ]
+.RI [ file.flatpakref ]
+.br
+.B mainuan-flatpak-install-gui --remove --scope
+.I user|system|system:ID file.flatpakref
+.br
+.B mainuan-flatpak-install-gui --demo
+.RI [ state ]
+.SH DESCRIPTION
+Version 1.0. Opens a Qt 6 and Kirigami window for a local Flatpak
+reference. With no file, offers a graphical file selector. User installation is
+selected initially. Install authorizes the app and required signed repositories;
+origin information is in collapsed details. Real ambiguity requires a choice.
+Installed apps offer Open and Uninstall for the exact selected copy. Uninstall
+asks for confirmation and preserves personal data, repositories and runtimes.
+.PP
+Run as a normal desktop user. Flatpak and the session Polkit agent handle
+required authorization according to effective policy. A password is not required
+for every system operation. Cancellation does not undo completed changes.
+.SH OPTIONS
+.TP
+.B --scope user|system|system:ID
+Select a user, default system or named system installation. Required for removal.
+.TP
+.B --remove
+Remove the exact application reference from the local file and selected scope,
+with graphical confirmation. Bare application IDs are not accepted.
+.TP
+.B --override-appname NAME
+Use plain text NAME for presentation only; never changes operation identity.
+.TP
+.BR --demo " [ready|remote|progress|success|error|cancelled]"
+Show an isolated demonstration without a real backend. Cannot be combined with
+file, scope, removal or name override.
+.TP
+.B --help
+Show command usage.
+.SH COMPATIBILITY
+flatpak-install-gui enters this same Qt application. The supported input is a local .flatpakref file. Bare IDs and URLs are outside
+the product scope and are rejected with a clear error.
+The internal Bash flags --fetch-dependencies and --do-install are retired and
+exit with a clear error without performing operations.
+.SH MIME
+The desktop ID is mainuan-flatpak-install-gui.desktop. MIME support alone does
+not select the default application. As the desktop user, run:
+.PP
+.nf
+xdg-mime default mainuan-flatpak-install-gui.desktop application/vnd.flatpak.ref
+xdg-mime query default application/vnd.flatpak.ref
+.fi
+.PP
+A distribution integration fragment is installed under
+/usr/share/mainuan-flatpak-install-gui/mainuan-mimeapps.list.
+Personal MIME preferences take precedence over distribution defaults.
+.SH FILES
+/usr/share/doc/mainuan-flatpak-install-gui/README.md.gz
+.br
+/usr/share/doc/mainuan-flatpak-install-gui/versao-1.0.md.gz
+.SH SEE ALSO
+.BR flatpak (1),
+.BR xdg-mime (1)
