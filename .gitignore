@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+/dist/
+/test-artifacts/
+/.vscode/
+*.deb
+*.deb.sha256

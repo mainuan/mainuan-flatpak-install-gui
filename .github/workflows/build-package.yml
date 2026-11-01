@@ -1,0 +1,35 @@
+name: Build Debian package
+
+on:
+  push:
+    branches:
+      - port/qt6-mainuan
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-26.04
+    env:
+      SOURCE_DATE_EPOCH: "1793300904"
+      PACKAGE: mainuan-flatpak-install-gui_1.0_all.deb
+      PACKAGE_SHA256: 4b31d19c144a5f7cf9cbaca3b4eb1f4d37dc46488b953cb4e933d6526492d3fd
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build package
+        run: ./build.sh dist
+      - name: Verify package
+        run: |
+          test "$(dpkg-deb -f "dist/$PACKAGE" Version)" = 1.0
+          echo "$PACKAGE_SHA256  dist/$PACKAGE" | sha256sum --check --strict
+          printf '%s  %s\n' "$PACKAGE_SHA256" "$PACKAGE" > "dist/$PACKAGE.sha256"
+      - name: Upload release assets
+        uses: actions/upload-artifact@v4
+        with:
+          name: mainuan-flatpak-install-gui-1.0
+          path: |
+            dist/mainuan-flatpak-install-gui_1.0_all.deb
+            dist/mainuan-flatpak-install-gui_1.0_all.deb.sha256
+          if-no-files-found: error

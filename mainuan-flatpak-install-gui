@@ -1,0 +1,7 @@
+#!/bin/sh
+# Both installed names enter the same Qt application.
+local_main="$(dirname "$(readlink -f "$0")")/qt/main.py"
+if [ -f "$local_main" ]; then
+    exec /usr/bin/python3 "$local_main" "$@"
+fi
+exec /usr/bin/python3 /usr/share/mainuan-flatpak-install-gui/qt/main.py "$@"
