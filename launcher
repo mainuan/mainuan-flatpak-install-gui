@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-Name=Mainuan Instalador Flatpak
-Comment=Instale aplicativos a partir de arquivos de referência Flatpak
+Name=Mainuan Flatpak Installer
+Comment=Install applications from Flatpak reference files
 Exec=mainuan-flatpak-install-gui %f
 TryExec=mainuan-flatpak-install-gui
 Icon=system-software-install

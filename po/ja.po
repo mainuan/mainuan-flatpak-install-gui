@@ -1,0 +1,758 @@
+# Japanese translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 11:40-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: ja <https://github.com/mainuan>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Mainuan Flatpak インストーラ"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Flatpak 参照ファイルからアプリケーションをインストールします"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Flatpak ファイルを選択"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Flatpak 参照 (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "デモ — 変更は一切行われません"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "%1 をインストール中"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "ファイルを選択"
+
+# reviewed: KDE ja katakana style without final long vowel
+# (ユーザ/マネージャ/ヘッダ/パーサ/サーバ), as in ドライバ/インストーラ/コンピュータ
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "自分のユーザのみ"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "システム全体"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "その他のシステムインストール: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "インストール先: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "ソースを 1 つ選択してください"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "アプリケーションまたは依存関係のソース"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "インストール全体の進捗"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "完了"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "進行中"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "現在のステップ: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "詳細を隠す"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "詳細を表示"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "ソース: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "必要に応じてインストール時に追加されます。"
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr "キャンセルすると安全に停止します。完了した変更は残る場合があります。"
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "インストールの技術的な詳細"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "準備"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "進捗"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "ソース"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "キャンセルされました"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "エラー"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "成功"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "状態 %1 をシミュレート"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "インストール"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "再試行"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "続行"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "別のコピーをインストール"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "アンインストール"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "開く"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "閉じる"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "必要なソースが GPG 鍵を提供していません。インストールを中止しました。"
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "互換性のあるソースがありません。"
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "互換性のあるソースが複数あります。使用するソースを選択してください。"
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "選択されたソースが無効です。"
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "インストール中に承認済みのソースが消失しました。"
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "インストール中…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "ソースの提案が要求されたアプリケーションに関連付けられていません。"
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "検証済みの記述子がない依存関係のソース: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr ""
+"このアプリケーションは、このインストール先にすでにインストールされています。"
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"このアプリケーションはすでにインストールされています。選択したインストール先"
+"に別のコピーをインストールしますか？"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "ソースを追加しました: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "インストールが完了しました。"
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr ""
+"インストールをキャンセルしました。すでに完了した変更は残る場合があります。"
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "操作をキャンセルしました。"
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "インストール状況を問い合わせできませんでした。"
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "ようこそ"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "インストールする .flatpakref ファイルを選択してください。"
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "インストール状況を確認しています…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "無効なファイル"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "この .flatpakref ファイルを開けませんでした。"
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "インストールを準備しています…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr ""
+"インストール先にあいまいな参照があります。正確な参照を選択してください。"
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "見つかったインストール: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "インストール済み"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr ""
+"アプリケーションをアンインストールしました。個人データは保持されています。"
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "インストール"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "更新"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "削除"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "ソース: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr ""
+"ダウンロード: {download} バイト、インストールサイズ: {installed} バイト"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "保留中の操作はありません。"
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "アプリケーションを開きました。"
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "キャンセルしています… 安全に終了するまでお待ちください。"
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr ""
+"{name} ({scope}) をアンインストールしますか？個人データは保持されます。"
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "アンインストール中…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "アプリケーションを開いています…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "無効なデモ状態です。"
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "サンプルアプリ"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "サンプルソース"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "シミュレーション結果: インストールが完了しました。"
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "シミュレーションエラー: ソースにアクセスできませんでした。"
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "シミュレーションによるキャンセル。完了した操作は残る場合があります。"
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "インストールを行わないデモです。"
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "現在の操作をダウンロードしています (シミュレーション)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr "見た目の評価用の架空の詳細です。実際のバックエンドは無効です。"
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "インストール先を選択してください。"
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (ソース {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "アプリケーションなし"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "ソース: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "なし"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: 問い合わせできませんでした: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "ソースに有効な署名鍵が含まれていません。"
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "ソースの鍵を検証できませんでした。"
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "ソースに無効、失効済み、または期限切れの鍵が含まれています。"
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "ソースの GPG 検証が無効になっています。"
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"設定されたソースが無効になっているか、フィルタが設定されています。インストー"
+"ルする前に設定を確認する必要があります。"
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "設定されたソースの ID が参照と異なります。"
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "設定されたソースの署名鍵が参照と異なります。"
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "ソースの設定が提供された記述子と異なります。"
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "インストール中にソースの設定が変更されました。もう一度お試しください。"
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "同じソースの記述子同士で設定に互換性がありません。"
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "インストールには承認されていない変更が必要です。"
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr ""
+"インストールに承認されていない別のアプリケーションが含まれようとしました。"
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "インストール中にアプリケーションのソースが変更されました。"
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "ソースが GPG 鍵を提供していないため、インストールを中止しました。"
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "この名前で ID の異なるソースがすでに存在します: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak がソースの追加を確認しませんでした。"
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(ソースを利用できません)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "進行中…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "トランザクションは完了しませんでした。"
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "この参照には確認済みのデプロイメントがありません。"
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "インストールされたソースがトランザクションのソースと異なります。"
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "選択した参照が変更されました。"
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "この参照は選択したインストール先にまだインストールされています。"
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "システムインストールがあいまいか、利用できません。"
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "選択したインストールのパスが変更されました。"
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak がアプリケーションを開いたことを確認しませんでした。"
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "承認が拒否されたか、キャンセルされました。"
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr ""
+"ソースにアクセスできませんでした。接続を確認して、もう一度お試しください。"
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "この操作に必要なアクセス権がありません。"
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "ソースで認証できませんでした。"
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "ソースを利用できません。"
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "必要なコンポーネントを利用できません。"
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr ""
+"このアプリケーションは別のプロセスによってすでにインストールされました。もう"
+"一度お試しください。"
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "このインストール先には別のソースからのインストールがあります。"
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Flatpak 参照が無効です。"
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "インストールするための空き容量が足りません。"
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "別のインストールが進行中です。もう一度お試しください。"
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "ソースにアクセスできませんでした。接続と詳細を確認してください。"
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "操作を完了できませんでした。詳細を参照してください。"
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Mainuan Flatpak インストーラ — ローカルの .flatpakref ファイル"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "ローカルの .flatpakref ファイル"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "見た目のデモ (インストール不可)"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "プレーンテキストの表示名 (ID は変更しない)"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "確認画面を表示して正確な参照を削除する"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user、system または system:ID (--remove に必須)"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies と --do-install は廃止されました (内部用の Bash ヘルパー"
+"でした)。.flatpakref ファイルを開き、「インストール」を使用してください。操作"
+"は何も実行されませんでした。"
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr ""
+"無効なインストール先です: user、system または system:ID を使用してください。"
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove には .flatpakref ファイルと --scope user|system|system:ID が必要で"
+"す。ID はファイルから取得されます。"
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"ローカルの .flatpakref ファイルを指定してください。旧インストーラの単独の ID "
+"や URL は受け付けません。"
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo は独立したモードです: ファイル、インストール先、削除、名前の上書きは受"
+"け付けません。"
+
+# reviewed: KDE ja katakana style without final long vowel
+# (ユーザ/マネージャ/ヘッダ/パーサ/サーバ), as in ドライバ/インストーラ/コンピュータ
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"インターフェースは一般ユーザとして実行してください。必要に応じて Flatpak/"
+"Polkit が承認を求めます。"
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Qt の依存関係を利用できません: {error}。README.md を参照してください。"
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr ""
+"ソースは、URL に認証情報やフラグメントを含まない HTTPS を使用する必要がありま"
+"す。"
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "参照が大きすぎるか、ヌルバイトが含まれています。"
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "無効な参照グループです。"
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "複数行のフィールドは受け付けません。"
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "無効な Flatpak 参照です。"
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "無効な GPG 鍵です。"
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "libflatpak の提案シグナルでは提供されていません"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "なし — GPG 署名は無効"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"ソース: {url}\n"
+"推奨名: {name}\n"
+"記述子: {descriptor}\n"
+"提供された鍵の SHA-256: {fingerprint}\n"
+"HTTPS は通信経路を保護しますが、このソースが信頼できることを保証するものでは"
+"ありません。ソースを追加すると、Flatpak の設定がただちに変更されます。インス"
+"トールをキャンセルしても、この変更は残る場合があります。"
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "ローカルファイル"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "このバージョンの参照はまだサポートされていません。"
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "まだサポートされていない参照オプション: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "無効なアプリケーション識別子です。"
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "このインターフェースはアプリケーション専用です。"
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "無効なアプリケーションブランチです。"
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "フィールド {key} にサポートされていないエスケープが含まれています。"
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr ".flatpakref ファイルを選択してください。"
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "通常のローカルファイルを選択してください。"
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "このバージョンのソース記述子はまだサポートされていません。"
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "まだサポートされていないソースオプション: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream が読み込みの上限を超えています。"
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "サポートされていない XML 宣言です。"

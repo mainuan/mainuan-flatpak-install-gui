@@ -1,7 +1,9 @@
+import os
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'qt'))
 from metadata import LIMIT, read_reference, parse_reference, parse_runtime_repo
 
@@ -33,11 +35,12 @@ class ReferenceTests(unittest.TestCase):
             with self.subTest(raw=raw[:120]), self.assertRaises(ValueError):
                 parse_reference(raw)
 
+    @patch.dict(os.environ, {'LANGUAGE': 'en'})  # Asserts compare the English source strings.
     def test_runtime_repo_security(self):
         raw = b'[Flatpak Repo]\nUrl=https://runtime.example.org/repo\nTitle=Runtime\nGPGKey=a2V5\n'
         spec = parse_runtime_repo(raw, 'https://example.org/runtime.flatpakrepo')
         self.assertEqual(spec.key, b'key')
-        self.assertIn('não garante', spec.notice())
+        self.assertIn('does not guarantee', spec.notice())
         for suffix in (b'Filter=foo\n', b'AuthenticatorName=example\n', b'Url=https://evil.org\n'):
             with self.assertRaises(ValueError):
                 parse_runtime_repo(raw + suffix, 'https://example.org')

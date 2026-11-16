@@ -2,6 +2,7 @@
 from PyQt6.QtCore import QObject, QThread, QUrl, pyqtProperty, pyqtSignal, pyqtSlot
 from backend import Cancelled, Decisions, Installer
 from metadata import read_reference, friendly_name
+from i18n import _, pgettext
 
 
 class Worker(QThread):
@@ -73,8 +74,8 @@ class Worker(QThread):
             cancelled = (isinstance(exc, Cancelled) or self.decisions.cancelled
                          or self.driver is not None and self.driver.is_cancelled(exc))
             self.event.emit({'event': 'cancelled' if cancelled else 'error',
-                             'message': 'Operação cancelada.' if cancelled else
-                             self.driver.error_message(exc) if self.driver else 'Não foi possível consultar a instalação.', 'details': str(exc)})
+                             'message': _('Operation cancelled.') if cancelled else
+                             self.driver.error_message(exc) if self.driver else _('Could not query the installation.'), 'details': str(exc)})
 
 
 class Controller(QObject):
@@ -91,9 +92,9 @@ class Controller(QObject):
         self.pending_remove = False
         self.override_name = None
         self._view = {'phase': 'empty', 'busy': False, 'started': False, 'hasFile': False,
-                      'description': '', 'demo': bool(demo), 'name': 'Boas-vindas', 'iconName': 'system-software-install',
+                      'description': '', 'demo': bool(demo), 'name': _('Welcome'), 'iconName': 'system-software-install',
                       'id': '', 'source': '', 'runtimeRepo': '', 'scope': 'user', 'details': '',
-                      'message': 'Escolha um arquivo .flatpakref para instalar.', 'inventory': '',
+                      'message': _('Choose a .flatpakref file to install.'), 'inventory': '',
                       'operations': '', 'notice': '', 'choices': [], 'token': 0, 'existingNotice': '',
                       'percent': -1, 'operation': '', 'operationStatus': '', 'installed': {}, 'systemScopes': []}
         if demo:
@@ -135,12 +136,12 @@ class Controller(QObject):
                         icon = name
                         break
             self.update(phase='checking', **{**reference.info, 'name': self.override_name or reference.display_name}, iconName=icon, scope=self._view['scope'], busy=True,
-                        message='Verificando instalação…', details='', operations='', installed={}, token=0)
+                        message=_('Checking installation…'), details='', operations='', installed={}, token=0)
             self.start_worker(reference=reference, scope=self._view['scope'], inspect=True)
         except (OSError, ValueError) as exc:
             self.reference = None
-            self.update(phase='error', name='Arquivo inválido', id='', source='', runtimeRepo='',
-                        message='Não foi possível abrir este arquivo .flatpakref.', details=str(exc), installed={})
+            self.update(phase='error', name=_('Invalid file'), id='', source='', runtimeRepo='',
+                        message=_('Could not open this .flatpakref file.'), details=str(exc), installed={})
 
     @pyqtSlot(str)
     def selectDestination(self, scope):
@@ -149,7 +150,7 @@ class Controller(QObject):
         if (scope in ('user', 'system') or scope.startswith('system:')) and not self._view['busy']:
             self.update(scope=scope, started=False)
             if self.reference and self._view['hasFile']:
-                self.update(busy=True, phase='checking', installed={}, message='Verificando instalação…')
+                self.update(busy=True, phase='checking', installed={}, message=_('Checking installation…'))
                 self.start_worker(reference=self.reference, scope=scope, inspect=True)
 
     @pyqtSlot()
@@ -159,7 +160,7 @@ class Controller(QObject):
         scope = self._view['scope']
         if scope not in ('user', 'system') and not scope.startswith('system:'):
             return
-        self.update(busy=True, started=True, phase='resolving', message='Preparando instalação…',
+        self.update(busy=True, started=True, phase='resolving', message=_('Preparing installation…'),
                     details='', operations='', notice='', percent=-1, installed={}, token=0)
         self.start_worker(reference=self.reference, scope=scope)
 
@@ -176,19 +177,19 @@ class Controller(QObject):
             matches = [r for r in self.locations if r['scope'] == self._view['scope'] and r.get('selected', True)]
             notice = '; '.join(f"{r['scope']}: {r['ref']}" for r in self.locations)
             if len(matches) > 1:
-                self.update(phase='error', message='Há referências ambíguas no destino. Selecione uma referência exata.', installed={})
+                self.update(phase='error', message=_('There are ambiguous references in the destination. Select an exact reference.'), installed={})
             else:
                 self.update(phase='success' if matches else 'ready', started=False,
                             installed=matches[0] if matches else {},
                             name=self.override_name or event.get('name', self.reference.display_name),
                             description=event.get('description', ''),
-                            existingNotice=('Instalações encontradas: ' + notice if notice else ''),
-                            message='Já instalado' if matches else '',
+                            existingNotice=(_('Installations found: {list}').format(list=notice) if notice else ''),
+                            message=_('Already installed') if matches else '',
                             details=notice)
         elif kind == 'remoteAdded':
             self.update(details=self._view['details'] + '\n' + event['message'])
         elif kind == 'removed':
-            self.update(phase='ready', started=False, installed={}, message='Aplicativo desinstalado. Dados pessoais preservados.')
+            self.update(phase='ready', started=False, installed={}, message=_('Application uninstalled. Personal data preserved.'))
         elif kind == 'inventory':
             self.update(inventory=event['message'])
         elif kind in ('confirmRemote', 'chooseRemote', 'confirmDuplicate'):
@@ -199,23 +200,27 @@ class Controller(QObject):
                         choices=event.get('choices', []), message='',
                         details=self._view['details'] + '\n' + event.get('details', ''))
         elif kind == 'operations':
-            labels = {'install': 'Instalar', 'update': 'Atualizar', 'uninstall': 'Remover'}
+            labels = {'install': pgettext('transaction operation', 'Install'),
+                      'update': pgettext('transaction operation', 'Update'),
+                      'uninstall': pgettext('transaction operation', 'Remove')}
             self.update(operations='\n\n'.join(
-                f'{labels.get(op["type"], op["type"])} {op["ref"]}\n'
-                f'Origem: {op["remote"]} — {op["url"]}\n'
-                f'Download: {op["download"]:,} bytes; espaço instalado: {op["installedSize"]:,} bytes'
-                for op in event['operations']) or 'Nenhuma operação pendente.')
+                # Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+                _('{operation} {ref}').format(operation=labels.get(op['type'], op['type']), ref=op['ref']) + '\n' +
+                _('Source: {remote} — {url}').format(remote=op['remote'], url=op['url']) + '\n' +
+                _('Download: {download} bytes; installed size: {installed} bytes').format(
+                    download=f'{op["download"]:,}', installed=f'{op["installedSize"]:,}')
+                for op in event['operations']) or _('No pending operations.'))
         elif kind == 'progress':
-            self.update(phase='installing', message='Instalando…', operationStatus=event['message'],
+            self.update(phase='installing', message=_('Installing…'), operationStatus=event['message'],
                         operation=event['operation'], percent=event['percent'])
         elif kind in ('success', 'error', 'cancelled'):
             self.update(phase=kind, token=0, percent=-1, message=event['message'],
                         details=self._view['details'] + '\n' + event.get('details', ''),
                         installed=event.get('installed', {}) if kind == 'success' else self._view['installed'])
         elif kind == 'launched':
-            self.update(phase='success', message='Aplicativo aberto.')
+            self.update(phase='success', message=_('Application opened.'))
         else:
-            self.update(phase=kind, message='Preparando instalação…' if kind == 'resolving'
+            self.update(phase=kind, message=_('Preparing installation…') if kind == 'resolving'
                         else event.get('message', ''), token=0)
 
     def finished(self):
@@ -237,13 +242,13 @@ class Controller(QObject):
             return
         value = choice if self._view['phase'] == 'chooseRemote' and accepted else accepted
         if self.worker.decisions.answer(token, value):
-            self.update(token=0, phase='resolving', message='Preparando instalação…')
+            self.update(token=0, phase='resolving', message=_('Preparing installation…'))
 
     @pyqtSlot()
     def cancel(self):
         if self.worker and self._view['busy']:
             self.worker.cancel()
-            self.update(phase='cancelling', token=0, message='Cancelando… Aguarde a conclusão segura.')
+            self.update(phase='cancelling', token=0, message=_('Cancelling… Wait for it to finish safely.'))
 
     @pyqtSlot(result=bool)
     def requestClose(self):
@@ -264,20 +269,21 @@ class Controller(QObject):
     def requestRemove(self):
         if self._view['demo'] or self._view['busy'] or not self._view['installed']:
             return
-        self.update(phase='confirmRemove', notice=f"Desinstalar {self._view['name']} ({self._view['scope']})? Os dados pessoais serão preservados.")
+        self.update(phase='confirmRemove', notice=_('Uninstall {name} ({scope})? Personal data will be preserved.').format(
+            name=self._view['name'], scope=self._view['scope']))
 
     @pyqtSlot()
     def confirmRemove(self):
         if self._view['phase'] != 'confirmRemove' or self._view['busy'] or self._view['demo']:
             return
-        self.update(busy=True, phase='removing', message='Desinstalando…')
+        self.update(busy=True, phase='removing', message=_('Uninstalling…'))
         self.start_worker(reference=self.reference, scope=self._view['scope'], installed=dict(self._view['installed']), remove=True)
 
     @pyqtSlot()
     def launch(self):
         if self._view['demo'] or self._view['busy'] or not self._view['installed']:
             return
-        self.update(busy=True, phase='launching', message='Abrindo o aplicativo…')
+        self.update(busy=True, phase='launching', message=_('Opening the application…'))
         self.start_worker(installed=self._view['installed'])
 
     @pyqtSlot(str)

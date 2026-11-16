@@ -2,6 +2,7 @@ from dataclasses import replace
 """Installed ABI checks and signal adapters, using only a temporary installation.
 No transaction.run(), downloads, host remote changes or app installations.
 """
+import os
 import sys
 import tempfile
 import unittest
@@ -69,10 +70,11 @@ class FlatpakApiTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             HttpsOnly().redirect_request(None, None, 302, '', {}, 'http://example.org/repo')
 
+    @patch.dict(os.environ, {'LANGUAGE': 'en'})  # Asserts compare the English source strings.
     def test_auth_and_busy_errors_are_short_and_specific(self):
-        cases = [(Flatpak.error_quark(), Flatpak.Error.NOT_AUTHORIZED, 'autorização'),
-                 (Flatpak.error_quark(), Flatpak.Error.PERMISSION_DENIED, 'Permissão'),
-                 (Gio.io_error_quark(), Gio.IOErrorEnum.BUSY, 'Outra instalação')]
+        cases = [(Flatpak.error_quark(), Flatpak.Error.NOT_AUTHORIZED, 'Authorization'),
+                 (Flatpak.error_quark(), Flatpak.Error.PERMISSION_DENIED, 'Permission'),
+                 (Gio.io_error_quark(), Gio.IOErrorEnum.BUSY, 'Another installation')]
         for domain, code, expected in cases:
             e = GLib.Error.new_literal(domain, 'technical error', code)
             self.assertIn(expected, self.driver.error_message(e))

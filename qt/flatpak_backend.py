@@ -9,6 +9,7 @@ gi.require_version('OSTree', '1.0')
 from gi.repository import Flatpak, Gio, GLib, OSTree
 from backend import OriginConflict
 from metadata import LIMIT, https_url, parse_runtime_repo
+from i18n import _
 
 
 class HttpsOnly(urllib.request.HTTPRedirectHandler):
@@ -28,7 +29,7 @@ class FlatpakDriver:
 
     def prepare(self, reference, scope):
         if scope not in ('user', 'system') and not scope.startswith('system:'):
-            raise ValueError('Escolha onde instalar.')
+            raise ValueError(_('Choose where to install.'))
         self.scope = scope
         self.installation = (Flatpak.Installation.new_user(self.cancellable) if scope == 'user'
                              else Flatpak.Installation.new_system(self.cancellable) if scope == 'system'
@@ -44,16 +45,16 @@ class FlatpakDriver:
                 inst = (self.installation if self.scope == scope else
                         Flatpak.Installation.new_user(self.cancellable) if scope == 'user' else
                         Flatpak.Installation.new_system(self.cancellable))
-                apps = [f'{r.format_ref()} (origem {r.get_origin()})'
+                apps = [_('{ref} (source {origin})').format(ref=r.format_ref(), origin=r.get_origin())
                         for r in inst.list_installed_refs(self.cancellable)
                         if r.get_name() == reference.app_id]
                 remotes = [f'{r.get_name()}: {r.get_url()}' for r in inst.list_remotes(self.cancellable)]
-                rows.append(f'{scope}: ' + ('; '.join(apps) or 'aplicativo ausente') +
-                            '\nOrigens: ' + ('; '.join(remotes) or 'nenhuma'))
+                rows.append(f'{scope}: ' + ('; '.join(apps) or _('application absent')) + '\n' +
+                            _('Sources: {list}').format(list='; '.join(remotes) or _('none')))
             except GLib.Error as exc:
                 if scope == self.scope:
                     raise
-                rows.append(f'{scope}: não foi possível consultar: {exc}')
+                rows.append(_('{scope}: could not query: {error}').format(scope=scope, error=exc))
         return '\n'.join(rows)
 
     def installed_ref(self, reference):
@@ -82,13 +83,13 @@ class FlatpakDriver:
                     GLib.Bytes.new(data)), None, self.cancellable)
                 self.key_cache[data] = self.repo_fingerprints(repo, 'keycheck')
                 if not self.key_cache[data]:
-                    raise OriginConflict('A origem não contém uma chave de assinatura válida.')
+                    raise OriginConflict(_('The source does not contain a valid signing key.'))
         return self.key_cache[data]
 
     def repo_fingerprints(self, repo, name):
         result = repo.remote_get_gpg_keys(name, None, self.cancellable)
         if not result[0]:
-            raise OriginConflict('Não foi possível verificar as chaves da origem.')
+            raise OriginConflict(_('Could not verify the source keys.'))
         keys = []
         for key in result[1]:
             subkeys, _, _ = key.unpack()
@@ -96,7 +97,7 @@ class FlatpakDriver:
                 continue
             primary = subkeys[0]
             if any(primary.get(flag) for flag in ('invalid', 'revoked', 'expired')):
-                raise OriginConflict('A origem contém uma chave inválida, revogada ou expirada.')
+                raise OriginConflict(_('The source contains an invalid, revoked or expired key.'))
             keys.append(primary['fingerprint'])
         return tuple(sorted(keys))
 
@@ -116,20 +117,20 @@ class FlatpakDriver:
         signature = self.remote_signature(remote)
         url, verify, collection, disabled, filter_path, nodeps, noenumerate, branch, priority, keys = signature
         if not verify:
-            raise OriginConflict("A origem possui verificação GPG desativada.")
+            raise OriginConflict(_('The source has GPG verification disabled.'))
         if disabled or filter_path:
-            raise OriginConflict('A origem configurada está desativada ou possui um filtro. '
-                                 'Sua configuração precisa ser conferida antes de instalar.')
+            raise OriginConflict(_('The configured source is disabled or has a filter. '
+                                   'Its configuration must be checked before installing.'))
         if spec:
             if url != spec.url or (spec.collection and spec.collection != collection):
-                raise OriginConflict('A identidade da origem configurada difere da referência.')
+                raise OriginConflict(_('The identity of the configured source differs from the reference.'))
             if spec.key and (not verify or self.key_fingerprints(spec.key) != keys):
-                raise OriginConflict('A chave de assinatura da origem configurada difere da referência.')
+                raise OriginConflict(_('The signing key of the configured source differs from the reference.'))
             if spec.default_branch and spec.default_branch != branch:
-                raise OriginConflict('A configuração da origem difere do descritor informado.')
+                raise OriginConflict(_('The source configuration differs from the provided descriptor.'))
         name = remote.get_name()
         if name in self.pinned_remotes and self.pinned_remotes[name] != signature:
-            raise OriginConflict('A configuração da origem mudou durante a instalação. Tente novamente.')
+            raise OriginConflict(_('The source configuration changed during the installation. Try again.'))
         self.pinned_remotes[name] = signature
         return name
 
@@ -158,7 +159,7 @@ class FlatpakDriver:
         if (first.collection and second.collection and first.collection != second.collection
                 or first.default_branch and second.default_branch and first.default_branch != second.default_branch
                 or first.key and second.key and self.key_fingerprints(first.key) != self.key_fingerprints(second.key)):
-            raise OriginConflict('Os descritores da mesma origem possuem configurações incompatíveis.')
+            raise OriginConflict(_('The descriptors of the same source have incompatible configurations.'))
         return replace(first, key=first.key or second.key, collection=first.collection or second.collection,
                        default_branch=first.default_branch or second.default_branch)
 
@@ -168,13 +169,13 @@ class FlatpakDriver:
         for op in ops:
             parsed = Flatpak.Ref.parse(op['ref'])
             if op['type'] not in ('install', 'update'):
-                raise OriginConflict('A instalação exigiria uma alteração que não foi autorizada.')
+                raise OriginConflict(_('The installation would require a change that was not authorized.'))
             if parsed.get_kind() == Flatpak.RefKind.APP and op['ref'] != expected:
-                raise OriginConflict('A instalação tentou incluir outro aplicativo não autorizado.')
+                raise OriginConflict(_('The installation tried to include another unauthorized application.'))
             remote = self.installation.get_remote_by_name(op['remote'], self.cancellable)
             self.check_remote(remote, reference.remote if op['ref'] == expected else None)
             if op['ref'] == expected and op['remote'] != main_remote:
-                raise OriginConflict('A origem do aplicativo mudou durante a instalação.')
+                raise OriginConflict(_('The application source changed during the installation.'))
         for name in tuple(self.pinned_remotes):
             self.check_remote(self.installation.get_remote_by_name(name, self.cancellable))
 
@@ -258,13 +259,13 @@ class FlatpakDriver:
 
     def add_remote(self, spec):
         if not spec.key:
-            raise OriginConflict('A origem não fornece chave GPG; instalação interrompida.')
+            raise OriginConflict(_('The source does not provide a GPG key; installation stopped.'))
         self.key_fingerprints(spec.key)
         # Never overwrite a remote, even if the supplied suggested name conflicts.
         names = {r.get_name() for r in self.installation.list_remotes(self.cancellable)}
         base = re.sub(r'[^A-Za-z0-9_.-]', '-', spec.suggested).lstrip('-')[:80] or 'mainuan-origin'
         if base in names:
-            raise OriginConflict('Já existe uma origem com esse nome e outra identidade: ' + base)
+            raise OriginConflict(_('A source with this name and another identity already exists: {name}').format(name=base))
         name = base
         remote = Flatpak.Remote.new(name)
         remote.set_url(spec.url)
@@ -277,7 +278,7 @@ class FlatpakDriver:
         if spec.default_branch:
             remote.set_default_branch(spec.default_branch)
         if not self.installation.add_remote(remote, False, self.cancellable):
-            raise RuntimeError('O Flatpak não confirmou a adição da origem.')
+            raise RuntimeError(_('Flatpak did not confirm adding the source.'))
         self.check_remote(self.installation.get_remote_by_name(name, self.cancellable), spec)
         return name
 
@@ -288,7 +289,7 @@ class FlatpakDriver:
             https_url(response.url)
             data = response.read(LIMIT + 1)
         if self.cancellable.is_cancelled():
-            raise GLib.Error.new_literal(Gio.io_error_quark(), 'Cancelado', Gio.IOErrorEnum.CANCELLED)
+            raise GLib.Error.new_literal(Gio.io_error_quark(), _('Cancelled'), Gio.IOErrorEnum.CANCELLED)
         return parse_runtime_repo(data, url)
 
     def transaction(self, reference, remote, policy):
@@ -315,7 +316,7 @@ class FlatpakDriver:
             try:
                 url = self.installation.get_remote_by_name(remote, self.cancellable).get_url() if remote else ''
             except GLib.Error:
-                url = '(origem indisponível)'
+                url = _('(source unavailable)')
             result.append({'type': op.get_operation_type().value_nick, 'ref': op.get_ref(),
                            'remote': remote, 'url': url, 'commit': op.get_commit() or '',
                            'download': op.get_download_size(), 'installedSize': op.get_installed_size()})
@@ -324,21 +325,21 @@ class FlatpakDriver:
     def new_operation(self, op, progress, policy):
         def update(p):
             percent = -1 if p.get_is_estimating() else p.get_progress()
-            policy.progress(op.get_ref(), p.get_status() or 'Em andamento…', percent)
+            policy.progress(op.get_ref(), p.get_status() or _('In progress…'), percent)
         progress.set_update_frequency(200)
         progress.connect('changed', lambda p: policy.guarded(None, update, p))
         update(progress)
 
     def run(self, tx):
         if not tx.run(self.cancellable):
-            raise RuntimeError('A transação não foi concluída.')
+            raise RuntimeError(_('The transaction was not completed.'))
 
     def verify(self, reference):
         ref = self.installed_ref(reference)
         if not ref.get_commit():
-            raise RuntimeError('A referência não tem implantação confirmada.')
+            raise RuntimeError(_('The reference has no confirmed deployment.'))
         if self.expected_remote and ref.get_origin() != self.expected_remote:
-            raise RuntimeError('A origem instalada difere da origem da transação.')
+            raise RuntimeError(_('The installed source differs from the transaction source.'))
         return {'name': ref.get_name(), 'arch': ref.get_arch(), 'branch': ref.get_branch(),
                 'scope': self.scope, 'origin': ref.get_origin(), 'ref': ref.format_ref()}
 
@@ -347,7 +348,7 @@ class FlatpakDriver:
         ref = inst.get_installed_ref(Flatpak.RefKind.APP, installed['name'], installed['arch'],
                                     installed['branch'], self.cancellable)
         if ref.format_ref() != installed['ref']:
-            raise OriginConflict('A referência selecionada mudou.')
+            raise OriginConflict(_('The selected reference changed.'))
         tx = Flatpak.Transaction.new_for_installation(inst, self.cancellable)
         # No delete-data, unused cleanup, remote removal or rebase.
         tx.set_disable_prune(True)
@@ -372,7 +373,7 @@ class FlatpakDriver:
             if exc.matches(Flatpak.error_quark(), Flatpak.Error.NOT_INSTALLED):
                 return
             raise
-        raise RuntimeError('A referência ainda está instalada no destino selecionado.')
+        raise RuntimeError(_('The reference is still installed in the selected destination.'))
 
     def action_installation(self, installed):
         if installed['scope'] == 'user':
@@ -383,10 +384,10 @@ class FlatpakDriver:
             matches = [i for i in Flatpak.get_system_installations(self.cancellable)
                        if 'system:' + i.get_id() == installed['scope']]
             if len(matches) != 1:
-                raise OriginConflict('Instalação de sistema ambígua ou indisponível.')
+                raise OriginConflict(_('Ambiguous or unavailable system installation.'))
             inst = matches[0]
         if installed.get('path') and inst.get_path().get_path() != installed['path']:
-            raise OriginConflict('O caminho da instalação selecionada mudou.')
+            raise OriginConflict(_('The path of the selected installation changed.'))
         inst.drop_caches(self.cancellable)
         return inst
 
@@ -395,7 +396,7 @@ class FlatpakDriver:
         ref = inst.get_installed_ref(Flatpak.RefKind.APP, installed['name'], installed['arch'],
                                     installed['branch'], self.cancellable)
         if not inst.launch(ref.get_name(), ref.get_arch(), ref.get_branch(), None, self.cancellable):
-            raise RuntimeError('O Flatpak não confirmou a abertura do aplicativo.')
+            raise RuntimeError(_('Flatpak did not confirm opening the application.'))
 
     @staticmethod
     def is_cancelled(exc):
@@ -409,26 +410,26 @@ class FlatpakDriver:
             if (exc.matches(Gio.io_error_quark(), Gio.IOErrorEnum.PERMISSION_DENIED)
                     or exc.matches(Gio.dbus_error_quark(), Gio.DBusError.ACCESS_DENIED)
                     or exc.matches(Gio.dbus_error_quark(), Gio.DBusError.AUTH_FAILED)):
-                return 'A autorização foi negada ou cancelada.'
+                return _('Authorization was denied or cancelled.')
             if any(exc.matches(Gio.io_error_quark(), code) for code in (
                     Gio.IOErrorEnum.NETWORK_UNREACHABLE, Gio.IOErrorEnum.HOST_UNREACHABLE,
                     Gio.IOErrorEnum.HOST_NOT_FOUND, Gio.IOErrorEnum.CONNECTION_REFUSED,
                     Gio.IOErrorEnum.TIMED_OUT, Gio.IOErrorEnum.NOT_CONNECTED)):
-                return 'Não foi possível acessar a origem. Verifique a conexão e tente novamente.'
+                return _('Could not access the source. Check the connection and try again.')
             for code, message in (
-                (Flatpak.Error.PERMISSION_DENIED, 'Permissão negada para esta operação.'),
-                (Flatpak.Error.NOT_AUTHORIZED, 'A autorização foi negada ou cancelada.'),
-                (Flatpak.Error.AUTHENTICATION_FAILED, 'Não foi possível autenticar na origem.'),
-                (Flatpak.Error.REMOTE_NOT_FOUND, 'A origem não está disponível.'),
-                (Flatpak.Error.RUNTIME_NOT_FOUND, 'Os componentes necessários não estão disponíveis.'),
-                (Flatpak.Error.ALREADY_INSTALLED, 'O aplicativo já foi instalado por outro processo. Tente novamente.'),
-                (Flatpak.Error.DIFFERENT_REMOTE, 'Há uma instalação com outra origem neste destino.'),
-                (Flatpak.Error.INVALID_REF, 'A referência Flatpak é inválida.'),
-                (Flatpak.Error.OUT_OF_SPACE, 'Não há espaço suficiente para instalar.')):
+                (Flatpak.Error.PERMISSION_DENIED, _('Permission denied for this operation.')),
+                (Flatpak.Error.NOT_AUTHORIZED, _('Authorization was denied or cancelled.')),
+                (Flatpak.Error.AUTHENTICATION_FAILED, _('Could not authenticate with the source.')),
+                (Flatpak.Error.REMOTE_NOT_FOUND, _('The source is not available.')),
+                (Flatpak.Error.RUNTIME_NOT_FOUND, _('The required components are not available.')),
+                (Flatpak.Error.ALREADY_INSTALLED, _('The application was already installed by another process. Try again.')),
+                (Flatpak.Error.DIFFERENT_REMOTE, _('There is an installation from another source in this destination.')),
+                (Flatpak.Error.INVALID_REF, _('The Flatpak reference is invalid.')),
+                (Flatpak.Error.OUT_OF_SPACE, _('There is not enough space to install.'))):
                 if exc.matches(Flatpak.error_quark(), code):
                     return message
             if exc.matches(Gio.io_error_quark(), Gio.IOErrorEnum.BUSY):
-                return 'Outra instalação está em andamento. Tente novamente.'
+                return _('Another installation is in progress. Try again.')
         if isinstance(exc, (TimeoutError, OSError)):
-            return 'Não foi possível acessar a origem. Verifique a conexão e os detalhes.'
-        return 'Não foi possível concluir a operação. Consulte os detalhes.'
+            return _('Could not access the source. Check the connection and the details.')
+        return _('Could not complete the operation. See the details.')

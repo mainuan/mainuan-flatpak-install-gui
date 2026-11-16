@@ -1,6 +1,7 @@
 """Operation-local installation authorization and validated origins."""
 import threading
 from metadata import https_url
+from i18n import _
 
 
 class Cancelled(Exception):
@@ -74,21 +75,21 @@ class Installer:
         for spec in pending:
             https_url(spec.url)
             if not spec.key:
-                raise OriginConflict('A origem necessária não fornece chave GPG. A instalação foi interrompida.')
+                raise OriginConflict(_('The required source does not provide a GPG key. The installation was stopped.'))
         self.authorized_remotes.update(identity(s) for s in pending)
 
     def choose(self, ref, names, descriptions):
         if len(names) == 1:
             return names[0]
         if not names:
-            raise OriginConflict('Nenhuma origem compatível está disponível.')
+            raise OriginConflict(_('No compatible source is available.'))
         cache_key = (ref, tuple(zip(names, descriptions)))
         if cache_key in self.selected_remotes:
             return self.selected_remotes[cache_key]
-        choice = self.ask('chooseRemote', notice='Há mais de uma origem compatível. Escolha qual deseja usar.',
+        choice = self.ask('chooseRemote', notice=_('There is more than one compatible source. Choose which one to use.'),
                           choices=descriptions, details=ref)
         if not 0 <= int(choice) < len(names):
-            raise ValueError('Origem selecionada inválida.')
+            raise ValueError(_('Invalid selected source.'))
         name = names[int(choice)]
         self.selected_remotes[cache_key] = name
         return name
@@ -110,13 +111,13 @@ class Installer:
         # Revalidate identity/configuration at the actual libflatpak veto points.
         for spec in self.allowed_specs.values():
             if not self.driver.remote_candidates(spec):
-                raise OriginConflict('A origem autorizada desapareceu durante a instalação.')
+                raise OriginConflict(_('The authorized source disappeared during the installation.'))
         ops = self.driver.operations(transaction)
         self.driver.validate_operations(ops, self.reference, self.main_remote)
         self.emit({'event': 'operations', 'operations': ops})
         self.decisions.check()
         if not pre_auth:
-            self.emit({'event': 'installing', 'message': 'Instalando…'})
+            self.emit({'event': 'installing', 'message': _('Installing…')})
         return True
 
     def new_remote(self, reason, app_id, name, url):
@@ -124,9 +125,9 @@ class Installer:
         # descriptor. Unknown URLs cannot inherit the user's install authorization.
         https_url(url)
         if reason not in (0, 1) or not self.reference or app_id != self.reference.app_id:
-            raise OriginConflict('Proposta de origem não vinculada ao aplicativo solicitado.')
+            raise OriginConflict(_('Source proposal not bound to the requested application.'))
         if url not in self.allowed_specs:
-            raise OriginConflict('Origem de dependência sem descritor validado: ' + url)
+            raise OriginConflict(_('Dependency source without a validated descriptor: {url}').format(url=url))
         self.remote_consent([self.allowed_specs[url]])
         return True
 
@@ -154,12 +155,12 @@ class Installer:
             if self.driver.is_installed(reference):
                 installed = self.driver.verify(reference)
                 self.decisions.check()
-                self.emit({'event': 'success', 'message': 'O aplicativo já está instalado neste destino.',
+                self.emit({'event': 'success', 'message': _('The application is already installed in this destination.'),
                            'installed': installed})
                 return
             if locations:
-                self.ask('confirmDuplicate', notice='Este aplicativo já está instalado. '
-                         'Deseja instalar outra cópia no destino selecionado?',
+                self.ask('confirmDuplicate', notice=_('This application is already installed. '
+                                                      'Do you want to install another copy in the selected destination?'),
                          details='\n'.join(f'{r["scope"]}: {r["ref"]}' for r in locations))
             # The Install click covers declared app/runtime origins. Resolve and
             # validate their descriptors before making any configuration changes.
@@ -180,7 +181,7 @@ class Installer:
                     existing = self.find_remote(spec)  # Recheck after waiting for the user.
                     name = existing or self.driver.add_remote(spec)
                     if not existing:
-                        self.emit({'event': 'remoteAdded', 'message': f'Origem adicionada: {name} — {url}'})
+                        self.emit({'event': 'remoteAdded', 'message': _('Source added: {name} — {url}').format(name=name, url=url)})
                 names[url] = name
             self.main_remote = names[reference.remote.url]
             self.decisions.check()
@@ -193,11 +194,11 @@ class Installer:
             self.decisions.check()
             installed = self.driver.verify(reference)
             self.decisions.check()
-            self.emit({'event': 'success', 'message': 'Instalação concluída.', 'installed': installed})
+            self.emit({'event': 'success', 'message': _('Installation completed.'), 'installed': installed})
         except Exception as exc:
             cause = self.callback_error or exc
             if isinstance(cause, Cancelled) or self.decisions.cancelled or self.driver.is_cancelled(cause):
-                self.emit({'event': 'cancelled', 'message': 'Instalação cancelada. Alterações já concluídas podem permanecer.',
+                self.emit({'event': 'cancelled', 'message': _('Installation cancelled. Changes already completed may remain.'),
                            'details': str(exc)})
             else:
                 self.emit({'event': 'error', 'message': self.driver.error_message(cause),

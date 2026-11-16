@@ -1,10 +1,12 @@
 """Qt/QML workflow tests with simulated transactions; never imports libflatpak."""
 import argparse
+import os
 import sys
 import tempfile
 import time
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'qt'))
+os.environ['LANGUAGE'] = 'en'  # No translator is installed: QML and Python show the English source strings.
 from PyQt6.QtCore import QObject, QMetaObject, Qt, QUrl, QPointF, qInstallMessageHandler
 from PyQt6.QtGui import QPalette, QColor, QIcon
 from PyQt6.QtWidgets import QApplication
@@ -97,12 +99,12 @@ with tempfile.TemporaryDirectory() as directory:
     c, e, w, drivers = create(path)
     assert not find(w, 'chooseFileButton').property('visible')
     assert not find(w, 'filePicker').property('visible')
-    assert find(w, 'userDestination').property('text') == 'Apenas seu usuário'
-    assert find(w, 'systemDestination').property('text') == 'Todo o sistema'
+    assert find(w, 'userDestination').property('text') == 'Only your user'
+    assert find(w, 'systemDestination').property('text') == 'Entire system'
     assert find(w, 'userDestination').property('visible') and find(w, 'systemDestination').property('visible')
     assert find(w, 'userDestination').property('checked')
     assert not find(w, 'detailsPanel').property('visible')
-    assert find(w, 'closeButton').property('text') == 'Fechar'
+    assert find(w, 'closeButton').property('text') == 'Close'
     title = find(w, 'installationTitle')
     assert title.property('text') == '<b>Exemplo & 100%</b>'
     expr = QQmlExpression(QQmlEngine.contextForObject(title), title, 'textFormat === 0')
@@ -130,7 +132,7 @@ with tempfile.TemporaryDirectory() as directory:
     assert c.view['installed']['scope'] == 'user'
     assert c.view['operations']
     assert find(w, 'openButton').property('visible')
-    assert find(w, 'closeButton').property('text') == 'Fechar'
+    assert find(w, 'closeButton').property('text') == 'Close'
     capture(w, 'success')
     destroy(c, e, w)
 
@@ -150,7 +152,7 @@ with tempfile.TemporaryDirectory() as directory:
     assert c.view['phase'] == 'error'
     assert not find(w, 'chooseFileButton').property('visible')
     assert not find(w, 'installButton').property('visible')
-    assert find(w, 'closeButton').property('text') == 'Fechar'
+    assert find(w, 'closeButton').property('text') == 'Close'
     capture(w, 'invalid')
     destroy(c, e, w)
 
@@ -173,7 +175,7 @@ with tempfile.TemporaryDirectory() as directory:
     click(w, 'installButton')
     wait_for(lambda: c.view['phase'] == 'chooseRemote')
     assert w.property('selectedOrigin') == -1
-    assert 'Selecione' in find(w, 'ambiguousOriginChoice').property('displayText')
+    assert 'Select' in find(w, 'ambiguousOriginChoice').property('displayText')
     assert not find(w, 'confirmButton').property('enabled')
     capture(w, 'ambiguous')
     find(w, 'ambiguousOriginChoice').forceActiveFocus()
@@ -198,7 +200,7 @@ with tempfile.TemporaryDirectory() as directory:
     assert 'dl.flathub.org' in find(w, 'installationSource').property('text')
     capture(w, 'scribe-ready')
     c.on_event({'event': 'progress', 'message': 'Baixando', 'operation': 'app/io.github.gnacho.Scribe/x86_64/stable', 'percent': 42})
-    assert find(w, 'installationTitle').property('text') == 'Instalando Scribe'
+    assert find(w, 'installationTitle').property('text') == 'Installing Scribe'
     capture(w, 'scribe-progress')
     c.install()
     wait_for(lambda: c.view['phase'] == 'success' and not c.view['busy'])
@@ -206,7 +208,7 @@ with tempfile.TemporaryDirectory() as directory:
     capture(w, 'scribe-success')
     click(w, 'removeButton')
     assert c.view['phase'] == 'confirmRemove'
-    assert c.view['notice'].startswith('Desinstalar Scribe (')
+    assert c.view['notice'].startswith('Uninstall Scribe (')
     assert find(w, 'installationTitle').property('text') == 'Scribe'
     capture(w, 'scribe-remove')
     destroy(c, e, w)
@@ -223,7 +225,7 @@ with tempfile.TemporaryDirectory() as directory:
     assert c.view['name'] == override
     assert c.view['installed']['name'] == 'io.github.gnacho.Scribe'
     click(w, 'removeButton')
-    assert c.view['notice'].startswith('Desinstalar ' + override)
+    assert c.view['notice'].startswith('Uninstall ' + override)
     notice = find(w, 'originNotice')
     assert QQmlExpression(QQmlEngine.contextForObject(notice), notice, 'textFormat === 0').evaluate()[0]
     capture(w, 'override-plaintext')

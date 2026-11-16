@@ -1,10 +1,12 @@
 """Compact presentation at native logical pixels and caller-selected Qt scaling."""
 import argparse
+import os
 import sys
 import tempfile
 import time
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'qt'))
+os.environ['LANGUAGE'] = 'en'  # No translator is installed: QML and Python show the English source strings.
 from PyQt6.QtCore import QObject, QMetaObject, Qt, QPointF, qInstallMessageHandler
 from PyQt6.QtGui import QPalette, QColor, QIcon
 from PyQt6.QtWidgets import QApplication
@@ -96,7 +98,7 @@ with tempfile.TemporaryDirectory() as folder:
         source=find(w,'installationSource')
         assert source.property('visible')
         assert c.view['source'] in source.property('text')
-        assert 'Será adicionada se necessária ao instalar' in source.property('text')
+        assert 'It will be added if needed when installing' in source.property('text')
         capture(w,appid+'-details')
         click(w,'detailsToggle')
         QTest.qWait(100)

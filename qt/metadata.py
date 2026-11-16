@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 import stat
 from urllib.parse import urlsplit
+from i18n import _
 
 LIMIT = 1024 * 1024
 
@@ -20,33 +21,33 @@ def https_url(value):
     except ValueError:
         valid = False
     if not valid or any(c.isspace() or ord(c) < 32 or c == '\\' for c in value):
-        raise ValueError('A origem precisa usar HTTPS sem credenciais ou fragmentos na URL.')
+        raise ValueError(_('The source must use HTTPS without credentials or fragments in the URL.'))
     return value
 
 
 def section_from_bytes(raw, group):
     if len(raw) > LIMIT or b'\x00' in raw:
-        raise ValueError('Referência muito grande ou com bytes nulos.')
+        raise ValueError(_('Reference too large or with null bytes.'))
     parser = configparser.ConfigParser(interpolation=None, strict=True, delimiters=('=',),
                                        comment_prefixes=('#',), empty_lines_in_values=False)
     parser.optionxform = str
     try:
         parser.read_string(raw.decode('utf-8-sig'))
         if parser.defaults() or parser.sections() != [group]:
-            raise ValueError('Grupo de referência inválido.')
+            raise ValueError(_('Invalid reference group.'))
         data = dict(parser[group])
         if any('\n' in v or '\r' in v for v in data.values()):
-            raise ValueError('Campos com múltiplas linhas não são aceitos.')
+            raise ValueError(_('Multi-line fields are not accepted.'))
         return data
     except (UnicodeError, configparser.Error, KeyError) as exc:
-        raise ValueError('Referência Flatpak inválida.') from exc
+        raise ValueError(_('Invalid Flatpak reference.')) from exc
 
 
 def gpg_key(value):
     try:
         return base64.b64decode(value, validate=True) if value else b''
     except ValueError as exc:
-        raise ValueError('Chave GPG inválida.') from exc
+        raise ValueError(_('Invalid GPG key.')) from exc
 
 
 @dataclass(frozen=True)
@@ -60,14 +61,16 @@ class RemoteSpec:
     default_branch: str = ''
 
     def notice(self):
-        fingerprint = ('não disponibilizada pelo sinal de proposta da libflatpak' if self.key is None
+        fingerprint = (_('not provided by the libflatpak proposal signal') if self.key is None
                        else hashlib.sha256(self.key).hexdigest() if self.key
-                       else 'ausente — assinatura GPG desativada')
-        return (f'Origem: {self.url}\nNome sugerido: {self.suggested}\n'
-                f'Descritor: {self.descriptor or "arquivo local"}\nSHA-256 da chave fornecida: {fingerprint}\n'
-                'HTTPS protege o transporte; não garante que esta origem seja confiável. '
-                'Adicionar a origem altera a configuração do Flatpak agora. '
-                'Ela pode permanecer mesmo se a instalação for cancelada.')
+                       else _('absent — GPG signature disabled'))
+        return (_('Source: {url}\nSuggested name: {name}\n'
+                  'Descriptor: {descriptor}\nSHA-256 of the provided key: {fingerprint}\n'
+                  'HTTPS protects the transport; it does not guarantee that this source is trustworthy. '
+                  'Adding the source changes the Flatpak configuration now. '
+                  'It may remain even if the installation is cancelled.').format(
+                    url=self.url, name=self.suggested, descriptor=self.descriptor or _('local file'),
+                    fingerprint=fingerprint))
 
 
 def friendly_name(app_id, title='', appstream=''):
@@ -103,25 +106,25 @@ class Reference:
 def parse_reference(raw):
     s = section_from_bytes(raw, 'Flatpak Ref')
     if s.get('Version', '1') != '1':
-        raise ValueError('Versão de referência ainda não suportada.')
+        raise ValueError(_('Reference version not supported yet.'))
     supported = {'Version', 'Name', 'Branch', 'IsRuntime', 'Url', 'Title', 'Comment',
                  'Description', 'Icon', 'Homepage', 'SuggestRemoteName', 'RuntimeRepo',
                  'GPGKey', 'DeployCollectionID'}
     extra = set(s) - supported
     if extra:
-        raise ValueError('Opções de referência ainda não suportadas: ' + ', '.join(sorted(extra)))
+        raise ValueError(_('Reference options not supported yet: {options}').format(options=', '.join(sorted(extra))))
     app_id = s.get('Name', '')
     if not re.fullmatch(r'[A-Za-z_][A-Za-z0-9_-]*(?:\.[A-Za-z_][A-Za-z0-9_-]*){2,}', app_id):
-        raise ValueError('Identificador do aplicativo inválido.')
+        raise ValueError(_('Invalid application identifier.'))
     if s.get('IsRuntime', 'false') != 'false':
-        raise ValueError('Esta interface é destinada a aplicativos.')
+        raise ValueError(_('This interface is intended for applications.'))
     branch = s.get('Branch', 'master')
     if not re.fullmatch(r'[A-Za-z0-9_][A-Za-z0-9_.-]*', branch):
-        raise ValueError('Branch do aplicativo inválida.')
+        raise ValueError(_('Invalid application branch.'))
     # Reject routing escape sequences instead of interpreting them differently from GKeyFile.
     for key in ('Url', 'RuntimeRepo', 'SuggestRemoteName', 'DeployCollectionID'):
         if '\\' in s.get(key, ''):
-            raise ValueError(f'Campo {key} contém escape não suportado.')
+            raise ValueError(_('Field {key} contains an unsupported escape.').format(key=key))
     source = https_url(s.get('Url', ''))
     runtime = https_url(s['RuntimeRepo']) if s.get('RuntimeRepo') else ''
     spec = RemoteSpec(source, s.get('SuggestRemoteName', app_id.lower()),
@@ -135,24 +138,24 @@ def parse_reference(raw):
 def read_reference(path):
     path = Path(path)
     if path.suffix.lower() != '.flatpakref':
-        raise ValueError('Selecione um arquivo .flatpakref.')
+        raise ValueError(_('Select a .flatpakref file.'))
     fd = os.open(path, os.O_RDONLY | os.O_NONBLOCK)
     with os.fdopen(fd, 'rb') as stream:
         if not stat.S_ISREG(os.fstat(stream.fileno()).st_mode):
-            raise ValueError('Selecione um arquivo local regular.')
+            raise ValueError(_('Select a regular local file.'))
         return parse_reference(stream.read(LIMIT + 1))
 
 
 def parse_runtime_repo(raw, descriptor):
     s = section_from_bytes(raw, 'Flatpak Repo')
     if s.get('Version', '1') != '1':
-        raise ValueError('Versão do descritor de origem ainda não suportada.')
+        raise ValueError(_('Source descriptor version not supported yet.'))
     # Do not silently ignore settings that change security or remote semantics.
     supported = {'Version', 'Url', 'Title', 'Comment', 'Description', 'Homepage', 'Icon',
                  'GPGKey', 'DeployCollectionID', 'DefaultBranch'}
     extra = set(s) - supported
     if extra:
-        raise ValueError('Opções de origem ainda não suportadas: ' + ', '.join(sorted(extra)))
+        raise ValueError(_('Source options not supported yet: {options}').format(options=', '.join(sorted(extra))))
     return RemoteSpec(https_url(s.get('Url', '')), 'runtime', s.get('Title', 'Runtime'),
                       gpg_key(s.get('GPGKey', '')), s.get('DeployCollectionID', ''), descriptor,
                       s.get('DefaultBranch', ''))
@@ -172,24 +175,56 @@ class BoundedXML:
         data = self.stream.read(min(size if size >= 0 else 65536, 65536))
         self.count += len(data)
         if self.count > APPSTREAM_LIMIT:
-            raise ValueError('AppStream excede o limite de leitura.')
+            raise ValueError(_('AppStream exceeds the read limit.'))
         scanned = self.tail + data
         if b'<!DOCTYPE' in scanned or b'<!ENTITY' in scanned or b'\x00' in data:
-            raise ValueError('Declarações XML não suportadas.')
+            raise ValueError(_('Unsupported XML declarations.'))
         self.tail = scanned[-16:]
         return data
 
 
+def ui_languages():
+    """The user's interface languages, most preferred first, as 'pt-BR'.
+
+    AppStream and .desktop translations are external data: pick the variant for
+    the session's UI languages (Plasma's LANGUAGE list) instead of LC_CTYPE.
+    """
+    try:
+        from PyQt6.QtCore import QLocale
+        languages = list(QLocale.system().uiLanguages())
+    except ImportError:
+        languages = []
+    if not languages:
+        for variable in ('LANGUAGE', 'LC_ALL', 'LC_MESSAGES', 'LANG'):
+            value = os.environ.get(variable, '')
+            if value:
+                languages = value.split(':')
+                break
+    result = []
+    for value in languages:
+        # Qt also lists script forms (pt-Latn-BR); AppStream/.desktop use pt-BR/pt_BR.
+        parts = value.split('.')[0].split('@')[0].replace('_', '-').split('-')
+        tag = '-'.join(p for i, p in enumerate(parts) if not (i and len(p) == 4 and p.isalpha()))
+        if tag and tag not in ('C', 'POSIX') and tag not in result:
+            result.append(tag)
+    return result
+
+
 def localized_text(nodes):
-    import locale
-    language = (locale.getlocale()[0] or '').replace('_', '-')
+    languages = ui_languages()
     key = '{http://www.w3.org/XML/1998/namespace}lang'
-    # Exact locale, same language, untranslated, then another available locale.
+    # Per preferred language: exact locale, then same language; then untranslated,
+    # then another available locale.
     def rank(node):
         lang = node.get(key, '').replace('_', '-')
-        return (0 if lang and lang == language else
-                1 if lang and language and lang.split('-')[0] == language.split('-')[0] else
-                2 if not lang else 3)
+        if not lang:
+            return (len(languages), 0)
+        for index, language in enumerate(languages):
+            if lang == language:
+                return (index, 0)
+            if lang.split('-')[0] == language.split('-')[0]:
+                return (index, 1)
+        return (len(languages), 1)
     return next((n.text.strip() for n in sorted(nodes, key=rank) if n.text and n.text.strip()), '')
 
 
@@ -281,10 +316,12 @@ def desktop_presentation(path, app_id=''):
         parser.optionxform = str
         parser.read_string(raw.decode('utf-8'))
         section = parser['Desktop Entry']
-        import locale
-        lang = locale.getlocale()[0] or ''
+        keys = []
+        for language in ui_languages():
+            language = language.replace('-', '_')
+            keys += [language, language.split('_')[0]]
         def value(key):
-            return next((section[k].strip() for k in (f'{key}[{lang}]', f'{key}[{lang.split("_")[0]}]', key) if section.get(k, '').strip()), '')
+            return next((section[k].strip() for k in [f'{key}[{lang}]' for lang in keys] + [key] if section.get(k, '').strip()), '')
         return {'name': compact_name(app_id, section.get('Name', ''), value('Name')),
                 'description': value('Comment')}
     except (OSError, UnicodeError, configparser.Error, KeyError):

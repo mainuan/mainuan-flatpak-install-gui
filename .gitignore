@@ -5,3 +5,4 @@ __pycache__/
 /.vscode/
 *.deb
 *.deb.sha256
+/build/

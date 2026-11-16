@@ -52,6 +52,7 @@ registra formas antigas com ID avulso, sem ampliar o escopo atual do produto.
 ## Construção e testes
 
 As dependências Debian estão em [packaging/control](packaging/control).
+O build requer também `gettext` (`msgfmt`); traduções em [docs/i18n](docs/i18n/README.md).
 O build não precisa de root. A implementação instalada usa `/usr/share`, sem
 checkout, PYTHONPATH de desenvolvimento ou dependências extraídas em `/tmp`.
 

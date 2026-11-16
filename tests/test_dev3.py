@@ -76,6 +76,7 @@ class DetectionTests(unittest.TestCase):
         self.assertEqual(c.view['phase'], 'error')
         self.assertIn('query failed', c.view['details'])
 
+    @patch.dict(os.environ, {'LANGUAGE': 'en'})  # Asserts compare the English source strings.
     def test_confirmed_remove_and_exact_open(self):
         c = self.controller()
         selected = {'scope': 'system', 'name': REFERENCE.app_id, 'arch': 'x86_64', 'branch': 'master', 'ref': OPS[0]['ref']}
@@ -93,7 +94,7 @@ class DetectionTests(unittest.TestCase):
         self.assertIn('remove:system:' + selected['ref'], self.drivers[-1].log)
         self.assertEqual(c.view['phase'], 'ready')
         self.assertFalse(c.view['installed'])
-        self.assertIn('preservados', c.view['message'])
+        self.assertIn('preserved', c.view['message'])
 
     def test_override_is_only_presentation(self):
         c = self.controller()
@@ -107,6 +108,7 @@ class DetectionTests(unittest.TestCase):
             self.assertEqual(c.reference.app_id, REFERENCE.app_id)
             self.assertFalse(any(x.startswith('MUTATE') for x in self.drivers[0].log))
 
+    @patch.dict(os.environ, {'LANGUAGE': 'en'})  # Asserts compare the English source strings.
     def test_reopen_after_installation(self):
         installed = {'scope': 'user', 'ref': OPS[0]['ref'], 'selected': True}
         c = self.controller(locations=[installed])
@@ -115,7 +117,7 @@ class DetectionTests(unittest.TestCase):
             path.write_bytes(REFERENCE.raw)
             c.loadFile(str(path))
             self.wait_for(lambda: not c.view['busy'])
-            self.assertEqual(c.view['message'], 'Já instalado')
+            self.assertEqual(c.view['message'], 'Already installed')
             self.assertEqual(c.view['installed']['ref'], installed['ref'])
 
 

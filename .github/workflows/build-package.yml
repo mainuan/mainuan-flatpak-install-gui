@@ -18,6 +18,12 @@ jobs:
       PACKAGE_SHA256: 4b31d19c144a5f7cf9cbaca3b4eb1f4d37dc46488b953cb4e933d6526492d3fd
     steps:
       - uses: actions/checkout@v4
+      - name: Install gettext
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends gettext
+      - name: Check translation template
+        run: po/i18n.sh check-pot
+      - name: Validate translation catalogs
+        run: po/i18n.sh validate
       - name: Build package
         run: ./build.sh dist
       - name: Verify package
