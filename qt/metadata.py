@@ -202,7 +202,9 @@ def ui_languages():
                 break
     result = []
     for value in languages:
-        tag = value.split('.')[0].split('@')[0].replace('_', '-')
+        # Qt also lists script forms (pt-Latn-BR); AppStream/.desktop use pt-BR/pt_BR.
+        parts = value.split('.')[0].split('@')[0].replace('_', '-').split('-')
+        tag = '-'.join(p for i, p in enumerate(parts) if not (i and len(p) == 4 and p.isalpha()))
         if tag and tag not in ('C', 'POSIX') and tag not in result:
             result.append(tag)
     return result

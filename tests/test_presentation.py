@@ -7,7 +7,7 @@ from pathlib import Path
 from unittest.mock import Mock, patch
 import unittest
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'qt'))
-from metadata import parse_reference, appstream_stream_presentation, installed_appstream_presentation, desktop_presentation
+from metadata import parse_reference, appstream_stream_presentation, installed_appstream_presentation, desktop_presentation, ui_languages
 from controller import Worker
 from test_backend import FakeDriver
 from test_flatpak_api import FlatpakDriver
@@ -24,6 +24,19 @@ class PresentationTests(unittest.TestCase):
             self.assertEqual(presentation(), {'name': 'GIMP', 'description': 'Crie e edite imagens'})
         self.assertEqual(GIMP.app_id, 'org.gimp.GIMP')
         self.assertEqual(GIMP.branch, 'stable')
+
+    def test_user_ui_language_picks_the_appstream_variant(self):
+        xml = XML.replace(b'<summary>Create', b'<summary xml:lang="pt">Criar e editar imagens</summary><summary>Create')
+        system = Mock()
+        system.system.return_value.uiLanguages.return_value = ['pt-Latn-BR', 'pt-BR', 'pt-Latn', 'pt']
+        with patch('PyQt6.QtCore.QLocale', system):
+            self.assertEqual(ui_languages(), ['pt-BR', 'pt'])
+            self.assertEqual(presentation(xml)['description'], 'Crie e edite imagens')
+        system.system.return_value.uiLanguages.return_value = ['en-Latn-US', 'en-US', 'en-Latn', 'en']
+        with patch('PyQt6.QtCore.QLocale', system):
+            self.assertEqual(presentation(xml)['description'], 'Create and edit images')
+        with patch('metadata.ui_languages', return_value=['es', 'pt']):
+            self.assertEqual(presentation(xml)['description'], 'Criar e editar imagens')
 
     def test_expanded_english_name_as_description_if_summary_absent(self):
         xml = XML[:XML.index(b'<summary>')] + b'</component>'
