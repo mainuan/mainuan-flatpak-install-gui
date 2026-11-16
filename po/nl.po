@@ -1,0 +1,758 @@
+# Dutch translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: nl <https://github.com/mainuan>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Mainuan Flatpak-installatieprogramma"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Toepassingen installeren vanuit Flatpak-referentiebestanden"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Flatpak-bestand kiezen"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Flatpak-referentie (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "DEMONSTRATIE — er worden geen wijzigingen aangebracht"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "%1 installeren"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Bestand kiezen"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Alleen uw gebruiker"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Hele systeem"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Andere systeeminstallatie: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Bestemming: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Selecteer een van de bronnen"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Bron van de toepassing of afhankelijkheid"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Totale voortgang van de installatie"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Voltooid"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "Bezig"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Huidige stap: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Details verbergen"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Details tonen"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Bron: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Deze wordt indien nodig toegevoegd tijdens de installatie."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr ""
+"Annuleren vraagt om een veilige stop. Voltooide wijzigingen kunnen blijven "
+"bestaan."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Technische details van de installatie"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Voorbereiding"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "Voortgang"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Bron"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "Geannuleerd"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Fout"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Succes"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "Status %1 simuleren"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Installeren"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Opnieuw proberen"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Doorgaan"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Nog een kopie installeren"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Deïnstalleren"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Openen"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Sluiten"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "De vereiste bron levert geen GPG-sleutel. De installatie is gestopt."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Er is geen compatibele bron beschikbaar."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "Er is meer dan één compatibele bron. Kies welke u wilt gebruiken."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Ongeldige geselecteerde bron."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "De geautoriseerde bron is tijdens de installatie verdwenen."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Bezig met installeren…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Bronvoorstel niet gekoppeld aan de gevraagde toepassing."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Bron van afhankelijkheid zonder gevalideerde descriptor: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "De toepassing is al op deze bestemming geïnstalleerd."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Deze toepassing is al geïnstalleerd. Wilt u nog een kopie installeren op de "
+"geselecteerde bestemming?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Bron toegevoegd: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Installatie voltooid."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr ""
+"Installatie geannuleerd. Reeds voltooide wijzigingen kunnen blijven bestaan."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "Bewerking geannuleerd."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Kon de installatie niet opvragen."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Welkom"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Kies een .flatpakref-bestand om te installeren."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Installatie controleren…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "Ongeldig bestand"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Kon dit .flatpakref-bestand niet openen."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Installatie voorbereiden…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr ""
+"Er zijn dubbelzinnige referenties op de bestemming. Selecteer een exacte "
+"referentie."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Gevonden installaties: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Al geïnstalleerd"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Toepassing gedeïnstalleerd. Persoonlijke gegevens zijn behouden."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Installeren"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Bijwerken"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Verwijderen"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Bron: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "Download: {download} bytes; geïnstalleerde grootte: {installed} bytes"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Geen openstaande bewerkingen."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Toepassing geopend."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "Bezig met annuleren… Wacht tot dit veilig is afgerond."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr ""
+"{name} ({scope}) deïnstalleren? Persoonlijke gegevens blijven behouden."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Bezig met deïnstalleren…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "De toepassing openen…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Ongeldige demonstratiestatus."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Voorbeeldtoepassing"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Voorbeeldbron"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Gesimuleerd resultaat: installatie voltooid."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Gesimuleerde fout: kon de bron niet benaderen."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "Gesimuleerde annulering. Voltooide bewerkingen kunnen blijven bestaan."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Demonstratie zonder installaties."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "De huidige bewerking downloaden (simulatie)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr ""
+"Fictieve details voor visuele beoordeling. Echte backend uitgeschakeld."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Kies waar u wilt installeren."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (bron {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "toepassing ontbreekt"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Bronnen: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "geen"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: kon niet opvragen: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "De bron bevat geen geldige ondertekeningssleutel."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Kon de sleutels van de bron niet verifiëren."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "De bron bevat een ongeldige, ingetrokken of verlopen sleutel."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Bij de bron is GPG-verificatie uitgeschakeld."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"De geconfigureerde bron is uitgeschakeld of heeft een filter. De "
+"configuratie ervan moet worden gecontroleerd voordat u installeert."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "De identiteit van de geconfigureerde bron wijkt af van de referentie."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr ""
+"De ondertekeningssleutel van de geconfigureerde bron wijkt af van de "
+"referentie."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "De configuratie van de bron wijkt af van de opgegeven descriptor."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr ""
+"De configuratie van de bron is tijdens de installatie gewijzigd. Probeer het "
+"opnieuw."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "De descriptors van dezelfde bron hebben incompatibele configuraties."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "De installatie zou een wijziging vereisen die niet is geautoriseerd."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr ""
+"De installatie probeerde een andere, niet-geautoriseerde toepassing op te "
+"nemen."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "De bron van de toepassing is tijdens de installatie gewijzigd."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "De bron levert geen GPG-sleutel; installatie gestopt."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Er bestaat al een bron met deze naam en een andere identiteit: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak heeft het toevoegen van de bron niet bevestigd."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(bron niet beschikbaar)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "Bezig…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "De transactie is niet voltooid."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "De referentie heeft geen bevestigde uitrol."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "De geïnstalleerde bron wijkt af van de bron van de transactie."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "De geselecteerde referentie is gewijzigd."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr ""
+"De referentie is nog steeds geïnstalleerd op de geselecteerde bestemming."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Dubbelzinnige of niet-beschikbare systeeminstallatie."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Het pad van de geselecteerde installatie is gewijzigd."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak heeft het openen van de toepassing niet bevestigd."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Autorisatie is geweigerd of geannuleerd."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr ""
+"Kon de bron niet benaderen. Controleer de verbinding en probeer het opnieuw."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Toegang geweigerd voor deze bewerking."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Kon niet authenticeren bij de bron."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "De bron is niet beschikbaar."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "De vereiste componenten zijn niet beschikbaar."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr ""
+"De toepassing is al door een ander proces geïnstalleerd. Probeer het opnieuw."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "Er is een installatie uit een andere bron op deze bestemming."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "De Flatpak-referentie is ongeldig."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Er is niet genoeg ruimte om te installeren."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "Er is een andere installatie bezig. Probeer het opnieuw."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "Kon de bron niet benaderen. Controleer de verbinding en de details."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "Kon de bewerking niet voltooien. Zie de details."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Mainuan Flatpak-installatieprogramma — lokaal .flatpakref-bestand"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "een lokaal .flatpakref-bestand"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "visuele demonstratie, kan niet installeren"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "weergavenaam als platte tekst; wijzigt de identiteit niet"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "de exacte referentie verwijderen, met grafische bevestiging"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system of system:ID; vereist voor --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies en --do-install zijn opgeheven: het waren interne Bash-"
+"hulpprogramma's. Open een .flatpakref-bestand en gebruik Installeren. Er is "
+"geen bewerking uitgevoerd."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Ongeldige bestemming: gebruik user, system of system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove vereist een .flatpakref-bestand en --scope user|system|system:ID; "
+"de identiteit komt uit het bestand."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Geef een lokaal .flatpakref-bestand op. Losse ID's of URL's uit het oude "
+"installatieprogramma worden niet geaccepteerd."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo is geïsoleerd: het accepteert geen bestand, bestemming, verwijdering "
+"of overschreven naam."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Voer de interface uit als gewone gebruiker. Flatpak/Polkit vraagt om "
+"autorisatie wanneer dat nodig is."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Qt-afhankelijkheid niet beschikbaar: {error}. Zie README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr ""
+"De bron moet HTTPS gebruiken zonder aanmeldgegevens of fragmenten in de URL."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Referentie te groot of met null-bytes."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Ongeldige referentiegroep."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Velden met meerdere regels worden niet geaccepteerd."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Ongeldige Flatpak-referentie."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Ongeldige GPG-sleutel."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "niet geleverd door het voorstelsignaal van libflatpak"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "ontbreekt — GPG-ondertekening uitgeschakeld"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Bron: {url}\n"
+"Voorgestelde naam: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 van de opgegeven sleutel: {fingerprint}\n"
+"HTTPS beschermt het transport; het garandeert niet dat deze bron betrouwbaar "
+"is. Het toevoegen van de bron wijzigt nu de Flatpak-configuratie. Dit kan "
+"blijven bestaan, ook als de installatie wordt geannuleerd."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "lokaal bestand"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Referentieversie nog niet ondersteund."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Referentieopties nog niet ondersteund: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Ongeldige toepassingsidentificatie."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Deze interface is bedoeld voor toepassingen."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Ongeldige toepassingstak."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "Veld {key} bevat een niet-ondersteunde escape-reeks."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Selecteer een .flatpakref-bestand."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Selecteer een gewoon lokaal bestand."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Versie van de brondescriptor nog niet ondersteund."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Bronopties nog niet ondersteund: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream overschrijdt de leeslimiet."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "Niet-ondersteunde XML-declaraties."
