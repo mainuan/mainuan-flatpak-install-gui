@@ -1,0 +1,740 @@
+# Hindi translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 11:40-0300\n"
+"PO-Revision-Date: 2026-11-16 11:40-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: hi <https://github.com/mainuan>\n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: launcher:3 qt/Main.qml:18 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Mainuan Flatpak संस्थापक"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Flatpak संदर्भ फ़ाइलों से अनुप्रयोग स्थापित करें"
+
+#: qt/Main.qml:73
+msgid "Choose Flatpak File"
+msgstr "Flatpak फ़ाइल चुनें"
+
+#: qt/Main.qml:74
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Flatpak संदर्भ (*.flatpakref)"
+
+#: qt/Main.qml:95
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "डेमो — कोई बदलाव नहीं किया जाएगा"
+
+#: qt/Main.qml:135
+msgid "Installing %1"
+msgstr "%1 स्थापित किया जा रहा है"
+
+#: qt/Main.qml:174
+msgid "Choose File"
+msgstr "फ़ाइल चुनें"
+
+#: qt/Main.qml:188 qt/Main.qml:214
+msgid "Only your user"
+msgstr "केवल आपका उपयोक्ता"
+
+#: qt/Main.qml:196 qt/Main.qml:214
+msgid "Entire system"
+msgstr "पूरा सिस्टम"
+
+#: qt/Main.qml:208
+msgid "Other system installation: %1"
+msgstr "अन्य सिस्टम स्थापना: %1"
+
+#: qt/Main.qml:214
+msgid "Destination: %1"
+msgstr "गंतव्य: %1"
+
+#: qt/Main.qml:233
+msgid "Select one of the sources"
+msgstr "स्रोतों में से एक चुनें"
+
+#: qt/Main.qml:235
+msgid "Source of the application or dependency"
+msgstr "अनुप्रयोग या निर्भरता का स्रोत"
+
+#: qt/Main.qml:267
+msgid "Total installation progress"
+msgstr "स्थापना की कुल प्रगति"
+
+#: qt/Main.qml:268
+msgid "Completed"
+msgstr "पूर्ण"
+
+#: qt/Main.qml:268
+msgid "In progress"
+msgstr "जारी है"
+
+#: qt/Main.qml:273
+msgid "Current step: %1%"
+msgstr "वर्तमान चरण: %1%"
+
+#: qt/Main.qml:281
+msgid "Hide Details"
+msgstr "विवरण छिपाएँ"
+
+#: qt/Main.qml:281
+msgid "Show Details"
+msgstr "विवरण दिखाएँ"
+
+#: qt/Main.qml:304
+msgid "Source: %1"
+msgstr "स्रोत: %1"
+
+#: qt/Main.qml:305
+msgid "It will be added if needed when installing."
+msgstr "आवश्यक होने पर इसे स्थापना के समय जोड़ा जाएगा।"
+
+#: qt/Main.qml:309
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr "रद्द करने से सुरक्षित रूप से रुकने का अनुरोध होता है। पूरे हो चुके बदलाव बने रह सकते हैं।"
+
+#: qt/Main.qml:313
+msgid "Technical installation details"
+msgstr "स्थापना का तकनीकी विवरण"
+
+#: qt/Main.qml:325
+msgid "Preparation"
+msgstr "तैयारी"
+
+#: qt/Main.qml:325
+msgid "Progress"
+msgstr "प्रगति"
+
+#: qt/Main.qml:325
+msgid "Source"
+msgstr "स्रोत"
+
+#: qt/Main.qml:326 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "रद्द किया गया"
+
+#: qt/Main.qml:326
+msgid "Error"
+msgstr "त्रुटि"
+
+#: qt/Main.qml:326
+msgid "Success"
+msgstr "सफलता"
+
+#: qt/Main.qml:328
+msgid "Simulate state %1"
+msgstr "स्थिति %1 का सिमुलेशन करें"
+
+#: qt/Main.qml:352
+msgid "Install"
+msgstr "स्थापित करें"
+
+#: qt/Main.qml:352
+msgid "Try Again"
+msgstr "फिर से प्रयास करें"
+
+#: qt/Main.qml:361
+msgid "Continue"
+msgstr "जारी रखें"
+
+#: qt/Main.qml:361
+msgid "Install Another Copy"
+msgstr "एक और प्रति स्थापित करें"
+
+#: qt/Main.qml:369 qt/Main.qml:376
+msgid "Uninstall"
+msgstr "अनइंस्टॉल करें"
+
+#: qt/Main.qml:384
+msgid "Open"
+msgstr "खोलें"
+
+#: qt/Main.qml:392
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: qt/Main.qml:392
+msgid "Close"
+msgstr "बंद करें"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "आवश्यक स्रोत GPG कुंजी प्रदान नहीं करता। स्थापना रोक दी गई।"
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "कोई संगत स्रोत उपलब्ध नहीं है।"
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "एक से अधिक संगत स्रोत हैं। चुनें कि किसका उपयोग करना है।"
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "चुना गया स्रोत अमान्य है।"
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "स्थापना के दौरान अधिकृत स्रोत गायब हो गया।"
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "स्थापित किया जा रहा है…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "स्रोत का प्रस्ताव अनुरोधित अनुप्रयोग से जुड़ा नहीं है।"
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "सत्यापित विवरणक के बिना निर्भरता स्रोत: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "अनुप्रयोग इस गंतव्य में पहले से स्थापित है।"
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"यह अनुप्रयोग पहले से स्थापित है। क्या आप चुने गए गंतव्य में एक और प्रति स्थापित करना चाहते हैं?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "स्रोत जोड़ा गया: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "स्थापना पूर्ण हुई।"
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "स्थापना रद्द की गई। पहले से पूरे हो चुके बदलाव बने रह सकते हैं।"
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "कार्य रद्द किया गया।"
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "स्थापना की जाँच नहीं की जा सकी।"
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "स्वागत है"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "स्थापित करने के लिए एक .flatpakref फ़ाइल चुनें।"
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "स्थापना की जाँच की जा रही है…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "अमान्य फ़ाइल"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "यह .flatpakref फ़ाइल नहीं खोली जा सकी।"
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "स्थापना तैयार की जा रही है…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "गंतव्य में अस्पष्ट संदर्भ हैं। कोई सटीक संदर्भ चुनें।"
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "मिली स्थापनाएँ: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "पहले से स्थापित"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "अनुप्रयोग अनइंस्टॉल किया गया। व्यक्तिगत डेटा सुरक्षित रखा गया।"
+
+# reviewed: tipo de operação exibido em "{operation} {ref}" na lista de
+# operações: substantivo
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "स्थापना"
+
+# reviewed: tipo de operação em "{operation} {ref}": substantivo
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "अद्यतन"
+
+# reviewed: tipo de operação em "{operation} {ref}": substantivo
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "हटाना"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "स्रोत: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "डाउनलोड: {download} बाइट; स्थापित आकार: {installed} बाइट"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "कोई लंबित कार्य नहीं।"
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "अनुप्रयोग खोला गया।"
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "रद्द किया जा रहा है… इसके सुरक्षित रूप से पूरा होने की प्रतीक्षा करें।"
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "{name} ({scope}) अनइंस्टॉल करें? व्यक्तिगत डेटा सुरक्षित रहेगा।"
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "अनइंस्टॉल किया जा रहा है…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "अनुप्रयोग खोला जा रहा है…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "अमान्य डेमो स्थिति।"
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "उदाहरण अनुप्रयोग"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "उदाहरण स्रोत"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "सिम्युलेटेड परिणाम: स्थापना पूर्ण हुई।"
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "सिम्युलेटेड त्रुटि: स्रोत तक पहुँचा नहीं जा सका।"
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "सिम्युलेटेड रद्दीकरण। पूरे हो चुके कार्य बने रह सकते हैं।"
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "स्थापनाओं के बिना डेमो।"
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "वर्तमान कार्य डाउनलोड किया जा रहा है (सिमुलेशन)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr "दृश्य मूल्यांकन के लिए काल्पनिक विवरण। वास्तविक बैकएंड अक्षम है।"
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "चुनें कि कहाँ स्थापित करना है।"
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (स्रोत {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "अनुप्रयोग मौजूद नहीं"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "स्रोत: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "कोई नहीं"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: जाँच नहीं की जा सकी: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "स्रोत में कोई मान्य हस्ताक्षर कुंजी नहीं है।"
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "स्रोत की कुंजियाँ सत्यापित नहीं की जा सकीं।"
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "स्रोत में अमान्य, निरस्त या समाप्त कुंजी है।"
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "स्रोत में GPG सत्यापन अक्षम है।"
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"कॉन्फ़िगर किया गया स्रोत अक्षम है या उसमें फ़िल्टर है। स्थापित करने से पहले इसके कॉन्फ़िगरेशन "
+"की जाँच आवश्यक है।"
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "कॉन्फ़िगर किए गए स्रोत की पहचान संदर्भ से भिन्न है।"
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "कॉन्फ़िगर किए गए स्रोत की हस्ताक्षर कुंजी संदर्भ से भिन्न है।"
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "स्रोत का कॉन्फ़िगरेशन दिए गए विवरणक से भिन्न है।"
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "स्थापना के दौरान स्रोत का कॉन्फ़िगरेशन बदल गया। फिर से प्रयास करें।"
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "एक ही स्रोत के विवरणकों में असंगत कॉन्फ़िगरेशन हैं।"
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "स्थापना के लिए ऐसे बदलाव की आवश्यकता होगी जो अधिकृत नहीं है।"
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "स्थापना ने किसी अन्य अनधिकृत अनुप्रयोग को शामिल करने का प्रयास किया।"
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "स्थापना के दौरान अनुप्रयोग का स्रोत बदल गया।"
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "स्रोत GPG कुंजी प्रदान नहीं करता; स्थापना रोक दी गई।"
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "इस नाम का लेकिन किसी अन्य पहचान वाला स्रोत पहले से मौजूद है: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak ने स्रोत जोड़े जाने की पुष्टि नहीं की।"
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(स्रोत उपलब्ध नहीं)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "जारी है…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "ट्रांज़ैक्शन पूरा नहीं हुआ।"
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "संदर्भ का कोई पुष्ट डिप्लॉयमेंट नहीं है।"
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "स्थापित स्रोत ट्रांज़ैक्शन के स्रोत से भिन्न है।"
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "चुना गया संदर्भ बदल गया।"
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "संदर्भ अभी भी चुने गए गंतव्य में स्थापित है।"
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "अस्पष्ट या अनुपलब्ध सिस्टम स्थापना।"
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "चुनी गई स्थापना का पथ बदल गया।"
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak ने अनुप्रयोग खोलने की पुष्टि नहीं की।"
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "प्राधिकरण अस्वीकार या रद्द कर दिया गया।"
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr "स्रोत तक पहुँचा नहीं जा सका। कनेक्शन जाँचें और फिर से प्रयास करें।"
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "इस कार्य के लिए अनुमति अस्वीकृत।"
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "स्रोत के साथ प्रमाणीकरण नहीं किया जा सका।"
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "स्रोत उपलब्ध नहीं है।"
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "आवश्यक घटक उपलब्ध नहीं हैं।"
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr ""
+"अनुप्रयोग किसी अन्य प्रक्रिया द्वारा पहले ही स्थापित कर दिया गया था। फिर से प्रयास करें।"
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "इस गंतव्य में किसी अन्य स्रोत से स्थापना मौजूद है।"
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Flatpak संदर्भ अमान्य है।"
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "स्थापित करने के लिए पर्याप्त स्थान नहीं है।"
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "एक अन्य स्थापना जारी है। फिर से प्रयास करें।"
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "स्रोत तक पहुँचा नहीं जा सका। कनेक्शन और विवरण जाँचें।"
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "कार्य पूरा नहीं किया जा सका। विवरण देखें।"
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Mainuan Flatpak संस्थापक — स्थानीय .flatpakref फ़ाइल"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "एक स्थानीय .flatpakref फ़ाइल"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "दृश्य डेमो, स्थापित नहीं कर सकता"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "सादे पाठ में प्रदर्शित नाम; पहचान नहीं बदलता"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "ग्राफ़िकल पुष्टि के साथ सटीक संदर्भ हटाएँ"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system या system:ID; --remove के लिए आवश्यक"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies और --do-install बंद कर दिए गए हैं: वे आंतरिक Bash सहायक थे। "
+"एक .flatpakref फ़ाइल खोलें और \"स्थापित करें\" का उपयोग करें। कोई कार्य नहीं किया गया।"
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "अमान्य गंतव्य: user, system या system:ID का उपयोग करें।"
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove के लिए एक .flatpakref फ़ाइल और --scope user|system|system:ID आवश्यक है; "
+"पहचान फ़ाइल से ली जाती है।"
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"एक स्थानीय .flatpakref फ़ाइल दें। पुराने संस्थापक के अलग ID या URL स्वीकार नहीं किए जाते।"
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr "--demo पृथक है: यह फ़ाइल, गंतव्य, हटाना या बदला हुआ नाम स्वीकार नहीं करता।"
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"इंटरफ़ेस को सामान्य उपयोक्ता के रूप में चलाएँ। आवश्यकता होने पर Flatpak/Polkit प्राधिकरण "
+"माँगेगा।"
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Qt निर्भरता उपलब्ध नहीं: {error}। README.md देखें।"
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr "स्रोत को URL में क्रेडेंशियल या फ़्रैगमेंट के बिना HTTPS का उपयोग करना चाहिए।"
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "संदर्भ बहुत बड़ा है या उसमें null बाइट हैं।"
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "अमान्य संदर्भ समूह।"
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "बहु-पंक्ति फ़ील्ड स्वीकार नहीं किए जाते।"
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "अमान्य Flatpak संदर्भ।"
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "अमान्य GPG कुंजी।"
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "libflatpak के प्रस्ताव संकेत द्वारा प्रदान नहीं किया गया"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "अनुपस्थित — GPG हस्ताक्षर अक्षम"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"स्रोत: {url}\n"
+"सुझाया गया नाम: {name}\n"
+"विवरणक: {descriptor}\n"
+"दी गई कुंजी का SHA-256: {fingerprint}\n"
+"HTTPS परिवहन की सुरक्षा करता है; यह इस बात की गारंटी नहीं देता कि यह स्रोत विश्वसनीय "
+"है। स्रोत जोड़ने से Flatpak कॉन्फ़िगरेशन अभी बदल जाता है। स्थापना रद्द होने पर भी यह बना "
+"रह सकता है।"
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "स्थानीय फ़ाइल"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "संदर्भ का यह संस्करण अभी समर्थित नहीं है।"
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "संदर्भ के ये विकल्प अभी समर्थित नहीं हैं: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "अमान्य अनुप्रयोग पहचानकर्ता।"
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "यह इंटरफ़ेस अनुप्रयोगों के लिए है।"
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "अमान्य अनुप्रयोग शाखा।"
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "फ़ील्ड {key} में असमर्थित एस्केप है।"
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "एक .flatpakref फ़ाइल चुनें।"
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "एक सामान्य स्थानीय फ़ाइल चुनें।"
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "स्रोत विवरणक का यह संस्करण अभी समर्थित नहीं है।"
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "स्रोत के ये विकल्प अभी समर्थित नहीं हैं: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream पढ़ने की सीमा से अधिक है।"
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "असमर्थित XML घोषणाएँ।"

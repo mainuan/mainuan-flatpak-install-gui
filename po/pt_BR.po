@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
 "issues\n"
-"POT-Creation-Date: 2026-11-16 11:30-0300\n"
+"POT-Creation-Date: 2026-11-16 11:40-0300\n"
 "PO-Revision-Date: 2026-11-16 11:19-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: Brazilian Portuguese\n"
@@ -84,7 +84,6 @@ msgid "In progress"
 msgstr "Em andamento"
 
 #: qt/Main.qml:273
-#, javascript-format
 msgid "Current step: %1%"
 msgstr "Etapa atual: %1%"
 
