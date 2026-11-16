@@ -20,7 +20,7 @@ def presentation(xml=XML, ref=GIMP):
 
 class PresentationTests(unittest.TestCase):
     def test_localized_gimp_name_and_summary(self):
-        with patch('locale.getlocale', return_value=('pt_BR', 'UTF-8')):
+        with patch('metadata.ui_languages', return_value=['pt-BR']):
             self.assertEqual(presentation(), {'name': 'GIMP', 'description': 'Crie e edite imagens'})
         self.assertEqual(GIMP.app_id, 'org.gimp.GIMP')
         self.assertEqual(GIMP.branch, 'stable')
@@ -65,7 +65,7 @@ class PresentationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as folder:
             p = Path(folder) / 'app.desktop'
             p.write_text('[Desktop Entry]\nName=GNU Image Manipulation Program\nName[pt_BR]=Programa de manipulação de imagem do GNU\nComment=Edit photos\n')
-            with patch('locale.getlocale', return_value=('pt_BR', 'UTF-8')):
+            with patch('metadata.ui_languages', return_value=['pt-BR']):
                 self.assertEqual(desktop_presentation(p, GIMP.app_id)['name'], 'GIMP')
 
     @unittest.skipIf(FlatpakDriver is None, 'GI Flatpak unavailable')
@@ -86,6 +86,6 @@ class PresentationTests(unittest.TestCase):
             ref.get_deploy_dir.return_value = str(deploy)
             inst.list_installed_refs.return_value = [ref]
             d.installations = [('user', inst)]
-            with patch('locale.getlocale', return_value=('pt_BR', 'UTF-8')):
+            with patch('metadata.ui_languages', return_value=['pt-BR']):
                 self.assertEqual(d.presentation(GIMP), {'name': 'GIMP', 'description': 'Crie e edite imagens'})
             self.assertEqual(GIMP.app_id, 'org.gimp.GIMP')

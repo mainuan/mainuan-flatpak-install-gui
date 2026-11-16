@@ -183,16 +183,46 @@ class BoundedXML:
         return data
 
 
+def ui_languages():
+    """The user's interface languages, most preferred first, as 'pt-BR'.
+
+    AppStream and .desktop translations are external data: pick the variant for
+    the session's UI languages (Plasma's LANGUAGE list) instead of LC_CTYPE.
+    """
+    try:
+        from PyQt6.QtCore import QLocale
+        languages = list(QLocale.system().uiLanguages())
+    except ImportError:
+        languages = []
+    if not languages:
+        for variable in ('LANGUAGE', 'LC_ALL', 'LC_MESSAGES', 'LANG'):
+            value = os.environ.get(variable, '')
+            if value:
+                languages = value.split(':')
+                break
+    result = []
+    for value in languages:
+        tag = value.split('.')[0].split('@')[0].replace('_', '-')
+        if tag and tag not in ('C', 'POSIX') and tag not in result:
+            result.append(tag)
+    return result
+
+
 def localized_text(nodes):
-    import locale
-    language = (locale.getlocale()[0] or '').replace('_', '-')
+    languages = ui_languages()
     key = '{http://www.w3.org/XML/1998/namespace}lang'
-    # Exact locale, same language, untranslated, then another available locale.
+    # Per preferred language: exact locale, then same language; then untranslated,
+    # then another available locale.
     def rank(node):
         lang = node.get(key, '').replace('_', '-')
-        return (0 if lang and lang == language else
-                1 if lang and language and lang.split('-')[0] == language.split('-')[0] else
-                2 if not lang else 3)
+        if not lang:
+            return (len(languages), 0)
+        for index, language in enumerate(languages):
+            if lang == language:
+                return (index, 0)
+            if lang.split('-')[0] == language.split('-')[0]:
+                return (index, 1)
+        return (len(languages), 1)
     return next((n.text.strip() for n in sorted(nodes, key=rank) if n.text and n.text.strip()), '')
 
 
@@ -284,10 +314,12 @@ def desktop_presentation(path, app_id=''):
         parser.optionxform = str
         parser.read_string(raw.decode('utf-8'))
         section = parser['Desktop Entry']
-        import locale
-        lang = locale.getlocale()[0] or ''
+        keys = []
+        for language in ui_languages():
+            language = language.replace('-', '_')
+            keys += [language, language.split('_')[0]]
         def value(key):
-            return next((section[k].strip() for k in (f'{key}[{lang}]', f'{key}[{lang.split("_")[0]}]', key) if section.get(k, '').strip()), '')
+            return next((section[k].strip() for k in [f'{key}[{lang}]' for lang in keys] + [key] if section.get(k, '').strip()), '')
         return {'name': compact_name(app_id, section.get('Name', ''), value('Name')),
                 'description': value('Comment')}
     except (OSError, UnicodeError, configparser.Error, KeyError):
