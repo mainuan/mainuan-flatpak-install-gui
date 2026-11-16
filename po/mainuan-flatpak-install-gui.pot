@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
 "issues\n"
-"POT-Creation-Date: 2026-11-16 11:19-0300\n"
+"POT-Creation-Date: 2026-11-16 11:30-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,159 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: launcher:3 qt/Main.qml:18 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr ""
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr ""
+
+#: qt/Main.qml:73
+msgid "Choose Flatpak File"
+msgstr ""
+
+#: qt/Main.qml:74
+msgid "Flatpak reference (*.flatpakref)"
+msgstr ""
+
+#: qt/Main.qml:95
+msgid "DEMONSTRATION — no changes will be made"
+msgstr ""
+
+#: qt/Main.qml:135
+msgid "Installing %1"
+msgstr ""
+
+#: qt/Main.qml:174
+msgid "Choose File"
+msgstr ""
+
+#: qt/Main.qml:188 qt/Main.qml:214
+msgid "Only your user"
+msgstr ""
+
+#: qt/Main.qml:196 qt/Main.qml:214
+msgid "Entire system"
+msgstr ""
+
+#: qt/Main.qml:208
+msgid "Other system installation: %1"
+msgstr ""
+
+#: qt/Main.qml:214
+msgid "Destination: %1"
+msgstr ""
+
+#: qt/Main.qml:233
+msgid "Select one of the sources"
+msgstr ""
+
+#: qt/Main.qml:235
+msgid "Source of the application or dependency"
+msgstr ""
+
+#: qt/Main.qml:267
+msgid "Total installation progress"
+msgstr ""
+
+#: qt/Main.qml:268
+msgid "Completed"
+msgstr ""
+
+#: qt/Main.qml:268
+msgid "In progress"
+msgstr ""
+
+#: qt/Main.qml:273
+#, javascript-format
+msgid "Current step: %1%"
+msgstr ""
+
+#: qt/Main.qml:281
+msgid "Hide Details"
+msgstr ""
+
+#: qt/Main.qml:281
+msgid "Show Details"
+msgstr ""
+
+#: qt/Main.qml:304
+msgid "Source: %1"
+msgstr ""
+
+#: qt/Main.qml:305
+msgid "It will be added if needed when installing."
+msgstr ""
+
+#: qt/Main.qml:309
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr ""
+
+#: qt/Main.qml:313
+msgid "Technical installation details"
+msgstr ""
+
+#: qt/Main.qml:325
+msgid "Preparation"
+msgstr ""
+
+#: qt/Main.qml:325
+msgid "Progress"
+msgstr ""
+
+#: qt/Main.qml:325
+msgid "Source"
+msgstr ""
+
+#: qt/Main.qml:326 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr ""
+
+#: qt/Main.qml:326
+msgid "Error"
+msgstr ""
+
+#: qt/Main.qml:326
+msgid "Success"
+msgstr ""
+
+#: qt/Main.qml:328
+msgid "Simulate state %1"
+msgstr ""
+
+#: qt/Main.qml:352
+msgid "Install"
+msgstr ""
+
+#: qt/Main.qml:352
+msgid "Try Again"
+msgstr ""
+
+#: qt/Main.qml:361
+msgid "Continue"
+msgstr ""
+
+#: qt/Main.qml:361
+msgid "Install Another Copy"
+msgstr ""
+
+#: qt/Main.qml:369 qt/Main.qml:376
+msgid "Uninstall"
+msgstr ""
+
+#: qt/Main.qml:384
+msgid "Open"
+msgstr ""
+
+#: qt/Main.qml:392
+msgid "Cancel"
+msgstr ""
+
+#: qt/Main.qml:392
+msgid "Close"
+msgstr ""
 
 #: qt/backend.py:78
 msgid ""
@@ -140,6 +293,7 @@ msgctxt "transaction operation"
 msgid "Remove"
 msgstr ""
 
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
 #: qt/controller.py:208
 #, python-brace-format
 msgid "{operation} {ref}"
@@ -310,10 +464,6 @@ msgstr ""
 msgid "Flatpak did not confirm adding the source."
 msgstr ""
 
-#: qt/flatpak_backend.py:292
-msgid "Cancelled"
-msgstr ""
-
 #: qt/flatpak_backend.py:319
 msgid "(source unavailable)"
 msgstr ""
@@ -470,10 +620,6 @@ msgstr ""
 msgid "Qt dependency unavailable: {error}. See README.md."
 msgstr ""
 
-#: qt/main.py:58
-msgid "Mainuan Flatpak Installer"
-msgstr ""
-
 #: qt/metadata.py:24
 msgid "The source must use HTTPS without credentials or fragments in the URL."
 msgstr ""
@@ -571,149 +717,4 @@ msgstr ""
 
 #: qt/metadata.py:181
 msgid "Unsupported XML declarations."
-msgstr ""
-
-#: qt/Main.qml:73
-msgid "Choose Flatpak File"
-msgstr ""
-
-#: qt/Main.qml:74
-msgid "Flatpak reference (*.flatpakref)"
-msgstr ""
-
-#: qt/Main.qml:95
-msgid "DEMONSTRATION — no changes will be made"
-msgstr ""
-
-#: qt/Main.qml:135
-msgid "Installing %1"
-msgstr ""
-
-#: qt/Main.qml:174
-msgid "Choose File"
-msgstr ""
-
-#: qt/Main.qml:188 qt/Main.qml:214
-msgid "Only your user"
-msgstr ""
-
-#: qt/Main.qml:196 qt/Main.qml:214
-msgid "Entire system"
-msgstr ""
-
-#: qt/Main.qml:208
-msgid "Other system installation: %1"
-msgstr ""
-
-#: qt/Main.qml:214
-msgid "Destination: %1"
-msgstr ""
-
-#: qt/Main.qml:233
-msgid "Select one of the sources"
-msgstr ""
-
-#: qt/Main.qml:235
-msgid "Source of the application or dependency"
-msgstr ""
-
-#: qt/Main.qml:267
-msgid "Total installation progress"
-msgstr ""
-
-#: qt/Main.qml:268
-msgid "Completed"
-msgstr ""
-
-#: qt/Main.qml:268
-msgid "In progress"
-msgstr ""
-
-#: qt/Main.qml:273
-#, javascript-format
-msgid "Current step: %1%"
-msgstr ""
-
-#: qt/Main.qml:281
-msgid "Hide Details"
-msgstr ""
-
-#: qt/Main.qml:281
-msgid "Show Details"
-msgstr ""
-
-#: qt/Main.qml:304
-msgid "Source: %1"
-msgstr ""
-
-#: qt/Main.qml:305
-msgid "It will be added if needed when installing."
-msgstr ""
-
-#: qt/Main.qml:309
-msgid "Cancel requests a safe stop. Completed changes may remain."
-msgstr ""
-
-#: qt/Main.qml:313
-msgid "Technical installation details"
-msgstr ""
-
-#: qt/Main.qml:325
-msgid "Preparation"
-msgstr ""
-
-#: qt/Main.qml:325
-msgid "Progress"
-msgstr ""
-
-#: qt/Main.qml:325
-msgid "Source"
-msgstr ""
-
-#: qt/Main.qml:326
-msgid "Error"
-msgstr ""
-
-#: qt/Main.qml:326
-msgid "Success"
-msgstr ""
-
-#: qt/Main.qml:328
-msgid "Simulate state %1"
-msgstr ""
-
-#: qt/Main.qml:352
-msgid "Install"
-msgstr ""
-
-#: qt/Main.qml:352
-msgid "Try Again"
-msgstr ""
-
-#: qt/Main.qml:361
-msgid "Continue"
-msgstr ""
-
-#: qt/Main.qml:361
-msgid "Install Another Copy"
-msgstr ""
-
-#: qt/Main.qml:369 qt/Main.qml:376
-msgid "Uninstall"
-msgstr ""
-
-#: qt/Main.qml:384
-msgid "Open"
-msgstr ""
-
-#: qt/Main.qml:392
-msgid "Cancel"
-msgstr ""
-
-#: qt/Main.qml:392
-msgid "Close"
-msgstr ""
-
-#: launcher:4
-msgid "Install applications from Flatpak reference files"
 msgstr ""
