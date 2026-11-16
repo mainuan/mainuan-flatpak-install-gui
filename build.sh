@@ -20,7 +20,13 @@ install -m 755 "$here/flatpak-install-gui" "$stage/usr/bin/flatpak-install-gui"
 for file in "$here"/qt/*.py "$here"/qt/*.qml; do
     install -m 644 "$file" "$stage/usr/share/mainuan-flatpak-install-gui/qt/"
 done
-install -m 644 "$here/launcher" "$stage/usr/share/applications/mainuan-flatpak-install-gui.desktop"
+# Translations: po/*.po -> /usr/share/locale/<lang>/LC_MESSAGES/<domain>.mo, and the
+# launcher template gets Name[<lang>]/Comment[<lang>] from the same catalogs.
+"$here/po/i18n.sh" compile "$stage/usr/share/locale"
+find "$stage/usr/share/locale" -type d -exec chmod 755 {} +
+find "$stage/usr/share/locale" -type f -exec chmod 644 {} +
+msgfmt --desktop --template="$here/launcher" -d "$here/po" -o "$stage/usr/share/applications/mainuan-flatpak-install-gui.desktop"
+chmod 644 "$stage/usr/share/applications/mainuan-flatpak-install-gui.desktop"
 install -m 644 "$here/packaging/copyright" "$stage/usr/share/doc/mainuan-flatpak-install-gui/copyright"
 for file in "$here/LICENSE" "$here/README.md" "$here"/docs/*; do
     test -f "$file" || continue

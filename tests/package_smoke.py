@@ -57,6 +57,8 @@ with tempfile.TemporaryDirectory(prefix='mainuan-package-rc1-') as folder:
     command+=['--chdir','/']
     environment={k:v for k,v in os.environ.items() if k not in ('PYTHONPATH','GI_TYPELIB_PATH','QT_PLUGIN_PATH','QML_IMPORT_PATH','QML2_IMPORT_PATH')}
     environment.update(QT_QPA_PLATFORM='offscreen',QT_QUICK_CONTROLS_STYLE='Basic')
+    # Portuguese asserts below exercise the installed pt_BR catalog (Python and QML).
+    environment.update(LANGUAGE='pt_BR',LANG='pt_BR.UTF-8',LC_ALL='',LC_MESSAGES='')
     for executable in ('mainuan-flatpak-install-gui','flatpak-install-gui'):
         result=subprocess.run(command+['--','/usr/bin/'+executable,'--help'],env=environment,text=True,capture_output=True,check=True)
         assert 'Mainuan Instalador Flatpak' in result.stdout
