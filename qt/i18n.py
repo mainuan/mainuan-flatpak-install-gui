@@ -77,4 +77,16 @@ def install_qt_translators(app):
     # The last installed translator is queried first; qtbase returns null for our strings.
     for translator in translators:
         app.installTranslator(translator)
+    apply_catalog_layout_direction(app)
     return translators
+
+
+def apply_catalog_layout_direction(app):
+    """Qt mirrors only when qtbase_<lang> says so (Urdu has none; qtbase may be
+    missing): follow the direction of the application catalog in use.  Without
+    a catalog the interface is English and the direction is left untouched."""
+    from PyQt6.QtCore import QLocale, Qt
+
+    language = catalog().info().get('language')
+    if language and QLocale(language).textDirection() == Qt.LayoutDirection.RightToLeft:
+        app.setLayoutDirection(Qt.LayoutDirection.RightToLeft)

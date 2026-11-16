@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
 "issues\n"
-"POT-Creation-Date: 2026-11-16 11:40-0300\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
 "PO-Revision-Date: 2026-11-16 11:30-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: zh_CN <https://github.com/mainuan>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: launcher:3 qt/Main.qml:18 qt/main.py:58
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
 msgid "Mainuan Flatpak Installer"
 msgstr "Mainuan Flatpak 安装程序"
 
@@ -26,147 +26,147 @@ msgstr "Mainuan Flatpak 安装程序"
 msgid "Install applications from Flatpak reference files"
 msgstr "从 Flatpak 引用文件安装应用程序"
 
-#: qt/Main.qml:73
+#: qt/Main.qml:77
 msgid "Choose Flatpak File"
 msgstr "选择 Flatpak 文件"
 
-#: qt/Main.qml:74
+#: qt/Main.qml:78
 msgid "Flatpak reference (*.flatpakref)"
 msgstr "Flatpak 引用 (*.flatpakref)"
 
-#: qt/Main.qml:95
+#: qt/Main.qml:99
 msgid "DEMONSTRATION — no changes will be made"
 msgstr "演示模式 — 不会进行任何更改"
 
-#: qt/Main.qml:135
+#: qt/Main.qml:139
 msgid "Installing %1"
 msgstr "正在安装 %1"
 
-#: qt/Main.qml:174
+#: qt/Main.qml:178
 msgid "Choose File"
 msgstr "选择文件"
 
-#: qt/Main.qml:188 qt/Main.qml:214
+#: qt/Main.qml:192 qt/Main.qml:218
 msgid "Only your user"
 msgstr "仅限当前用户"
 
-#: qt/Main.qml:196 qt/Main.qml:214
+#: qt/Main.qml:200 qt/Main.qml:218
 msgid "Entire system"
 msgstr "整个系统"
 
-#: qt/Main.qml:208
+#: qt/Main.qml:212
 msgid "Other system installation: %1"
 msgstr "其他系统安装位置：%1"
 
-#: qt/Main.qml:214
+#: qt/Main.qml:218
 msgid "Destination: %1"
 msgstr "目标位置：%1"
 
-#: qt/Main.qml:233
+#: qt/Main.qml:237
 msgid "Select one of the sources"
 msgstr "请选择其中一个来源"
 
-#: qt/Main.qml:235
+#: qt/Main.qml:239
 msgid "Source of the application or dependency"
 msgstr "应用程序或依赖项的来源"
 
-#: qt/Main.qml:267
+#: qt/Main.qml:271
 msgid "Total installation progress"
 msgstr "总安装进度"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "Completed"
 msgstr "已完成"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "In progress"
 msgstr "进行中"
 
-#: qt/Main.qml:273
+#: qt/Main.qml:277
 msgid "Current step: %1%"
 msgstr "当前步骤：%1%"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Hide Details"
 msgstr "隐藏详情"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Show Details"
 msgstr "显示详情"
 
-#: qt/Main.qml:304
+#: qt/Main.qml:308
 msgid "Source: %1"
 msgstr "来源：%1"
 
-#: qt/Main.qml:305
+#: qt/Main.qml:309
 msgid "It will be added if needed when installing."
 msgstr "安装时如有需要将添加此来源。"
 
-#: qt/Main.qml:309
+#: qt/Main.qml:313
 msgid "Cancel requests a safe stop. Completed changes may remain."
 msgstr "取消将请求安全停止。已完成的更改可能会保留。"
 
-#: qt/Main.qml:313
+#: qt/Main.qml:317
 msgid "Technical installation details"
 msgstr "安装技术详情"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Preparation"
 msgstr "准备"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Progress"
 msgstr "进度"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Source"
 msgstr "来源"
 
-#: qt/Main.qml:326 qt/flatpak_backend.py:292
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
 msgid "Cancelled"
 msgstr "已取消"
 
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Error"
 msgstr "错误"
 
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Success"
 msgstr "成功"
 
-#: qt/Main.qml:328
+#: qt/Main.qml:332
 msgid "Simulate state %1"
 msgstr "模拟状态 %1"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Install"
 msgstr "安装"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Try Again"
 msgstr "重试"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Continue"
 msgstr "继续"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Install Another Copy"
 msgstr "安装另一个副本"
 
-#: qt/Main.qml:369 qt/Main.qml:376
+#: qt/Main.qml:373 qt/Main.qml:380
 msgid "Uninstall"
 msgstr "卸载"
 
-#: qt/Main.qml:384
+#: qt/Main.qml:388
 msgid "Open"
 msgstr "打开"
 
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Cancel"
 msgstr "取消"
 
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Close"
 msgstr "关闭"
 

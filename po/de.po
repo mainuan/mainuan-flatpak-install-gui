@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
 "issues\n"
-"POT-Creation-Date: 2026-11-16 11:40-0300\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
 "PO-Revision-Date: 2026-11-16 11:40-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: de <https://github.com/mainuan>\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 # reviewed: Durchkopplung wie bei anderen Mainuan-Namen (Mainuan-Neuigkeiten,
 # Mainuan-Funktionsaktualisierung)
-#: launcher:3 qt/Main.qml:18 qt/main.py:58
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
 msgid "Mainuan Flatpak Installer"
 msgstr "Mainuan-Flatpak-Installation"
 
@@ -28,152 +28,152 @@ msgstr "Mainuan-Flatpak-Installation"
 msgid "Install applications from Flatpak reference files"
 msgstr "Anwendungen aus Flatpak-Referenzdateien installieren"
 
-#: qt/Main.qml:73
+#: qt/Main.qml:77
 msgid "Choose Flatpak File"
 msgstr "Flatpak-Datei auswählen"
 
-#: qt/Main.qml:74
+#: qt/Main.qml:78
 msgid "Flatpak reference (*.flatpakref)"
 msgstr "Flatpak-Referenz (*.flatpakref)"
 
-#: qt/Main.qml:95
+#: qt/Main.qml:99
 msgid "DEMONSTRATION — no changes will be made"
 msgstr "DEMONSTRATION – es werden keine Änderungen vorgenommen"
 
-#: qt/Main.qml:135
+#: qt/Main.qml:139
 msgid "Installing %1"
 msgstr "%1 wird installiert"
 
-#: qt/Main.qml:174
+#: qt/Main.qml:178
 msgid "Choose File"
 msgstr "Datei auswählen"
 
-#: qt/Main.qml:188 qt/Main.qml:214
+#: qt/Main.qml:192 qt/Main.qml:218
 msgid "Only your user"
 msgstr "Nur für Ihren Benutzer"
 
-#: qt/Main.qml:196 qt/Main.qml:214
+#: qt/Main.qml:200 qt/Main.qml:218
 msgid "Entire system"
 msgstr "Gesamtes System"
 
-#: qt/Main.qml:208
+#: qt/Main.qml:212
 msgid "Other system installation: %1"
 msgstr "Andere Systeminstallation: %1"
 
-#: qt/Main.qml:214
+#: qt/Main.qml:218
 msgid "Destination: %1"
 msgstr "Ziel: %1"
 
-#: qt/Main.qml:233
+#: qt/Main.qml:237
 msgid "Select one of the sources"
 msgstr "Wählen Sie eine der Quellen aus"
 
-#: qt/Main.qml:235
+#: qt/Main.qml:239
 msgid "Source of the application or dependency"
 msgstr "Quelle der Anwendung oder Abhängigkeit"
 
-#: qt/Main.qml:267
+#: qt/Main.qml:271
 msgid "Total installation progress"
 msgstr "Gesamtfortschritt der Installation"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "Completed"
 msgstr "Abgeschlossen"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "In progress"
 msgstr "In Bearbeitung"
 
-#: qt/Main.qml:273
+#: qt/Main.qml:277
 msgid "Current step: %1%"
 msgstr "Aktueller Schritt: %1 %"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Hide Details"
 msgstr "Details ausblenden"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Show Details"
 msgstr "Details anzeigen"
 
-#: qt/Main.qml:304
+#: qt/Main.qml:308
 msgid "Source: %1"
 msgstr "Quelle: %1"
 
-#: qt/Main.qml:305
+#: qt/Main.qml:309
 msgid "It will be added if needed when installing."
 msgstr "Sie wird bei der Installation bei Bedarf hinzugefügt."
 
-#: qt/Main.qml:309
+#: qt/Main.qml:313
 msgid "Cancel requests a safe stop. Completed changes may remain."
 msgstr ""
 "Abbrechen fordert einen sicheren Halt an. Bereits abgeschlossene Änderungen "
 "können bestehen bleiben."
 
-#: qt/Main.qml:313
+#: qt/Main.qml:317
 msgid "Technical installation details"
 msgstr "Technische Details zur Installation"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Preparation"
 msgstr "Vorbereitung"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Progress"
 msgstr "Fortschritt"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Source"
 msgstr "Quelle"
 
-#: qt/Main.qml:326 qt/flatpak_backend.py:292
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
 msgid "Cancelled"
 msgstr "Abgebrochen"
 
 # from mainuan-grub-editor
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Error"
 msgstr "Fehler"
 
 # from mainuan-grub-editor
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Success"
 msgstr "Erfolgreich"
 
-#: qt/Main.qml:328
+#: qt/Main.qml:332
 msgid "Simulate state %1"
 msgstr "Status %1 simulieren"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Install"
 msgstr "Installieren"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Try Again"
 msgstr "Erneut versuchen"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Continue"
 msgstr "Fortsetzen"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Install Another Copy"
 msgstr "Weitere Kopie installieren"
 
-#: qt/Main.qml:369 qt/Main.qml:376
+#: qt/Main.qml:373 qt/Main.qml:380
 msgid "Uninstall"
 msgstr "Deinstallieren"
 
-#: qt/Main.qml:384
+#: qt/Main.qml:388
 msgid "Open"
 msgstr "Öffnen"
 
 # from mainuan-grub-editor
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Close"
 msgstr "Schließen"
 

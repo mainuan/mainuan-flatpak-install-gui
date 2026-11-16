@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
 "issues\n"
-"POT-Creation-Date: 2026-11-16 11:40-0300\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
 "PO-Revision-Date: 2026-11-16 11:19-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: Brazilian Portuguese\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: launcher:3 qt/Main.qml:18 qt/main.py:58
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
 msgid "Mainuan Flatpak Installer"
 msgstr "Mainuan Instalador Flatpak"
 
@@ -27,148 +27,148 @@ msgstr "Mainuan Instalador Flatpak"
 msgid "Install applications from Flatpak reference files"
 msgstr "Instale aplicativos a partir de arquivos de referência Flatpak"
 
-#: qt/Main.qml:73
+#: qt/Main.qml:77
 msgid "Choose Flatpak File"
 msgstr "Escolher arquivo Flatpak"
 
-#: qt/Main.qml:74
+#: qt/Main.qml:78
 msgid "Flatpak reference (*.flatpakref)"
 msgstr "Referência Flatpak (*.flatpakref)"
 
-#: qt/Main.qml:95
+#: qt/Main.qml:99
 msgid "DEMONSTRATION — no changes will be made"
 msgstr "DEMONSTRAÇÃO — nenhuma alteração será executada"
 
-#: qt/Main.qml:135
+#: qt/Main.qml:139
 msgid "Installing %1"
 msgstr "Instalando %1"
 
-#: qt/Main.qml:174
+#: qt/Main.qml:178
 msgid "Choose File"
 msgstr "Escolher arquivo"
 
-#: qt/Main.qml:188 qt/Main.qml:214
+#: qt/Main.qml:192 qt/Main.qml:218
 msgid "Only your user"
 msgstr "Apenas seu usuário"
 
-#: qt/Main.qml:196 qt/Main.qml:214
+#: qt/Main.qml:200 qt/Main.qml:218
 msgid "Entire system"
 msgstr "Todo o sistema"
 
-#: qt/Main.qml:208
+#: qt/Main.qml:212
 msgid "Other system installation: %1"
 msgstr "Outra instalação de sistema: %1"
 
-#: qt/Main.qml:214
+#: qt/Main.qml:218
 msgid "Destination: %1"
 msgstr "Destino: %1"
 
-#: qt/Main.qml:233
+#: qt/Main.qml:237
 msgid "Select one of the sources"
 msgstr "Selecione uma das origens"
 
-#: qt/Main.qml:235
+#: qt/Main.qml:239
 msgid "Source of the application or dependency"
 msgstr "Origem do aplicativo ou dependência"
 
-#: qt/Main.qml:267
+#: qt/Main.qml:271
 msgid "Total installation progress"
 msgstr "Progresso total da instalação"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "Completed"
 msgstr "Concluído"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "In progress"
 msgstr "Em andamento"
 
-#: qt/Main.qml:273
+#: qt/Main.qml:277
 msgid "Current step: %1%"
 msgstr "Etapa atual: %1%"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Hide Details"
 msgstr "Ocultar detalhes"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Show Details"
 msgstr "Ver detalhes"
 
-#: qt/Main.qml:304
+#: qt/Main.qml:308
 msgid "Source: %1"
 msgstr "Origem: %1"
 
-#: qt/Main.qml:305
+#: qt/Main.qml:309
 msgid "It will be added if needed when installing."
 msgstr "Será adicionada se necessária ao instalar."
 
-#: qt/Main.qml:309
+#: qt/Main.qml:313
 msgid "Cancel requests a safe stop. Completed changes may remain."
 msgstr ""
 "Cancelar solicita uma parada segura. Alterações concluídas podem permanecer."
 
-#: qt/Main.qml:313
+#: qt/Main.qml:317
 msgid "Technical installation details"
 msgstr "Detalhes técnicos da instalação"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Preparation"
 msgstr "Preparação"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Progress"
 msgstr "Progresso"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Source"
 msgstr "Origem"
 
-#: qt/Main.qml:326 qt/flatpak_backend.py:292
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
 msgid "Cancelled"
 msgstr "Cancelado"
 
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Error"
 msgstr "Erro"
 
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Success"
 msgstr "Sucesso"
 
-#: qt/Main.qml:328
+#: qt/Main.qml:332
 msgid "Simulate state %1"
 msgstr "Simular estado %1"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Install"
 msgstr "Instalar"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Try Again"
 msgstr "Tentar novamente"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Continue"
 msgstr "Continuar"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Install Another Copy"
 msgstr "Instalar outra cópia"
 
-#: qt/Main.qml:369 qt/Main.qml:376
+#: qt/Main.qml:373 qt/Main.qml:380
 msgid "Uninstall"
 msgstr "Desinstalar"
 
-#: qt/Main.qml:384
+#: qt/Main.qml:388
 msgid "Open"
 msgstr "Abrir"
 
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Close"
 msgstr "Fechar"
 

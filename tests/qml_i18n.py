@@ -4,6 +4,7 @@ Run by tests/test_i18n.py in a subprocess per language, offscreen; never imports
 the real backend. The language comes only from the environment (LANGUAGE etc.).
 """
 import json
+import os
 from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'qt'))
@@ -13,6 +14,12 @@ from PyQt6.QtQml import QQmlApplicationEngine
 from PyQt6 import QtQuick, sip  # noqa: F401
 from controller import Controller
 from i18n import _, install_qt_translators
+
+if 'QML_I18N_QT_TRANSLATIONS' in os.environ:
+    # Simulates a missing qtbase_<lang>.qm (e.g. Urdu, or qt6-translations-l10n absent).
+    from unittest import mock
+    from PyQt6.QtCore import QLibraryInfo
+    mock.patch.object(QLibraryInfo, 'path', return_value=os.environ['QML_I18N_QT_TRANSLATIONS']).start()
 
 app = QApplication(sys.argv[:1])
 app.setApplicationName('mainuan-flatpak-install-gui')
@@ -31,6 +38,8 @@ result = {}
 def collect():
     result['title'] = window.property('title')
     result['displayName'] = app.applicationDisplayName()
+    result['layoutDirection'] = app.layoutDirection().name
+    result['mirrored'] = window.findChild(QObject, 'installButton').property('mirrored')
     for name in ('installButton', 'closeButton', 'userDestination', 'systemDestination',
                  'detailsToggle', 'installationMessage', 'installationTitle', 'installationSource'):
         result[name] = window.findChild(QObject, name).property('text')

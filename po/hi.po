@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
 "Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
 "issues\n"
-"POT-Creation-Date: 2026-11-16 11:40-0300\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
 "PO-Revision-Date: 2026-11-16 11:40-0300\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: hi <https://github.com/mainuan>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: launcher:3 qt/Main.qml:18 qt/main.py:58
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
 msgid "Mainuan Flatpak Installer"
 msgstr "Mainuan Flatpak संस्थापक"
 
@@ -25,147 +25,147 @@ msgstr "Mainuan Flatpak संस्थापक"
 msgid "Install applications from Flatpak reference files"
 msgstr "Flatpak संदर्भ फ़ाइलों से अनुप्रयोग स्थापित करें"
 
-#: qt/Main.qml:73
+#: qt/Main.qml:77
 msgid "Choose Flatpak File"
 msgstr "Flatpak फ़ाइल चुनें"
 
-#: qt/Main.qml:74
+#: qt/Main.qml:78
 msgid "Flatpak reference (*.flatpakref)"
 msgstr "Flatpak संदर्भ (*.flatpakref)"
 
-#: qt/Main.qml:95
+#: qt/Main.qml:99
 msgid "DEMONSTRATION — no changes will be made"
 msgstr "डेमो — कोई बदलाव नहीं किया जाएगा"
 
-#: qt/Main.qml:135
+#: qt/Main.qml:139
 msgid "Installing %1"
 msgstr "%1 स्थापित किया जा रहा है"
 
-#: qt/Main.qml:174
+#: qt/Main.qml:178
 msgid "Choose File"
 msgstr "फ़ाइल चुनें"
 
-#: qt/Main.qml:188 qt/Main.qml:214
+#: qt/Main.qml:192 qt/Main.qml:218
 msgid "Only your user"
 msgstr "केवल आपका उपयोक्ता"
 
-#: qt/Main.qml:196 qt/Main.qml:214
+#: qt/Main.qml:200 qt/Main.qml:218
 msgid "Entire system"
 msgstr "पूरा सिस्टम"
 
-#: qt/Main.qml:208
+#: qt/Main.qml:212
 msgid "Other system installation: %1"
 msgstr "अन्य सिस्टम स्थापना: %1"
 
-#: qt/Main.qml:214
+#: qt/Main.qml:218
 msgid "Destination: %1"
 msgstr "गंतव्य: %1"
 
-#: qt/Main.qml:233
+#: qt/Main.qml:237
 msgid "Select one of the sources"
 msgstr "स्रोतों में से एक चुनें"
 
-#: qt/Main.qml:235
+#: qt/Main.qml:239
 msgid "Source of the application or dependency"
 msgstr "अनुप्रयोग या निर्भरता का स्रोत"
 
-#: qt/Main.qml:267
+#: qt/Main.qml:271
 msgid "Total installation progress"
 msgstr "स्थापना की कुल प्रगति"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "Completed"
 msgstr "पूर्ण"
 
-#: qt/Main.qml:268
+#: qt/Main.qml:272
 msgid "In progress"
 msgstr "जारी है"
 
-#: qt/Main.qml:273
+#: qt/Main.qml:277
 msgid "Current step: %1%"
 msgstr "वर्तमान चरण: %1%"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Hide Details"
 msgstr "विवरण छिपाएँ"
 
-#: qt/Main.qml:281
+#: qt/Main.qml:285
 msgid "Show Details"
 msgstr "विवरण दिखाएँ"
 
-#: qt/Main.qml:304
+#: qt/Main.qml:308
 msgid "Source: %1"
 msgstr "स्रोत: %1"
 
-#: qt/Main.qml:305
+#: qt/Main.qml:309
 msgid "It will be added if needed when installing."
 msgstr "आवश्यक होने पर इसे स्थापना के समय जोड़ा जाएगा।"
 
-#: qt/Main.qml:309
+#: qt/Main.qml:313
 msgid "Cancel requests a safe stop. Completed changes may remain."
 msgstr "रद्द करने से सुरक्षित रूप से रुकने का अनुरोध होता है। पूरे हो चुके बदलाव बने रह सकते हैं।"
 
-#: qt/Main.qml:313
+#: qt/Main.qml:317
 msgid "Technical installation details"
 msgstr "स्थापना का तकनीकी विवरण"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Preparation"
 msgstr "तैयारी"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Progress"
 msgstr "प्रगति"
 
-#: qt/Main.qml:325
+#: qt/Main.qml:329
 msgid "Source"
 msgstr "स्रोत"
 
-#: qt/Main.qml:326 qt/flatpak_backend.py:292
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
 msgid "Cancelled"
 msgstr "रद्द किया गया"
 
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Error"
 msgstr "त्रुटि"
 
-#: qt/Main.qml:326
+#: qt/Main.qml:330
 msgid "Success"
 msgstr "सफलता"
 
-#: qt/Main.qml:328
+#: qt/Main.qml:332
 msgid "Simulate state %1"
 msgstr "स्थिति %1 का सिमुलेशन करें"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Install"
 msgstr "स्थापित करें"
 
-#: qt/Main.qml:352
+#: qt/Main.qml:356
 msgid "Try Again"
 msgstr "फिर से प्रयास करें"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Continue"
 msgstr "जारी रखें"
 
-#: qt/Main.qml:361
+#: qt/Main.qml:365
 msgid "Install Another Copy"
 msgstr "एक और प्रति स्थापित करें"
 
-#: qt/Main.qml:369 qt/Main.qml:376
+#: qt/Main.qml:373 qt/Main.qml:380
 msgid "Uninstall"
 msgstr "अनइंस्टॉल करें"
 
-#: qt/Main.qml:384
+#: qt/Main.qml:388
 msgid "Open"
 msgstr "खोलें"
 
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Cancel"
 msgstr "रद्द करें"
 
-#: qt/Main.qml:392
+#: qt/Main.qml:396
 msgid "Close"
 msgstr "बंद करें"
 

@@ -15,6 +15,10 @@ Controls.ApplicationWindow {
                      Math.max(260, Screen.desktopAvailableHeight - 80))
     minimumWidth: 360
     minimumHeight: 240
+    // Plain Qt Quick Controls do not mirror on their own (Kirigami windows do the
+    // same): follow the application direction set from the catalog language.
+    LayoutMirroring.enabled: Application.layoutDirection === Qt.RightToLeft
+    LayoutMirroring.childrenInherit: true
     title: qsTr("Mainuan Flatpak Installer")
     readonly property var state: backend.view
     readonly property string phase: state.phase

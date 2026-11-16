@@ -128,6 +128,35 @@ class I18nTests(unittest.TestCase):
                 self.assertEqual(en['installationMessage'], 'Demonstration without installations.')
                 self.assertIn('Source: https://example.org/repo\nIt will be added if needed when installing.', en['installationSource'])
 
+    def test_right_to_left_catalog_mirrors_qml_without_qtbase(self):
+        try:
+            import PyQt6.QtQml  # noqa: F401
+        except ImportError:
+            self.skipTest('PyQt6 unavailable')
+        target = Path(self.tmp.name) / 'ar' / 'LC_MESSAGES'
+        target.mkdir(parents=True, exist_ok=True)
+        subprocess.run(['msgfmt', '--check', '-o', str(target / f'{DOMAIN}.mo'),
+                        str(ROOT / 'po' / 'ar.po')], check=True)
+
+        def run(language):
+            with tempfile.TemporaryDirectory() as empty:
+                # Empty Qt translations directory: no qtbase_<lang>.qm can mirror the layout.
+                env = {**os.environ, 'LANGUAGE': language, 'LC_ALL': '', 'LC_MESSAGES': '', 'LANG': 'en_US.UTF-8',
+                       **self.locale, 'QT_QPA_PLATFORM': 'offscreen', 'QML_I18N_QT_TRANSLATIONS': empty}
+                out = subprocess.run([sys.executable, str(ROOT / 'tests' / 'qml_i18n.py')], env=env,
+                                     capture_output=True, text=True, timeout=120)
+            self.assertEqual(out.returncode, 0, out.stderr)
+            return json.loads(out.stdout.strip().splitlines()[-1])
+        # The application's Arabic catalog is used: the QML window is mirrored.
+        ar = run('ar')
+        self.assertEqual(ar['layoutDirection'], 'RightToLeft')
+        self.assertTrue(ar['mirrored'])
+        # Urdu is right-to-left but has no application catalog: English, left to right.
+        ur = run('ur')
+        self.assertEqual(ur['installButton'], 'Install')
+        self.assertEqual(ur['layoutDirection'], 'LeftToRight')
+        self.assertFalse(ur['mirrored'])
+
 
 class CatalogLookupTests(unittest.TestCase):
     def test_installed_layout_is_the_default(self):
