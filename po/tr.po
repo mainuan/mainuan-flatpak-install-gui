@@ -1,0 +1,743 @@
+# Turkish translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: tr <https://github.com/mainuan>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Mainuan Flatpak Kurucu"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Flatpak başvuru dosyalarından uygulama kurun"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Flatpak Dosyası Seç"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Flatpak başvurusu (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "TANITIM — hiçbir değişiklik yapılmayacak"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "Kuruluyor: %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Dosya Seç"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Yalnızca kullanıcınız"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Tüm sistem"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Diğer sistem kurulumu: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Hedef: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Kaynaklardan birini seçin"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Uygulamanın ya da bağımlılığın kaynağı"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Toplam kurulum ilerlemesi"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Tamamlandı"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "Sürüyor"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Geçerli adım: %%1"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Ayrıntıları Gizle"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Ayrıntıları Göster"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Kaynak: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Gerekirse kurulum sırasında eklenecek."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr "İptal, güvenli bir durdurma ister. Tamamlanan değişiklikler kalabilir."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Teknik kurulum ayrıntıları"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Hazırlık"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "İlerleme"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Kaynak"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "İptal Edildi"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Hata"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Başarılı"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "%1 durumunu benzet"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Kur"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Yeniden Dene"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Sürdür"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Başka Bir Kopya Kur"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Kaldır"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Aç"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "İptal"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Kapat"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "Gereken kaynak bir GPG anahtarı sağlamıyor. Kurulum durduruldu."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Uyumlu kaynak yok."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "Birden fazla uyumlu kaynak var. Hangisinin kullanılacağını seçin."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Seçilen kaynak geçersiz."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "Yetkilendirilmiş kaynak kurulum sırasında kayboldu."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Kuruluyor…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Kaynak önerisi, istenen uygulamaya bağlı değil."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Doğrulanmış betimleyicisi olmayan bağımlılık kaynağı: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "Uygulama bu hedefte zaten kurulu."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Bu uygulama zaten kurulu. Seçilen hedefe başka bir kopya kurmak istiyor "
+"musunuz?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Kaynak eklendi: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Kurulum tamamlandı."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "Kurulum iptal edildi. Önceden tamamlanan değişiklikler kalabilir."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "İşlem iptal edildi."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Kurulum sorgulanamadı."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Hoş Geldiniz"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Kurmak için bir .flatpakref dosyası seçin."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Kurulum denetleniyor…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "Geçersiz dosya"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Bu .flatpakref dosyası açılamadı."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Kurulum hazırlanıyor…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "Hedefte belirsiz başvurular var. Tam bir başvuru seçin."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Bulunan kurulumlar: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Zaten kurulu"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Uygulama kaldırıldı. Kişisel veriler korundu."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Kur"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Güncelle"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Kaldır"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Kaynak: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "İndirme: {download} bayt; kurulu boyut: {installed} bayt"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Bekleyen işlem yok."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Uygulama açıldı."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "İptal ediliyor… Güvenle bitmesini bekleyin."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "{name} ({scope}) kaldırılsın mı? Kişisel veriler korunacak."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Kaldırılıyor…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "Uygulama açılıyor…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Geçersiz tanıtım durumu."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Örnek uygulama"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Örnek kaynak"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Benzetim sonucu: kurulum tamamlandı."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Benzetim hatası: kaynağa erişilemedi."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "Benzetim iptali. Tamamlanan işlemler kalabilir."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Kurulum yapılmayan tanıtım."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "Geçerli işlem indiriliyor (benzetim)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr ""
+"Görsel değerlendirme için kurgusal ayrıntılar. Gerçek arka uç devre dışı."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Nereye kurulacağını seçin."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (kaynak: {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "uygulama yok"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Kaynaklar: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "yok"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: sorgulanamadı: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "Kaynak geçerli bir imzalama anahtarı içermiyor."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Kaynak anahtarları doğrulanamadı."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr ""
+"Kaynak geçersiz, iptal edilmiş ya da süresi dolmuş bir anahtar içeriyor."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Kaynağın GPG doğrulaması devre dışı."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"Yapılandırılmış kaynak devre dışı ya da bir süzgece sahip. Kurmadan önce "
+"yapılandırması denetlenmelidir."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "Yapılandırılmış kaynağın kimliği başvurudakinden farklı."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "Yapılandırılmış kaynağın imzalama anahtarı başvurudakinden farklı."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "Kaynak yapılandırması, sağlanan betimleyiciden farklı."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "Kurulum sırasında kaynak yapılandırması değişti. Yeniden deneyin."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "Aynı kaynağın betimleyicileri uyumsuz yapılandırmalara sahip."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "Kurulum, yetkilendirilmemiş bir değişiklik gerektirecek."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "Kurulum, yetkilendirilmemiş başka bir uygulamayı eklemeye çalıştı."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "Kurulum sırasında uygulama kaynağı değişti."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "Kaynak bir GPG anahtarı sağlamıyor; kurulum durduruldu."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Bu adla ve başka bir kimlikle zaten bir kaynak var: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak, kaynağın eklendiğini doğrulamadı."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(kaynak kullanılamıyor)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "Sürüyor…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "İşlem tamamlanmadı."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "Başvurunun doğrulanmış bir dağıtımı yok."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "Kurulu kaynak, işlemin kaynağından farklı."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "Seçilen başvuru değişti."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "Başvuru, seçilen hedefte hâlâ kurulu."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Belirsiz ya da kullanılamayan sistem kurulumu."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Seçilen kurulumun yolu değişti."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak, uygulamanın açıldığını doğrulamadı."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Yetkilendirme reddedildi ya da iptal edildi."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr "Kaynağa erişilemedi. Bağlantıyı denetleyip yeniden deneyin."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Bu işlem için izin reddedildi."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Kaynakla kimlik doğrulanamadı."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "Kaynak kullanılamıyor."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "Gereken bileşenler kullanılamıyor."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "Uygulama başka bir süreç tarafından zaten kuruldu. Yeniden deneyin."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "Bu hedefte başka bir kaynaktan yapılmış bir kurulum var."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Flatpak başvurusu geçersiz."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Kurmak için yeterli alan yok."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "Başka bir kurulum sürüyor. Yeniden deneyin."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "Kaynağa erişilemedi. Bağlantıyı ve ayrıntıları denetleyin."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "İşlem tamamlanamadı. Ayrıntılara bakın."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Mainuan Flatpak Kurucu — yerel .flatpakref dosyası"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "yerel bir .flatpakref dosyası"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "görsel tanıtım, kurulum yapamaz"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "düz metin görünen ad; kimliği değiştirmez"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "tam başvuruyu grafik onayla kaldır"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system ya da system:KİMLİK; --remove için gereklidir"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies ve --do-install kaldırıldı: bunlar iç Bash "
+"yardımcılarıydı. Bir .flatpakref dosyası açıp Kur’u kullanın. Hiçbir işlem "
+"yapılmadı."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Geçersiz hedef: user, system ya da system:KİMLİK kullanın."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove, bir .flatpakref dosyası ve --scope user|system|system:KİMLİK "
+"gerektirir; kimlik dosyadan alınır."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Yerel bir .flatpakref dosyası belirtin. Eski kurucunun tek başına kimlikleri "
+"ya da URL’leri kabul edilmez."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo yalıtılmıştır: dosya, hedef, kaldırma ya da geçersiz kılınan ad kabul "
+"etmez."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Arayüzü olağan bir kullanıcı olarak çalıştırın. Flatpak/Polkit gerektiğinde "
+"yetkilendirme isteyecektir."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Qt bağımlılığı kullanılamıyor: {error}. README.md dosyasına bakın."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr "Kaynak, URL’de kimlik bilgisi ya da parça olmadan HTTPS kullanmalıdır."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Başvuru çok büyük ya da boş baytlar içeriyor."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Geçersiz başvuru grubu."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Çok satırlı alanlar kabul edilmez."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Geçersiz Flatpak başvurusu."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Geçersiz GPG anahtarı."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "libflatpak öneri sinyali tarafından sağlanmadı"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "yok — GPG imzası devre dışı"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Kaynak: {url}\n"
+"Önerilen ad: {name}\n"
+"Betimleyici: {descriptor}\n"
+"Sağlanan anahtarın SHA-256 değeri: {fingerprint}\n"
+"HTTPS aktarımı korur; bu kaynağın güvenilir olduğunu garanti etmez. Kaynağı "
+"eklemek Flatpak yapılandırmasını hemen değiştirir. Kurulum iptal edilse bile "
+"kalabilir."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "yerel dosya"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Başvuru sürümü henüz desteklenmiyor."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Başvuru seçenekleri henüz desteklenmiyor: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Geçersiz uygulama tanımlayıcısı."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Bu arayüz uygulamalar için tasarlanmıştır."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Geçersiz uygulama dalı."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "{key} alanı desteklenmeyen bir kaçış dizisi içeriyor."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Bir .flatpakref dosyası seçin."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Olağan bir yerel dosya seçin."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Kaynak betimleyici sürümü henüz desteklenmiyor."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Kaynak seçenekleri henüz desteklenmiyor: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream okuma sınırını aşıyor."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "Desteklenmeyen XML bildirimleri."

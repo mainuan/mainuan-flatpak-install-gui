@@ -1,0 +1,746 @@
+# Indonesian translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: id <https://github.com/mainuan>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Penginstal Flatpak Mainuan"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Instal aplikasi dari file referensi Flatpak"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Pilih File Flatpak"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Referensi Flatpak (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "DEMONSTRASI — tidak ada perubahan yang akan dibuat"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "Menginstal %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Pilih File"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Hanya pengguna Anda"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Seluruh sistem"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Pemasangan sistem lain: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Tujuan: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Pilih salah satu sumber"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Sumber aplikasi atau dependensi"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Kemajuan pemasangan total"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Selesai"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "Sedang berlangsung"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Langkah saat ini: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Sembunyikan Perincian"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Tampilkan Perincian"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Sumber: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Akan ditambahkan bila diperlukan saat menginstal."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr ""
+"Batal meminta penghentian yang aman. Perubahan yang sudah selesai mungkin "
+"tetap ada."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Perincian teknis pemasangan"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Persiapan"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "Kemajuan"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Sumber"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "Dibatalkan"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Galat"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Berhasil"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "Simulasikan status %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Instal"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Coba Lagi"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Lanjutkan"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Instal Salinan Lain"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Copot"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Buka"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "Batal"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Tutup"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr ""
+"Sumber yang diperlukan tidak menyediakan kunci GPG. Pemasangan dihentikan."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Tidak ada sumber kompatibel yang tersedia."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "Ada lebih dari satu sumber yang kompatibel. Pilih yang akan digunakan."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Sumber yang dipilih tidak valid."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "Sumber yang diotorisasi hilang selama pemasangan."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Menginstal…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Usulan sumber tidak terikat pada aplikasi yang diminta."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Sumber dependensi tanpa deskriptor yang tervalidasi: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "Aplikasi ini sudah terinstal di tujuan ini."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Aplikasi ini sudah terinstal. Apakah Anda ingin menginstal salinan lain di "
+"tujuan yang dipilih?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Sumber ditambahkan: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Pemasangan selesai."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "Pemasangan dibatalkan. Perubahan yang sudah selesai mungkin tetap ada."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "Operasi dibatalkan."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Tidak dapat memeriksa pemasangan."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Selamat Datang"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Pilih file .flatpakref untuk diinstal."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Memeriksa pemasangan…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "File tidak valid"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Tidak dapat membuka file .flatpakref ini."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Menyiapkan pemasangan…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "Ada referensi yang ambigu di tujuan. Pilih referensi yang tepat."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Pemasangan yang ditemukan: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Sudah terinstal"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Aplikasi dicopot. Data pribadi tetap dipertahankan."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Instal"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Perbarui"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Hapus"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Sumber: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "Unduhan: {download} bita; ukuran terinstal: {installed} bita"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Tidak ada operasi yang tertunda."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Aplikasi dibuka."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "Membatalkan… Tunggu hingga selesai dengan aman."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "Copot {name} ({scope})? Data pribadi akan tetap dipertahankan."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Mencopot…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "Membuka aplikasi…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Status demonstrasi tidak valid."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Aplikasi contoh"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Sumber contoh"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Hasil simulasi: pemasangan selesai."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Galat simulasi: tidak dapat mengakses sumber."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "Pembatalan simulasi. Operasi yang sudah selesai mungkin tetap ada."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Demonstrasi tanpa pemasangan."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "Mengunduh operasi saat ini (simulasi)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr ""
+"Perincian fiktif untuk evaluasi visual. Backend sebenarnya dinonaktifkan."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Pilih lokasi pemasangan."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (sumber {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "aplikasi tidak ada"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Sumber: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "tidak ada"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: tidak dapat memeriksa: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "Sumber tidak berisi kunci penandatanganan yang valid."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Tidak dapat memverifikasi kunci sumber."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "Sumber berisi kunci yang tidak valid, dicabut, atau kedaluwarsa."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Verifikasi GPG pada sumber ini dinonaktifkan."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"Sumber yang dikonfigurasi dinonaktifkan atau memiliki filter. Konfigurasinya "
+"harus diperiksa sebelum menginstal."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "Identitas sumber yang dikonfigurasi berbeda dengan referensi."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr ""
+"Kunci penandatanganan sumber yang dikonfigurasi berbeda dengan referensi."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "Konfigurasi sumber berbeda dengan deskriptor yang diberikan."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "Konfigurasi sumber berubah selama pemasangan. Coba lagi."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr ""
+"Deskriptor dari sumber yang sama memiliki konfigurasi yang tidak kompatibel."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "Pemasangan akan memerlukan perubahan yang tidak diotorisasi."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "Pemasangan mencoba menyertakan aplikasi lain yang tidak diotorisasi."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "Sumber aplikasi berubah selama pemasangan."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "Sumber tidak menyediakan kunci GPG; pemasangan dihentikan."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Sudah ada sumber dengan nama ini tetapi identitasnya berbeda: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak tidak mengonfirmasi penambahan sumber."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(sumber tidak tersedia)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "Sedang berlangsung…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "Transaksi tidak selesai."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "Referensi tidak memiliki deployment yang terkonfirmasi."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "Sumber yang terinstal berbeda dengan sumber transaksi."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "Referensi yang dipilih telah berubah."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "Referensi masih terinstal di tujuan yang dipilih."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Pemasangan sistem ambigu atau tidak tersedia."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Jalur pemasangan yang dipilih telah berubah."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak tidak mengonfirmasi pembukaan aplikasi."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Otorisasi ditolak atau dibatalkan."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr "Tidak dapat mengakses sumber. Periksa koneksi lalu coba lagi."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Izin ditolak untuk operasi ini."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Tidak dapat mengautentikasi dengan sumber."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "Sumber tidak tersedia."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "Komponen yang diperlukan tidak tersedia."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "Aplikasi sudah diinstal oleh proses lain. Coba lagi."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "Ada pemasangan dari sumber lain di tujuan ini."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Referensi Flatpak tidak valid."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Ruang tidak cukup untuk menginstal."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "Pemasangan lain sedang berlangsung. Coba lagi."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "Tidak dapat mengakses sumber. Periksa koneksi dan perinciannya."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "Tidak dapat menyelesaikan operasi. Lihat perinciannya."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Penginstal Flatpak Mainuan — file .flatpakref lokal"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "file .flatpakref lokal"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "demonstrasi visual, tidak dapat menginstal"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "nama tampilan berupa teks biasa; tidak mengubah identitas"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "hapus referensi yang tepat, dengan konfirmasi grafis"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system, atau system:ID; wajib untuk --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies dan --do-install sudah dihentikan: keduanya adalah "
+"pembantu Bash internal. Buka file .flatpakref dan gunakan Instal. Tidak ada "
+"operasi yang dijalankan."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Tujuan tidak valid: gunakan user, system, atau system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove memerlukan file .flatpakref dan --scope user|system|system:ID; "
+"identitasnya diambil dari file."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Berikan file .flatpakref lokal. ID atau URL tersendiri dari penginstal lama "
+"tidak diterima."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo bersifat terisolasi: tidak menerima file, tujuan, penghapusan, atau "
+"nama pengganti."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Jalankan antarmuka sebagai pengguna biasa. Flatpak/Polkit akan meminta "
+"otorisasi bila diperlukan."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Dependensi Qt tidak tersedia: {error}. Lihat README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr "Sumber harus menggunakan HTTPS tanpa kredensial atau fragmen di URL."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Referensi terlalu besar atau berisi bita null."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Grup referensi tidak valid."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Kolom multibaris tidak diterima."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Referensi Flatpak tidak valid."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Kunci GPG tidak valid."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "tidak disediakan oleh sinyal usulan libflatpak"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "tidak ada — tanda tangan GPG dinonaktifkan"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Sumber: {url}\n"
+"Nama yang disarankan: {name}\n"
+"Deskriptor: {descriptor}\n"
+"SHA-256 dari kunci yang diberikan: {fingerprint}\n"
+"HTTPS melindungi transmisi data; HTTPS tidak menjamin bahwa sumber ini "
+"tepercaya. Menambahkan sumber akan langsung mengubah konfigurasi Flatpak. "
+"Perubahan ini mungkin tetap ada meskipun pemasangan dibatalkan."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "file lokal"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Versi referensi belum didukung."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Opsi referensi belum didukung: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Pengenal aplikasi tidak valid."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Antarmuka ini ditujukan untuk aplikasi."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Cabang aplikasi tidak valid."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "Kolom {key} berisi escape yang tidak didukung."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Pilih file .flatpakref."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Pilih file lokal biasa."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Versi deskriptor sumber belum didukung."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Opsi sumber belum didukung: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream melebihi batas pembacaan."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "Deklarasi XML tidak didukung."

@@ -1,0 +1,743 @@
+# Vietnamese translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: vi <https://github.com/mainuan>\n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Trình cài đặt Flatpak của Mainuan"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Cài đặt ứng dụng từ tệp tham chiếu Flatpak"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Chọn tệp Flatpak"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Tham chiếu Flatpak (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "MINH HOẠ — sẽ không có thay đổi nào"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "Đang cài đặt %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Chọn tệp"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Chỉ người dùng của bạn"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Toàn bộ hệ thống"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Bản cài đặt hệ thống khác: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Đích: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Chọn một trong các nguồn"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Nguồn của ứng dụng hoặc gói phụ thuộc"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Tiến độ cài đặt tổng thể"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Đã hoàn tất"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "Đang tiến hành"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Bước hiện tại: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Ẩn chi tiết"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Hiện chi tiết"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Nguồn: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Nguồn này sẽ được thêm khi cài đặt nếu cần."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr "Huỷ sẽ yêu cầu dừng an toàn. Các thay đổi đã hoàn tất có thể vẫn còn."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Chi tiết kỹ thuật của việc cài đặt"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Chuẩn bị"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "Tiến độ"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Nguồn"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "Đã huỷ"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Lỗi"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Thành công"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "Mô phỏng trạng thái %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Cài đặt"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Thử lại"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Tiếp tục"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Cài đặt thêm bản khác"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Gỡ cài đặt"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Mở"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "Huỷ"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Đóng"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "Nguồn được yêu cầu không cung cấp khoá GPG. Đã dừng cài đặt."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Không có nguồn tương thích nào."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "Có nhiều hơn một nguồn tương thích. Hãy chọn nguồn cần dùng."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Nguồn được chọn không hợp lệ."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "Nguồn đã được cấp phép biến mất trong khi cài đặt."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Đang cài đặt…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Đề xuất nguồn không gắn với ứng dụng được yêu cầu."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Nguồn gói phụ thuộc không có tệp mô tả đã được xác thực: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "Ứng dụng đã được cài đặt ở đích này."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Ứng dụng này đã được cài đặt. Bạn có muốn cài đặt thêm một bản khác vào đích "
+"đã chọn không?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Đã thêm nguồn: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Đã cài đặt xong."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "Đã huỷ cài đặt. Các thay đổi đã hoàn tất có thể vẫn còn."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "Đã huỷ thao tác."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Không truy vấn được thông tin cài đặt."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Chào mừng"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Chọn một tệp .flatpakref để cài đặt."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Đang kiểm tra cài đặt…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "Tệp không hợp lệ"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Không mở được tệp .flatpakref này."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Đang chuẩn bị cài đặt…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr ""
+"Có các tham chiếu không rõ ràng ở đích. Hãy chọn một tham chiếu chính xác."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Các bản cài đặt tìm thấy: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Đã cài đặt"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Đã gỡ cài đặt ứng dụng. Dữ liệu cá nhân được giữ nguyên."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Cài đặt"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Cập nhật"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Gỡ bỏ"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Nguồn: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "Tải về: {download} byte; kích thước sau khi cài: {installed} byte"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Không có thao tác nào đang chờ."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Đã mở ứng dụng."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "Đang huỷ… Hãy đợi để quá trình kết thúc an toàn."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "Gỡ cài đặt {name} ({scope})? Dữ liệu cá nhân sẽ được giữ nguyên."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Đang gỡ cài đặt…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "Đang mở ứng dụng…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Trạng thái minh hoạ không hợp lệ."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Ứng dụng ví dụ"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Nguồn ví dụ"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Kết quả mô phỏng: đã cài đặt xong."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Lỗi mô phỏng: không truy cập được nguồn."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "Huỷ mô phỏng. Các thao tác đã hoàn tất có thể vẫn còn."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Bản minh hoạ không thực hiện cài đặt."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "Đang tải về thao tác hiện tại (mô phỏng)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr "Chi tiết giả định để đánh giá giao diện. Backend thực đã bị tắt."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Chọn nơi cài đặt."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (nguồn {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "không có ứng dụng"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Nguồn: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "không có"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: không truy vấn được: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "Nguồn không chứa khoá ký hợp lệ."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Không xác minh được các khoá của nguồn."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "Nguồn chứa khoá không hợp lệ, đã bị thu hồi hoặc đã hết hạn."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Nguồn đã tắt xác minh GPG."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"Nguồn đã cấu hình đang bị tắt hoặc có bộ lọc. Cần kiểm tra cấu hình của "
+"nguồn trước khi cài đặt."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "Danh tính của nguồn đã cấu hình khác với tham chiếu."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "Khoá ký của nguồn đã cấu hình khác với tham chiếu."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "Cấu hình nguồn khác với tệp mô tả được cung cấp."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "Cấu hình nguồn đã thay đổi trong khi cài đặt. Hãy thử lại."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "Các tệp mô tả của cùng một nguồn có cấu hình không tương thích."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "Việc cài đặt sẽ cần một thay đổi chưa được cấp phép."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "Việc cài đặt đã cố thêm một ứng dụng khác chưa được cấp phép."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "Nguồn của ứng dụng đã thay đổi trong khi cài đặt."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "Nguồn không cung cấp khoá GPG; đã dừng cài đặt."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Đã có một nguồn cùng tên nhưng khác danh tính: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak chưa xác nhận việc thêm nguồn."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(nguồn không khả dụng)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "Đang tiến hành…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "Giao dịch chưa hoàn tất."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "Tham chiếu chưa có bản triển khai được xác nhận."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "Nguồn đã cài đặt khác với nguồn của giao dịch."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "Tham chiếu đã chọn đã thay đổi."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "Tham chiếu vẫn còn được cài đặt ở đích đã chọn."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Bản cài đặt hệ thống không rõ ràng hoặc không khả dụng."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Đường dẫn của bản cài đặt đã chọn đã thay đổi."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak chưa xác nhận việc mở ứng dụng."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Việc cấp quyền đã bị từ chối hoặc bị huỷ."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr "Không truy cập được nguồn. Hãy kiểm tra kết nối và thử lại."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Không có quyền thực hiện thao tác này."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Không xác thực được với nguồn."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "Nguồn không khả dụng."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "Không có các thành phần cần thiết."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "Ứng dụng đã được một tiến trình khác cài đặt. Hãy thử lại."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "Đã có một bản cài đặt từ nguồn khác ở đích này."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Tham chiếu Flatpak không hợp lệ."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Không đủ dung lượng để cài đặt."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "Một quá trình cài đặt khác đang diễn ra. Hãy thử lại."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "Không truy cập được nguồn. Hãy kiểm tra kết nối và phần chi tiết."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "Không hoàn tất được thao tác. Xem phần chi tiết."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Trình cài đặt Flatpak của Mainuan — tệp .flatpakref cục bộ"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "một tệp .flatpakref cục bộ"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "minh hoạ giao diện, không thể cài đặt"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "tên hiển thị dạng văn bản thuần; không thay đổi danh tính"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "gỡ bỏ đúng tham chiếu, có xác nhận bằng giao diện đồ hoạ"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system hoặc system:ID; bắt buộc với --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies và --do-install đã bị ngừng: chúng là các trình trợ "
+"giúp Bash nội bộ. Hãy mở một tệp .flatpakref và dùng Cài đặt. Chưa có thao "
+"tác nào được thực hiện."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Đích không hợp lệ: hãy dùng user, system hoặc system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove cần một tệp .flatpakref và --scope user|system|system:ID; danh tính "
+"được lấy từ tệp."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Hãy cung cấp một tệp .flatpakref cục bộ. Không chấp nhận mã ID hay URL riêng "
+"lẻ của trình cài đặt cũ."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo là chế độ riêng biệt: không chấp nhận tệp, đích, việc gỡ bỏ hay tên "
+"ghi đè."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Hãy chạy giao diện bằng người dùng thường. Flatpak/Polkit sẽ yêu cầu cấp "
+"quyền khi cần."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Không có phụ thuộc Qt: {error}. Xem README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr ""
+"Nguồn phải dùng HTTPS, không có thông tin đăng nhập hay phân đoạn trong URL."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Tham chiếu quá lớn hoặc chứa byte rỗng."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Nhóm tham chiếu không hợp lệ."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Không chấp nhận trường nhiều dòng."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Tham chiếu Flatpak không hợp lệ."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Khoá GPG không hợp lệ."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "không được tín hiệu đề xuất của libflatpak cung cấp"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "không có — chữ ký GPG đã bị tắt"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Nguồn: {url}\n"
+"Tên đề xuất: {name}\n"
+"Tệp mô tả: {descriptor}\n"
+"SHA-256 của khoá được cung cấp: {fingerprint}\n"
+"HTTPS bảo vệ đường truyền; nó không đảm bảo nguồn này đáng tin cậy. Việc "
+"thêm nguồn sẽ thay đổi cấu hình Flatpak ngay bây giờ. Nguồn có thể vẫn còn "
+"ngay cả khi việc cài đặt bị huỷ."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "tệp cục bộ"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Phiên bản tham chiếu chưa được hỗ trợ."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Các tuỳ chọn tham chiếu chưa được hỗ trợ: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Mã định danh ứng dụng không hợp lệ."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Giao diện này dành cho ứng dụng."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Nhánh ứng dụng không hợp lệ."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "Trường {key} chứa ký tự thoát không được hỗ trợ."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Hãy chọn một tệp .flatpakref."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Hãy chọn một tệp cục bộ thông thường."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Phiên bản tệp mô tả nguồn chưa được hỗ trợ."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Các tuỳ chọn nguồn chưa được hỗ trợ: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream vượt quá giới hạn đọc."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "Khai báo XML không được hỗ trợ."
