@@ -1,10 +1,11 @@
 """Release-candidate review: cancellation boundaries, lifetime and public CLI."""
 import contextlib
 import io
+import os
 import sys
 from pathlib import Path
 import unittest
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'qt'))
 from backend import Decisions, Installer, OriginConflict
 from controller import Controller, Worker
@@ -76,20 +77,22 @@ class FinalBoundaryTests(unittest.TestCase):
     def test_default_system_alias_uses_the_same_detection_scope(self):
         self.assertEqual(arguments(['--scope', 'system:default', 'a.flatpakref']).scope, 'system')
 
+    @patch.dict(os.environ, {'LANGUAGE': 'en'})  # Asserts compare the English source strings.
     def test_internal_options_have_accurate_retirement_error(self):
         for flag in ('--fetch-dependencies', '--do-install'):
             output = io.StringIO()
             with contextlib.redirect_stderr(output), self.assertRaises(SystemExit) as result:
                 arguments([flag, 'a.flatpakref'])
             self.assertEqual(result.exception.code, 2)
-            self.assertIn('descontinuados', output.getvalue())
+            self.assertIn('discontinued', output.getvalue())
             self.assertNotIn('--remove, --override-appname', output.getvalue())
 
+    @patch.dict(os.environ, {'LANGUAGE': 'en'})  # Asserts compare the English source strings.
     def test_bare_legacy_id_requires_migration_to_a_local_reference(self):
         output = io.StringIO()
         with contextlib.redirect_stderr(output), self.assertRaises(SystemExit):
             arguments(['--override-appname=Exemplo', 'org.example.App'])
-        self.assertIn('arquivo .flatpakref local', output.getvalue())
+        self.assertIn('local .flatpakref file', output.getvalue())
 
     def test_demo_rejects_scope_and_even_empty_name_override(self):
         for options in (['--scope','system'], ['--override-appname=']):

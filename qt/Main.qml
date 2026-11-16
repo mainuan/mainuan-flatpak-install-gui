@@ -15,7 +15,7 @@ Controls.ApplicationWindow {
                      Math.max(260, Screen.desktopAvailableHeight - 80))
     minimumWidth: 360
     minimumHeight: 240
-    title: "Mainuan Instalador Flatpak"
+    title: qsTr("Mainuan Flatpak Installer")
     readonly property var state: backend.view
     readonly property string phase: state.phase
     readonly property bool finished: ["success", "error", "cancelled"].indexOf(phase) >= 0
@@ -70,8 +70,8 @@ Controls.ApplicationWindow {
     FileDialog {
         id: picker
         objectName: "filePicker"
-        title: "Escolher arquivo Flatpak"
-        nameFilters: ["Referência Flatpak (*.flatpakref)"]
+        title: qsTr("Choose Flatpak File")
+        nameFilters: [qsTr("Flatpak reference (*.flatpakref)")]
         fileMode: FileDialog.OpenFile
         onAccepted: backend.loadUrl(selectedFile)
     }
@@ -92,7 +92,7 @@ Controls.ApplicationWindow {
             Controls.Label {
                 Layout.fillWidth: true
                 visible: window.state.demo
-                text: "DEMONSTRAÇÃO — nenhuma alteração será executada"
+                text: qsTr("DEMONSTRATION — no changes will be made")
                 textFormat: Text.PlainText
                 wrapMode: Text.Wrap
                 color: window.accent
@@ -132,7 +132,7 @@ Controls.ApplicationWindow {
                         level: 3
                         font.bold: true
                         font.pointSize: window.font.pointSize + 3
-                        text: (window.phase === "installing" ? "Instalando " : "") + window.state.name
+                        text: window.phase === "installing" ? qsTr("Installing %1").arg(window.state.name) : window.state.name
                         textFormat: Text.PlainText
                         wrapMode: Text.WrapAnywhere
                         color: window.textTone
@@ -171,7 +171,7 @@ Controls.ApplicationWindow {
             Controls.Button {
                 objectName: "chooseFileButton"
                 visible: !window.state.hasFile && !window.state.demo
-                text: "Escolher arquivo"
+                text: qsTr("Choose File")
                 icon.name: "document-open"
                 onClicked: picker.open()
             }
@@ -185,7 +185,7 @@ Controls.ApplicationWindow {
                 Controls.RadioButton {
                     id: userDestination
                     objectName: "userDestination"
-                    text: "Apenas seu usuário"
+                    text: qsTr("Only your user")
                     checked: window.state.scope === "user"
                     Controls.ButtonGroup.group: destinations
                     onClicked: backend.selectDestination("user")
@@ -193,7 +193,7 @@ Controls.ApplicationWindow {
                 Controls.RadioButton {
                     id: systemDestination
                     objectName: "systemDestination"
-                    text: "Todo o sistema"
+                    text: qsTr("Entire system")
                     checked: window.state.scope === "system"
                     Controls.ButtonGroup.group: destinations
                     onClicked: backend.selectDestination("system")
@@ -205,13 +205,13 @@ Controls.ApplicationWindow {
                 enabled: !window.state.busy && !window.state.demo
                 model: window.state.systemScopes
                 textRole: "label"
-                displayText: "Outra instalação de sistema: " + currentText
+                displayText: qsTr("Other system installation: %1").arg(currentText)
                 onActivated: (index) => backend.selectDestination(window.state.systemScopes[index].scope)
             }
             Controls.Label {
                 Layout.fillWidth: true
                 visible: window.finished && window.state.source.length > 0
-                text: "Destino: " + (window.state.scope === "user" ? "Apenas seu usuário" : "Todo o sistema")
+                text: qsTr("Destination: %1").arg(window.state.scope === "user" ? qsTr("Only your user") : qsTr("Entire system"))
                 color: window.muted
             }
             Controls.Label {
@@ -230,9 +230,9 @@ Controls.ApplicationWindow {
                 visible: window.phase === "chooseRemote"
                 model: window.state.choices
                 currentIndex: window.selectedOrigin
-                displayText: window.selectedOrigin < 0 ? "Selecione uma das origens" : textAt(window.selectedOrigin)
+                displayText: window.selectedOrigin < 0 ? qsTr("Select one of the sources") : textAt(window.selectedOrigin)
                 onActivated: (index) => { window.selectedOrigin = index }
-                Accessible.name: "Origem do aplicativo ou dependência"
+                Accessible.name: qsTr("Source of the application or dependency")
             }
             ColumnLayout {
                 Layout.fillWidth: true
@@ -264,13 +264,13 @@ Controls.ApplicationWindow {
                             }
                         }
                     }
-                    Accessible.name: "Progresso total da instalação"
-                    Accessible.description: indeterminate ? "Em andamento" : "Concluído"
+                    Accessible.name: qsTr("Total installation progress")
+                    Accessible.description: indeterminate ? qsTr("In progress") : qsTr("Completed")
                 }
                 Controls.Label {
                     Layout.alignment: Qt.AlignRight
                     visible: window.phase === "success" || window.state.percent >= 0
-                    text: window.phase === "success" ? "100%" : "Etapa atual: " + window.state.percent + "%"
+                    text: window.phase === "success" ? "100%" : qsTr("Current step: %1%").arg(window.state.percent)
                     color: window.muted
                 }
             }
@@ -278,7 +278,7 @@ Controls.ApplicationWindow {
                 objectName: "detailsToggle"
                 visible: window.state.hasFile
                 flat: true
-                text: window.showDetails ? "Ocultar detalhes" : "Ver detalhes"
+                text: window.showDetails ? qsTr("Hide Details") : qsTr("Show Details")
                 icon.name: window.showDetails ? "arrow-up" : "arrow-down"
                 onClicked: window.showDetails = !window.showDetails
             }
@@ -301,16 +301,16 @@ Controls.ApplicationWindow {
                         readOnly: true
                         selectByMouse: true
                         textFormat: TextEdit.PlainText
-                        text: "Origem: " + window.state.source
-                              + "\nSerá adicionada se necessária ao instalar."
+                        text: qsTr("Source: %1").arg(window.state.source)
+                              + "\n" + qsTr("It will be added if needed when installing.")
                               + "\n" + window.state.id + "\n" + window.state.runtimeRepo + "\n" + window.state.details
                               + "\n" + window.state.operations + "\n" + window.state.inventory
                               + "\n" + window.state.operation + "\n" + window.state.operationStatus
-                              + "\nCancelar solicita uma parada segura. Alterações concluídas podem permanecer."
+                              + "\n" + qsTr("Cancel requests a safe stop. Completed changes may remain.")
                         wrapMode: Text.WrapAnywhere
                         font.family: "monospace"
                         color: window.textTone
-                        Accessible.name: "Detalhes técnicos da instalação"
+                        Accessible.name: qsTr("Technical installation details")
                     }
                 }
             }
@@ -322,10 +322,10 @@ Controls.ApplicationWindow {
                     model: ["ready", "remote", "progress", "success", "error", "cancelled"]
                     Controls.Button {
                         required property string modelData
-                        text: ({ready: "Preparação", remote: "Origem", progress: "Progresso",
-                                success: "Sucesso", error: "Erro", cancelled: "Cancelado"})[modelData]
+                        text: ({ready: qsTr("Preparation"), remote: qsTr("Source"), progress: qsTr("Progress"),
+                                success: qsTr("Success"), error: qsTr("Error"), cancelled: qsTr("Cancelled")})[modelData]
                         onClicked: backend.simulate(modelData)
-                        Accessible.name: "Simular estado " + text
+                        Accessible.name: qsTr("Simulate state %1").arg(text)
                     }
                 }
             }
@@ -349,7 +349,7 @@ Controls.ApplicationWindow {
                 visible: window.state.source.length > 0 && !window.state.started && !window.finished
                          || (!window.state.busy && ["error", "cancelled"].indexOf(window.phase) >= 0 && window.state.source.length > 0)
                 enabled: !window.state.busy && !window.state.demo
-                text: window.finished ? "Tentar novamente" : "Instalar"
+                text: window.finished ? qsTr("Try Again") : qsTr("Install")
                 highlighted: true
                 onClicked: backend.install()
             }
@@ -358,7 +358,7 @@ Controls.ApplicationWindow {
                 objectName: "confirmButton"
                 visible: window.confirming && window.phase !== "confirmRemove"
                 enabled: window.state.token > 0 && !window.state.demo && (window.phase !== "chooseRemote" || window.selectedOrigin >= 0)
-                text: window.phase === "confirmDuplicate" ? "Instalar outra cópia" : "Continuar"
+                text: window.phase === "confirmDuplicate" ? qsTr("Install Another Copy") : qsTr("Continue")
                 highlighted: true
                 onClicked: backend.respond(true, window.selectedOrigin)
             }
@@ -366,14 +366,14 @@ Controls.ApplicationWindow {
                 objectName: "removeButton"
                 visible: !!window.state.installed.ref && !window.confirming
                 enabled: !window.state.busy && !window.state.demo
-                text: "Desinstalar"
+                text: qsTr("Uninstall")
                 onClicked: backend.requestRemove()
             }
             Controls.Button {
                 id: removeConfirmation
                 objectName: "confirmRemoveButton"
                 visible: window.phase === "confirmRemove"
-                text: "Desinstalar"
+                text: qsTr("Uninstall")
                 enabled: !window.state.busy && !window.state.demo
                 onClicked: backend.confirmRemove()
             }
@@ -381,7 +381,7 @@ Controls.ApplicationWindow {
                 objectName: "openButton"
                 visible: window.phase === "success" && (window.state.demo || !!window.state.installed.ref)
                 enabled: !window.state.demo && !window.state.busy
-                text: "Abrir"
+                text: qsTr("Open")
                 icon.name: "system-run"
                 highlighted: true
                 onClicked: backend.launch()
@@ -389,7 +389,7 @@ Controls.ApplicationWindow {
             Controls.Button {
                 id: closeButton
                 objectName: "closeButton"
-                text: window.finished || window.phase === "ready" || !window.state.hasFile ? "Fechar" : "Cancelar"
+                text: window.finished || window.phase === "ready" || !window.state.hasFile ? qsTr("Close") : qsTr("Cancel")
                 enabled: window.phase !== "cancelling"
                 onClicked: {
                     if (window.phase === "confirmRemove") backend.selectDestination(window.state.scope);
