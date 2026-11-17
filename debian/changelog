@@ -10,7 +10,7 @@ mainuan-flatpak-install-gui (1.1) resolute; urgency=medium
   * Pipeline de CI com a suíte de testes completa, verificação de build
     reprodutível, lintian e teste de instalação e remoção.
 
- -- Mainuan Developers <dev@mainuan.com.br>  Tue, 17 Nov 2026 11:30:00 -0300
+ -- Mainuan Developers <dev@mainuan.com.br>  Tue, 17 Nov 2026 11:23:15 -0300
 
 mainuan-flatpak-install-gui (1.0) unstable; urgency=medium
 
