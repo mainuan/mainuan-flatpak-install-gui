@@ -38,7 +38,15 @@ jobs:
             dpkg-buildpackage -us -uc -b > ../build.log 2>&1) || { cat "$(dirname "$dir")/build.log"; exit 1; }
         done
         sha256sum "$HOME"/repro-a/*.deb "$HOME"/repro-b/*.deb
-        cmp "$HOME"/repro-a/*.deb "$HOME"/repro-b/*.deb
+        if ! cmp "$HOME"/repro-a/*.deb "$HOME"/repro-b/*.deb; then
+          for d in a b; do
+            dpkg-deb -e "$HOME"/repro-$d/*.deb "$HOME/ctrl-$d"
+            dpkg-deb --fsys-tarfile "$HOME"/repro-$d/*.deb | tar -tv --full-time > "$HOME/data-$d.txt"
+          done
+          diff -r "$HOME/ctrl-a" "$HOME/ctrl-b" || true
+          diff "$HOME/data-a.txt" "$HOME/data-b.txt" || true
+          exit 1
+        fi
         rm -rf "$HOME/repro-a" "$HOME/repro-b"
       smoke-command: |
         test -x /usr/bin/mainuan-flatpak-install-gui
