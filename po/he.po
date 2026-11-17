@@ -1,0 +1,734 @@
+# Hebrew translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: he <https://github.com/mainuan>\n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
+"n % 10 == 0) ? 2 : 3));\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "מתקין ה־Flatpak של Mainuan"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "התקנת יישומים מקובצי הפניה של Flatpak"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "בחירת קובץ Flatpak"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "הפניית Flatpak (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "הדגמה — לא יבוצעו שינויים"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "מתבצעת התקנה של %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "בחירת קובץ"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "רק המשתמש שלך"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "המערכת כולה"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "התקנת מערכת אחרת: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "יעד: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "יש לבחור אחד מהמקורות"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "מקור היישום או התלות"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "התקדמות ההתקנה הכוללת"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "הושלם"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "בתהליך"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "שלב נוכחי: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "הסתרת פרטים"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "הצגת פרטים"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "מקור: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "הוא יתווסף בעת ההתקנה, אם יהיה צורך."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr "ביטול מבקש עצירה בטוחה. שינויים שהושלמו עשויים להישאר."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "פרטים טכניים של ההתקנה"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "הכנה"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "התקדמות"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "מקור"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "בוטל"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "שגיאה"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "הצלחה"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "הדמיית מצב %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "התקנה"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "לנסות שוב"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "המשך"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "התקנת עותק נוסף"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "הסרה"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "פתיחה"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "ביטול"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "סגירה"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "המקור הנדרש אינו מספק מפתח GPG. ההתקנה נעצרה."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "אין מקור תואם זמין."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "יש יותר ממקור תואם אחד. יש לבחור באיזה להשתמש."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "המקור שנבחר שגוי."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "המקור המורשה נעלם במהלך ההתקנה."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "מתבצעת התקנה…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "הצעת המקור אינה קשורה ליישום המבוקש."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "מקור תלות ללא מתאר מאומת: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "היישום כבר מותקן ביעד זה."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr "יישום זה כבר מותקן. להתקין עותק נוסף ביעד שנבחר?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "נוסף מקור: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "ההתקנה הושלמה."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "ההתקנה בוטלה. שינויים שכבר הושלמו עשויים להישאר."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "הפעולה בוטלה."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "לא ניתן לבדוק את ההתקנה."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "ברוכים הבאים"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "יש לבחור קובץ .flatpakref להתקנה."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "ההתקנה נבדקת…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "קובץ שגוי"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "לא ניתן לפתוח את קובץ ה־.flatpakref הזה."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "ההתקנה בהכנה…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "יש הפניות דו־משמעיות ביעד. יש לבחור הפניה מדויקת."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "נמצאו התקנות: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "כבר מותקן"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "היישום הוסר. הנתונים האישיים נשמרו."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "התקנה"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "עדכון"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "הסרה"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "מקור: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "הורדה: {download} בתים; גודל לאחר התקנה: {installed} בתים"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "אין פעולות ממתינות."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "היישום נפתח."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "מתבצע ביטול… יש להמתין לסיום בטוח."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "להסיר את {name} ({scope})? הנתונים האישיים יישמרו."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "מתבצעת הסרה…"
+
+# reviewed: unpointed היישום נפתח… reads the same as 'Application opened.'
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "מתבצעת פתיחה של היישום…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "מצב הדגמה שגוי."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "יישום לדוגמה"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "מקור לדוגמה"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "תוצאה מדומה: ההתקנה הושלמה."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "שגיאה מדומה: לא ניתן לגשת למקור."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "ביטול מדומה. פעולות שהושלמו עשויות להישאר."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "הדגמה ללא התקנות."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "הפעולה הנוכחית בהורדה (הדמיה)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr "פרטים בדויים להערכה חזותית. המנגנון האמיתי מושבת."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "יש לבחור היכן להתקין."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (מקור {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "היישום אינו קיים"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "מקורות: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "אין"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: לא ניתן לבצע שאילתה: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "המקור אינו מכיל מפתח חתימה תקף."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "לא ניתן לאמת את המפתחות של המקור."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "המקור מכיל מפתח שגוי, שנשלל או שפג תוקפו."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "אימות GPG מושבת במקור."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"המקור המוגדר מושבת או שיש לו מסנן. יש לבדוק את ההגדרות שלו לפני ההתקנה."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "הזהות של המקור המוגדר שונה מזו שבהפניה."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "מפתח החתימה של המקור המוגדר שונה מזה שבהפניה."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "הגדרות המקור שונות מהמתאר שסופק."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "הגדרות המקור השתנו במהלך ההתקנה. יש לנסות שוב."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "למתארים של אותו מקור יש הגדרות שאינן תואמות."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "ההתקנה הייתה דורשת שינוי שלא אושר."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "ההתקנה ניסתה לכלול יישום נוסף שלא אושר."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "מקור היישום השתנה במהלך ההתקנה."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "המקור אינו מספק מפתח GPG; ההתקנה נעצרה."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "כבר קיים מקור בשם זה עם זהות אחרת: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak לא אישר את הוספת המקור."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(המקור אינו זמין)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "בתהליך…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "הטרנזקציה לא הושלמה."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "להפניה אין פריסה מאושרת."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "המקור המותקן שונה ממקור הטרנזקציה."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "ההפניה שנבחרה השתנתה."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "ההפניה עדיין מותקנת ביעד שנבחר."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "התקנת מערכת דו־משמעית או לא זמינה."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "הנתיב של ההתקנה שנבחרה השתנה."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak לא אישר את פתיחת היישום."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "האישור נדחה או בוטל."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr "לא ניתן לגשת למקור. יש לבדוק את החיבור ולנסות שוב."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "ההרשאה לפעולה זו נדחתה."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "לא ניתן להזדהות מול המקור."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "המקור אינו זמין."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "הרכיבים הנדרשים אינם זמינים."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "היישום כבר הותקן על ידי תהליך אחר. יש לנסות שוב."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "קיימת ביעד זה התקנה ממקור אחר."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "הפניית ה־Flatpak שגויה."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "אין מספיק מקום להתקנה."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "התקנה אחרת מתבצעת כעת. יש לנסות שוב."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "לא ניתן לגשת למקור. יש לבדוק את החיבור ואת הפרטים."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "לא ניתן להשלים את הפעולה. יש לעיין בפרטים."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "מתקין ה־Flatpak של Mainuan — קובץ .flatpakref מקומי"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "קובץ .flatpakref מקומי"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "הדגמה חזותית, ללא אפשרות התקנה"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "שם תצוגה בטקסט פשוט; אינו משנה את הזהות"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "הסרת ההפניה המדויקת, עם אישור גרפי"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system או system:ID; נדרש עבור --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies ו־--do-install הופסקו: הם היו כלי עזר פנימיים של Bash. "
+"יש לפתוח קובץ .flatpakref ולהשתמש ב„התקנה”. לא בוצעה אף פעולה."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "יעד שגוי: יש להשתמש ב־user, system או system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove דורש קובץ .flatpakref ו־--scope user|system|system:ID; הזהות נלקחת "
+"מהקובץ."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"יש לספק קובץ .flatpakref מקומי. מזהים או כתובות URL בודדים מהמתקין הישן אינם "
+"מתקבלים."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr "--demo מבודד: אינו מקבל קובץ, יעד, הסרה או שם חלופי."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr "יש להריץ את הממשק כמשתמש רגיל. Flatpak/Polkit יבקשו אישור בעת הצורך."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "תלות Qt אינה זמינה: {error}. פרטים ב־README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr "המקור חייב להשתמש ב־HTTPS ללא פרטי גישה או מקטעים בכתובת ה־URL."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "ההפניה גדולה מדי או מכילה בתים ריקים."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "קבוצת הפניה שגויה."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "שדות מרובי שורות אינם מתקבלים."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "הפניית Flatpak שגויה."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "מפתח GPG שגוי."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "לא סופק באות ההצעה של libflatpak"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "חסר — חתימת GPG מושבתת"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"מקור: {url}\n"
+"שם מוצע: {name}\n"
+"מתאר: {descriptor}\n"
+"SHA-256 של המפתח שסופק: {fingerprint}\n"
+"HTTPS מגן על ההעברה; הוא אינו מבטיח שמקור זה מהימן. הוספת המקור משנה את "
+"הגדרות ה־Flatpak כבר עכשיו. היא עשויה להישאר גם אם ההתקנה תבוטל."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "קובץ מקומי"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "גרסת ההפניה עדיין אינה נתמכת."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "אפשרויות ההפניה עדיין אינן נתמכות: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "מזהה יישום שגוי."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "ממשק זה מיועד ליישומים."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "ענף יישום שגוי."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "השדה {key} מכיל רצף בריחה שאינו נתמך."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "יש לבחור קובץ .flatpakref."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "יש לבחור קובץ מקומי רגיל."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "גרסת מתאר המקור עדיין אינה נתמכת."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "אפשרויות המקור עדיין אינן נתמכות: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream חורג ממגבלת הקריאה."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "הצהרות XML שאינן נתמכות."

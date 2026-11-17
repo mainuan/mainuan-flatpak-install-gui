@@ -133,10 +133,11 @@ class I18nTests(unittest.TestCase):
             import PyQt6.QtQml  # noqa: F401
         except ImportError:
             self.skipTest('PyQt6 unavailable')
-        target = Path(self.tmp.name) / 'ar' / 'LC_MESSAGES'
-        target.mkdir(parents=True, exist_ok=True)
-        subprocess.run(['msgfmt', '--check', '-o', str(target / f'{DOMAIN}.mo'),
-                        str(ROOT / 'po' / 'ar.po')], check=True)
+        for language in ('ar', 'ur'):
+            target = Path(self.tmp.name) / language / 'LC_MESSAGES'
+            target.mkdir(parents=True, exist_ok=True)
+            subprocess.run(['msgfmt', '--check', '-o', str(target / f'{DOMAIN}.mo'),
+                            str(ROOT / 'po' / f'{language}.po')], check=True)
 
         def run(language):
             with tempfile.TemporaryDirectory() as empty:
@@ -151,11 +152,15 @@ class I18nTests(unittest.TestCase):
         ar = run('ar')
         self.assertEqual(ar['layoutDirection'], 'RightToLeft')
         self.assertTrue(ar['mirrored'])
-        # Urdu is right-to-left but has no application catalog: English, left to right.
+        # Urdu has an application catalog but no qtbase_ur: mirrored by the catalog.
         ur = run('ur')
-        self.assertEqual(ur['installButton'], 'Install')
-        self.assertEqual(ur['layoutDirection'], 'LeftToRight')
-        self.assertFalse(ur['mirrored'])
+        self.assertEqual(ur['layoutDirection'], 'RightToLeft')
+        self.assertTrue(ur['mirrored'])
+        # Yiddish is right-to-left but has no application catalog: English, left to right.
+        yi = run('yi')
+        self.assertEqual(yi['installButton'], 'Install')
+        self.assertEqual(yi['layoutDirection'], 'LeftToRight')
+        self.assertFalse(yi['mirrored'])
 
 
 class CatalogLookupTests(unittest.TestCase):

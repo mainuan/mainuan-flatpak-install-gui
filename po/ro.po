@@ -1,0 +1,756 @@
+# Romanian translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: ro <https://github.com/mainuan>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Instalator Flatpak Mainuan"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Instalați aplicații din fișiere de referință Flatpak"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Alegeți fișierul Flatpak"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Referință Flatpak (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "DEMONSTRAȚIE — nu se va face nicio modificare"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "Se instalează %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Alege fișier"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Doar utilizatorul dvs."
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Tot sistemul"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Altă instalare de sistem: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Destinație: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Selectați una dintre surse"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Sursa aplicației sau a dependenței"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Progresul total al instalării"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Încheiat"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "În desfășurare"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Pasul curent: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Ascunde detaliile"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Arată detaliile"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Sursă: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Va fi adăugată la instalare, dacă este necesar."
+
+# reviewed: 'Renunțarea' soa estranho; o conceito é anulação (como 'Instalare
+# anulată'); botão continua 'Renunță'
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr ""
+"Anularea solicită o oprire sigură. Modificările deja efectuate pot rămâne."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Detalii tehnice ale instalării"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Pregătire"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "Progres"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Sursă"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "Anulat"
+
+# from mainuan-grub-editor
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Eroare"
+
+# from mainuan-grub-editor
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Succes"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "Simulează starea %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Instalează"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Încearcă din nou"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Continuă"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Instalează o altă copie"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Dezinstalează"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Deschide"
+
+# from mainuan-grub-editor
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "Anulează"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Închide"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "Sursa necesară nu furnizează o cheie GPG. Instalarea a fost oprită."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Nu este disponibilă nicio sursă compatibilă."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "Există mai multe surse compatibile. Alegeți pe care să o folosiți."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Sursa selectată nu este validă."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "Sursa autorizată a dispărut în timpul instalării."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Se instalează…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Propunere de sursă care nu este legată de aplicația solicitată."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Sursă de dependență fără descriptor validat: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "Aplicația este deja instalată în această destinație."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Această aplicație este deja instalată. Doriți să instalați o altă copie în "
+"destinația selectată?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Sursă adăugată: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Instalare finalizată."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "Instalare anulată. Modificările deja efectuate pot rămâne."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "Operație anulată."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Instalarea nu a putut fi interogată."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Bun venit"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Alegeți un fișier .flatpakref pentru instalare."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Se verifică instalarea…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "Fișier nevalid"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Acest fișier .flatpakref nu a putut fi deschis."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Se pregătește instalarea…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "Există referințe ambigue în destinație. Selectați o referință exactă."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Instalări găsite: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Deja instalată"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Aplicație dezinstalată. Datele personale au fost păstrate."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Instalare"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Actualizare"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Eliminare"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Sursă: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr ""
+"Descărcare: {download} octeți; dimensiune instalată: {installed} octeți"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Nicio operație în așteptare."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Aplicația a fost deschisă."
+
+# reviewed: 'Se renunță…' como status de progresso é forçado; padrão ro 'Se
+# anulează…' (botão segue 'Renunță')
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "Se anulează… Așteptați încheierea în siguranță."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "Dezinstalați {name} ({scope})? Datele personale vor fi păstrate."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Se dezinstalează…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "Se deschide aplicația…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Stare de demonstrație nevalidă."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Aplicație exemplu"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Sursă exemplu"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Rezultat simulat: instalare finalizată."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Eroare simulată: sursa nu a putut fi accesată."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "Anulare simulată. Operațiile deja efectuate pot rămâne."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Demonstrație fără instalări."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "Se descarcă operația curentă (simulare)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr ""
+"Detalii fictive pentru evaluare vizuală. Backend-ul real este dezactivat."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Alegeți unde să instalați."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (sursa {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "aplicație absentă"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Surse: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "niciuna"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: nu s-a putut interoga: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "Sursa nu conține o cheie de semnare validă."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Cheile sursei nu au putut fi verificate."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "Sursa conține o cheie nevalidă, revocată sau expirată."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Sursa are verificarea GPG dezactivată."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"Sursa configurată este dezactivată sau are un filtru. Configurația ei "
+"trebuie verificată înainte de instalare."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "Identitatea sursei configurate diferă de cea din referință."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "Cheia de semnare a sursei configurate diferă de cea din referință."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "Configurația sursei diferă de descriptorul furnizat."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr ""
+"Configurația sursei s-a modificat în timpul instalării. Încercați din nou."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "Descriptorii aceleiași surse au configurații incompatibile."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "Instalarea ar necesita o modificare care nu a fost autorizată."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "Instalarea a încercat să includă o altă aplicație neautorizată."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "Sursa aplicației s-a modificat în timpul instalării."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "Sursa nu furnizează o cheie GPG; instalarea a fost oprită."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Există deja o sursă cu acest nume și altă identitate: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak nu a confirmat adăugarea sursei."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(sursă indisponibilă)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "În desfășurare…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "Tranzacția nu a fost finalizată."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "Referința nu are o implementare confirmată."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "Sursa instalată diferă de sursa tranzacției."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "Referința selectată s-a modificat."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "Referința este încă instalată în destinația selectată."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Instalare de sistem ambiguă sau indisponibilă."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Calea instalării selectate s-a modificat."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak nu a confirmat deschiderea aplicației."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Autorizarea a fost refuzată sau anulată."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr ""
+"Sursa nu a putut fi accesată. Verificați conexiunea și încercați din nou."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Permisiune refuzată pentru această operație."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Autentificarea la sursă a eșuat."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "Sursa nu este disponibilă."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "Componentele necesare nu sunt disponibile."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "Aplicația a fost deja instalată de un alt proces. Încercați din nou."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "Există o instalare dintr-o altă sursă în această destinație."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Referința Flatpak nu este validă."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Nu există suficient spațiu pentru instalare."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "O altă instalare este în desfășurare. Încercați din nou."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "Sursa nu a putut fi accesată. Verificați conexiunea și detaliile."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "Operația nu a putut fi finalizată. Consultați detaliile."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Instalator Flatpak Mainuan — fișier .flatpakref local"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "un fișier .flatpakref local"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "demonstrație vizuală, fără posibilitate de instalare"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "nume afișat în text simplu; nu modifică identitatea"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "elimină referința exactă, cu confirmare grafică"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system sau system:ID; obligatoriu pentru --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies și --do-install au fost scoase din uz: erau utilitare "
+"Bash interne. Deschideți un fișier .flatpakref și folosiți Instalează. Nu a "
+"fost efectuată nicio operație."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Destinație nevalidă: folosiți user, system sau system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove necesită un fișier .flatpakref și --scope user|system|system:ID; "
+"identitatea provine din fișier."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Furnizați un fișier .flatpakref local. ID-urile sau URL-urile independente "
+"din vechiul instalator nu sunt acceptate."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo este izolat: nu acceptă fișier, destinație, eliminare sau nume "
+"suprascris."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Rulați interfața ca utilizator obișnuit. Flatpak/Polkit va cere autorizare "
+"atunci când este necesar."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Dependența Qt nu este disponibilă: {error}. Consultați README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr ""
+"Sursa trebuie să folosească HTTPS, fără date de autentificare sau fragmente "
+"în URL."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Referință prea mare sau cu octeți nuli."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Grup de referință nevalid."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Câmpurile pe mai multe rânduri nu sunt acceptate."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Referință Flatpak nevalidă."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Cheie GPG nevalidă."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "nefurnizat de semnalul de propunere libflatpak"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "absentă — semnătură GPG dezactivată"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Sursă: {url}\n"
+"Nume sugerat: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 al cheii furnizate: {fingerprint}\n"
+"HTTPS protejează transportul; nu garantează că această sursă este de "
+"încredere. Adăugarea sursei modifică acum configurația Flatpak. Aceasta "
+"poate rămâne chiar dacă instalarea este anulată."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "fișier local"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Versiunea referinței nu este încă acceptată."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Opțiunile referinței nu sunt încă acceptate: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Identificator de aplicație nevalid."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Această interfață este destinată aplicațiilor."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Ramură de aplicație nevalidă."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "Câmpul {key} conține o secvență de escape neacceptată."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Selectați un fișier .flatpakref."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Selectați un fișier local obișnuit."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Versiunea descriptorului de sursă nu este încă acceptată."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Opțiunile sursei nu sunt încă acceptate: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream depășește limita de citire."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "Declarații XML neacceptate."

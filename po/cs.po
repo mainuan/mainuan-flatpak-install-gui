@@ -1,0 +1,744 @@
+# Czech translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: cs <https://github.com/mainuan>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Instalátor Flatpaku Mainuan"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Instalace aplikací ze souborů odkazů Flatpak"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Vyberte soubor Flatpak"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Odkaz Flatpak (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "UKÁZKA — nebudou provedeny žádné změny"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "Instaluje se %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Vybrat soubor"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Pouze pro vás"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Celý systém"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Jiná systémová instalace: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Cíl: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Vyberte jeden ze zdrojů"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Zdroj aplikace nebo závislosti"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Celkový průběh instalace"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Dokončeno"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "Probíhá"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Aktuální krok: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Skrýt podrobnosti"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Zobrazit podrobnosti"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Zdroj: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Bude v případě potřeby přidán při instalaci."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr "Zrušení vyžádá bezpečné zastavení. Dokončené změny mohou zůstat."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Technické podrobnosti instalace"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Příprava"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "Průběh"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Zdroj"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "Zrušeno"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Chyba"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Úspěch"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "Simulovat stav %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Instalovat"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Zkusit znovu"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Pokračovat"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Instalovat další kopii"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Odinstalovat"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Otevřít"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Zavřít"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "Požadovaný zdroj neposkytuje klíč GPG. Instalace byla zastavena."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Není dostupný žádný kompatibilní zdroj."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "Existuje více kompatibilních zdrojů. Vyberte, který chcete použít."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Neplatný vybraný zdroj."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "Autorizovaný zdroj během instalace zmizel."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Instaluje se…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Návrh zdroje není svázán s požadovanou aplikací."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Zdroj závislosti bez ověřeného popisovače: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "Aplikace je v tomto cíli již nainstalována."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Tato aplikace je již nainstalována. Chcete do vybraného cíle nainstalovat "
+"další kopii?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Přidán zdroj: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Instalace dokončena."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "Instalace zrušena. Již dokončené změny mohou zůstat."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "Operace zrušena."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Nelze zjistit stav instalace."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Vítejte"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Vyberte soubor .flatpakref k instalaci."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Kontroluje se instalace…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "Neplatný soubor"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Tento soubor .flatpakref nelze otevřít."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Připravuje se instalace…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "V cíli existují nejednoznačné odkazy. Vyberte přesný odkaz."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Nalezené instalace: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Již nainstalováno"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Aplikace odinstalována. Osobní data zůstala zachována."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Instalovat"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Odstranit"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Zdroj: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "Stažení: {download} bajtů; velikost po instalaci: {installed} bajtů"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Žádné čekající operace."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Aplikace otevřena."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "Ruší se… Počkejte na bezpečné dokončení."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "Odinstalovat {name} ({scope})? Osobní data zůstanou zachována."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Odinstalovává se…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "Otevírá se aplikace…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Neplatný stav ukázky."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Ukázková aplikace"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Ukázkový zdroj"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Simulovaný výsledek: instalace dokončena."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Simulovaná chyba: nelze získat přístup ke zdroji."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "Simulované zrušení. Dokončené operace mohou zůstat."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Ukázka bez instalací."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "Stahuje se aktuální operace (simulace)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr ""
+"Smyšlené podrobnosti pro vizuální posouzení. Skutečná podpůrná vrstva je "
+"vypnutá."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Vyberte, kam instalovat."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (zdroj {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "aplikace chybí"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Zdroje: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "žádné"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: nelze provést dotaz: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "Zdroj neobsahuje platný podpisový klíč."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Nelze ověřit klíče zdroje."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "Zdroj obsahuje neplatný, odvolaný nebo prošlý klíč."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Zdroj má vypnuté ověřování GPG."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"Nastavený zdroj je zakázán nebo má filtr. Před instalací je nutné "
+"zkontrolovat jeho nastavení."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "Identita nastaveného zdroje se liší od odkazu."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "Podpisový klíč nastaveného zdroje se liší od odkazu."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "Nastavení zdroje se liší od poskytnutého popisovače."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "Nastavení zdroje se během instalace změnilo. Zkuste to znovu."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "Popisovače téhož zdroje mají nekompatibilní nastavení."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "Instalace by vyžadovala změnu, která nebyla povolena."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "Instalace se pokusila zahrnout jinou nepovolenou aplikaci."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "Zdroj aplikace se během instalace změnil."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "Zdroj neposkytuje klíč GPG; instalace zastavena."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Zdroj s tímto názvem a jinou identitou již existuje: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak nepotvrdil přidání zdroje."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(zdroj není dostupný)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "Probíhá…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "Transakce nebyla dokončena."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "Odkaz nemá potvrzené nasazení."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "Nainstalovaný zdroj se liší od zdroje transakce."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "Vybraný odkaz se změnil."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "Odkaz je ve vybraném cíli stále nainstalován."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Nejednoznačná nebo nedostupná systémová instalace."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Cesta vybrané instalace se změnila."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak nepotvrdil otevření aplikace."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Ověření bylo zamítnuto nebo zrušeno."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr ""
+"Nelze získat přístup ke zdroji. Zkontrolujte připojení a zkuste to znovu."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Pro tuto operaci nemáte oprávnění."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Nelze se ověřit u zdroje."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "Zdroj není dostupný."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "Požadované součásti nejsou dostupné."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "Aplikace již byla nainstalována jiným procesem. Zkuste to znovu."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "V tomto cíli existuje instalace z jiného zdroje."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Odkaz Flatpak je neplatný."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Pro instalaci není dostatek místa."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "Probíhá jiná instalace. Zkuste to znovu."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "Nelze získat přístup ke zdroji. Zkontrolujte připojení a podrobnosti."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "Operaci nelze dokončit. Viz podrobnosti."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Instalátor Flatpaku Mainuan — místní soubor .flatpakref"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "místní soubor .flatpakref"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "vizuální ukázka, bez možnosti instalace"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "zobrazovaný název jako prostý text; nemění identitu"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "odstranit přesný odkaz, s grafickým potvrzením"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system nebo system:ID; vyžadováno pro --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"Volby --fetch-dependencies a --do-install byly zrušeny: šlo o interní "
+"pomocníky v Bashi. Otevřete soubor .flatpakref a použijte Instalovat. Nebyla "
+"provedena žádná operace."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Neplatný cíl: použijte user, system nebo system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove vyžaduje soubor .flatpakref a --scope user|system|system:ID; "
+"identita se převezme ze souboru."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Zadejte místní soubor .flatpakref. Samostatná ID ani URL ze starého "
+"instalátoru nejsou přijímána."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo je izolovaný: nepřijímá soubor, cíl, odebrání ani přepsaný název."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Spusťte rozhraní jako běžný uživatel. Flatpak/Polkit si v případě potřeby "
+"vyžádá oprávnění."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Závislost Qt není dostupná: {error}. Viz README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr ""
+"Zdroj musí používat HTTPS bez přihlašovacích údajů nebo fragmentů v URL."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Odkaz je příliš velký nebo obsahuje nulové bajty."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Neplatná skupina odkazu."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Víceřádková pole nejsou přijímána."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Neplatný odkaz Flatpak."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Neplatný klíč GPG."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "neposkytnuto signálem návrhu libflatpak"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "chybí — podpis GPG vypnut"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Zdroj: {url}\n"
+"Navrhovaný název: {name}\n"
+"Popisovač: {descriptor}\n"
+"SHA-256 poskytnutého klíče: {fingerprint}\n"
+"HTTPS chrání přenos; nezaručuje, že je tento zdroj důvěryhodný. Přidání "
+"zdroje okamžitě změní nastavení Flatpaku. Může zůstat i v případě, že bude "
+"instalace zrušena."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "místní soubor"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Verze odkazu zatím není podporována."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Volby odkazu zatím nejsou podporovány: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Neplatný identifikátor aplikace."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Toto rozhraní je určeno pro aplikace."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Neplatná větev aplikace."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "Pole {key} obsahuje nepodporovanou únikovou sekvenci."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Vyberte soubor .flatpakref."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Vyberte běžný místní soubor."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Verze popisovače zdroje zatím není podporována."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Volby zdroje zatím nejsou podporovány: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream překračuje limit pro čtení."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "Nepodporované deklarace XML."
