@@ -1,3 +1,17 @@
+mainuan-flatpak-install-gui (1.1) resolute; urgency=medium
+
+  * Interface traduzida (gettext) em 33 idiomas, inclusive a janela QML e a
+    entrada .desktop, seguindo o idioma da sessão do KDE Plasma; nomes e
+    resumos do AppStream escolhidos pelo idioma da interface.
+  * Layout espelhado para idiomas da direita para a esquerda.
+  * Empacotamento Debian padrão (debhelper) no lugar de build.sh; o banco de
+    dados .desktop é atualizado pelos gatilhos do desktop-file-utils, sem
+    scripts de mantenedor próprios.
+  * Pipeline de CI com a suíte de testes completa, verificação de build
+    reprodutível, lintian e teste de instalação e remoção.
+
+ -- Mainuan Developers <dev@mainuan.com.br>  Tue, 17 Nov 2026 11:30:00 -0300
+
 mainuan-flatpak-install-gui (1.0) unstable; urgency=medium
 
   * Promote the approved release candidate to version 1.0 without functional

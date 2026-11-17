@@ -1,0 +1,58 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: Mainuan Instalador Flatpak
+Upstream-Contact: Mainuan Developers <dev@mainuan.com.br>
+Source: https://github.com/mainuan/mainuan-flatpak-install-gui
+Comment:
+ The project originated in Tiger-OperatingSystem/flatpak-install-gui by
+ Natanael Barbosa Santos / Tiger OS. The original Bash implementation was
+ MIT licensed; it is replaced in this package. Its license and attribution
+ are retained in docs/LICENSE-original-MIT, installed in
+ /usr/share/doc/mainuan-flatpak-install-gui.
+
+Files: *
+Copyright: 2026 Mainuan contributors
+License: GPL-3
+
+Files: qt/Main.qml
+Copyright: 2026 Mainuan contributors
+License: GPL-3
+Comment:
+ Visual structure and palette adapted from Mainuan Welcome (GPL-3):
+ https://github.com/mainuan/welcome/blob/main/qml/components/InstallDialog.qml
+ https://github.com/mainuan/welcome/blob/main/qml/Main.qml
+
+Files: docs/LICENSE-original-MIT
+Copyright: 2022 Tiger OS
+License: MIT
+
+License: GPL-3
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, version 3 of the License.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General Public License
+ version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.

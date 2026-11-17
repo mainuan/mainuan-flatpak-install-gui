@@ -1,6 +1,6 @@
 # Mainuan Instalador Flatpak
 
-Versão **1.0**, preparada localmente para publicação, branch `port/qt6-mainuan`. Implementação Qt 6 Quick/QML, Kirigami e libflatpak via PyGObject.
+Versão **1.1**. Implementação Qt 6 Quick/QML, Kirigami e libflatpak via PyGObject.
 
 Abre um arquivo `.flatpakref` local, mostra nome e resumo separados, permite
 escolher **Apenas seu usuário** ou **Todo o sistema** e oferece **Instalar**.
@@ -51,21 +51,30 @@ registra formas antigas com ID avulso, sem ampliar o escopo atual do produto.
 
 ## Construção e testes
 
-As dependências Debian estão em [packaging/control](packaging/control).
-O build requer também `gettext` (`msgfmt`); traduções em [docs/i18n](docs/i18n/README.md).
-O build não precisa de root. A implementação instalada usa `/usr/share`, sem
-checkout, PYTHONPATH de desenvolvimento ou dependências extraídas em `/tmp`.
+O pacote é construído pelo diretório padrão `debian/` (debhelper); as
+dependências estão em [debian/control](debian/control) e a versão vem de
+[debian/changelog](debian/changelog). O build requer também `gettext`
+(`msgfmt`); traduções em [docs/i18n](docs/i18n/README.md). O build não precisa
+de root. A implementação instalada usa `/usr/share`, sem checkout, PYTHONPATH de
+desenvolvimento ou dependências extraídas em `/tmp`.
 
 ```sh
-./build.sh
+sudo apt build-dep ./
+dpkg-buildpackage -us -uc -b      # executa também a suíte de testes
 /usr/bin/python3 -m unittest discover -s tests -v
 QT_QPA_PLATFORM=offscreen QT_QUICK_CONTROLS_STYLE=Basic \
-  /usr/bin/python3 tests/qml_flow.py --output test-artifacts/1.0-flow
+  /usr/bin/python3 tests/qml_flow.py --output test-artifacts/flow
 QT_QPA_PLATFORM=offscreen QT_QUICK_CONTROLS_STYLE=Basic \
-  /usr/bin/python3 tests/qml_presentation.py --output test-artifacts/1.0-presentation
-lintian --tag-display-limit 0 'dist/mainuan-flatpak-install-gui_1.0_all.deb'
-sha256sum 'dist/mainuan-flatpak-install-gui_1.0_all.deb'
+  /usr/bin/python3 tests/qml_presentation.py --output test-artifacts/presentation
+lintian ../mainuan-flatpak-install-gui_*_all.deb
 ```
+
+O workflow [.github/workflows/ci.yml](.github/workflows/ci.yml) usa o pipeline
+compartilhado da organização: em cada pull request e push executa esses testes,
+compila o pacote duas vezes em caminhos diferentes e exige `.deb` idêntico
+(build reprodutível), roda lintian, instala, reinstala e remove o pacote num
+Ubuntu 26.04 limpo e abre a janela real em modo demonstração. A release só é
+publicada a partir de uma tag `v<versão>`, com `SHA256SUMS`.
 
 Execute os testes com as dependências do pacote disponíveis. Os testes de transação
 usam simulação e repositórios temporários: não instalam/removem apps reais. O teste

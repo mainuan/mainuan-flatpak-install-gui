@@ -284,7 +284,7 @@ class FlatpakDriver:
 
     def fetch_runtime(self, url):
         # Bounded network I/O with TLS and HTTPS-only redirects; no install side effects.
-        request = urllib.request.Request(url, headers={'User-Agent': 'Mainuan-Flatpak-Installer/1.0'})
+        request = urllib.request.Request(url, headers={'User-Agent': 'Mainuan-Flatpak-Installer/1.1'})
         with urllib.request.build_opener(HttpsOnly()).open(request, timeout=15) as response:
             https_url(response.url)
             data = response.read(LIMIT + 1)
