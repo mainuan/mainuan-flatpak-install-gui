@@ -1,0 +1,732 @@
+# Thai translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: th <https://github.com/mainuan>\n"
+"Language: th\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "ตัวติดตั้ง Flatpak ของ Mainuan"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "ติดตั้งแอปพลิเคชันจากไฟล์อ้างอิง Flatpak"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "เลือกไฟล์ Flatpak"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "ไฟล์อ้างอิง Flatpak (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "สาธิต — จะไม่มีการเปลี่ยนแปลงใด ๆ"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "กำลังติดตั้ง %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "เลือกไฟล์"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "เฉพาะผู้ใช้ของคุณ"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "ทั้งระบบ"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "การติดตั้งระดับระบบอื่น: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "ปลายทาง: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "เลือกแหล่งใดแหล่งหนึ่ง"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "แหล่งของแอปพลิเคชันหรือการขึ้นต่อกัน"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "ความคืบหน้าการติดตั้งทั้งหมด"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "เสร็จสมบูรณ์"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "กำลังดำเนินการ"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "ขั้นตอนปัจจุบัน: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "ซ่อนรายละเอียด"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "แสดงรายละเอียด"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "แหล่ง: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "จะถูกเพิ่มเมื่อจำเป็นในระหว่างการติดตั้ง"
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr "การยกเลิกจะร้องขอให้หยุดอย่างปลอดภัย การเปลี่ยนแปลงที่เสร็จแล้วอาจยังคงอยู่"
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "รายละเอียดทางเทคนิคของการติดตั้ง"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "การเตรียมการ"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "ความคืบหน้า"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "แหล่ง"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "ยกเลิกแล้ว"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "ข้อผิดพลาด"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "สำเร็จ"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "จำลองสถานะ %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "ติดตั้ง"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "ลองอีกครั้ง"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "ดำเนินการต่อ"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "ติดตั้งอีกสำเนา"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "ถอนการติดตั้ง"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "เปิด"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "ยกเลิก"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "ปิด"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "แหล่งที่ต้องการไม่มีกุญแจ GPG การติดตั้งถูกหยุด"
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "ไม่มีแหล่งที่เข้ากันได้"
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "มีแหล่งที่เข้ากันได้มากกว่าหนึ่งแหล่ง โปรดเลือกแหล่งที่จะใช้"
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "แหล่งที่เลือกไม่ถูกต้อง"
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "แหล่งที่ได้รับอนุญาตหายไประหว่างการติดตั้ง"
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "กำลังติดตั้ง…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "แหล่งที่เสนอไม่ได้ผูกกับแอปพลิเคชันที่ร้องขอ"
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "แหล่งของการขึ้นต่อกันไม่มีตัวอธิบายที่ผ่านการตรวจสอบ: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "แอปพลิเคชันนี้ติดตั้งอยู่ในปลายทางนี้แล้ว"
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr "แอปพลิเคชันนี้ติดตั้งอยู่แล้ว ต้องการติดตั้งอีกสำเนาในปลายทางที่เลือกหรือไม่?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "เพิ่มแหล่งแล้ว: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "ติดตั้งเสร็จสมบูรณ์"
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "ยกเลิกการติดตั้งแล้ว การเปลี่ยนแปลงที่เสร็จแล้วอาจยังคงอยู่"
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "ยกเลิกการดำเนินการแล้ว"
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "ไม่สามารถสอบถามการติดตั้ง"
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "ยินดีต้อนรับ"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "เลือกไฟล์ .flatpakref เพื่อติดตั้ง"
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "กำลังตรวจสอบการติดตั้ง…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "ไฟล์ไม่ถูกต้อง"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "ไม่สามารถเปิดไฟล์ .flatpakref นี้"
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "กำลังเตรียมการติดตั้ง…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "มีการอ้างอิงที่กำกวมในปลายทาง โปรดเลือกการอ้างอิงที่ตรงกันพอดี"
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "การติดตั้งที่พบ: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "ติดตั้งแล้ว"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "ถอนการติดตั้งแอปพลิเคชันแล้ว ข้อมูลส่วนตัวยังคงอยู่"
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "ติดตั้ง"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "อัปเดต"
+
+# reviewed: Remove = เอาออก em todos os lotes (Removing… กำลังเอาออก, Remove:
+# เอาออก); 'ลบออก' inconsistente
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "เอาออก"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "แหล่ง: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "ดาวน์โหลด: {download} ไบต์ ขนาดเมื่อติดตั้ง: {installed} ไบต์"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "ไม่มีการดำเนินการที่ค้างอยู่"
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "เปิดแอปพลิเคชันแล้ว"
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "กำลังยกเลิก… โปรดรอให้เสร็จสิ้นอย่างปลอดภัย"
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr "ถอนการติดตั้ง {name} ({scope}) หรือไม่? ข้อมูลส่วนตัวจะยังคงอยู่"
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "กำลังถอนการติดตั้ง…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "กำลังเปิดแอปพลิเคชัน…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "สถานะการสาธิตไม่ถูกต้อง"
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "แอปตัวอย่าง"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "แหล่งตัวอย่าง"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "ผลลัพธ์จำลอง: ติดตั้งเสร็จสมบูรณ์"
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "ข้อผิดพลาดจำลอง: ไม่สามารถเข้าถึงแหล่ง"
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "การยกเลิกจำลอง การดำเนินการที่เสร็จแล้วอาจยังคงอยู่"
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "การสาธิตโดยไม่มีการติดตั้ง"
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "กำลังดาวน์โหลดการดำเนินการปัจจุบัน (จำลอง)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr "รายละเอียดสมมุติสำหรับการประเมินด้านภาพ ปิดแบ็กเอนด์จริงไว้"
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "เลือกตำแหน่งที่จะติดตั้ง"
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (แหล่ง {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "ไม่มีแอปพลิเคชัน"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "แหล่ง: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "ไม่มี"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: ไม่สามารถสอบถาม: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "แหล่งไม่มีกุญแจลงลายเซ็นที่ถูกต้อง"
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "ไม่สามารถตรวจสอบกุญแจของแหล่ง"
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "แหล่งมีกุญแจที่ไม่ถูกต้อง ถูกเพิกถอน หรือหมดอายุ"
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "แหล่งนี้ปิดการตรวจสอบ GPG ไว้"
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr "แหล่งที่กำหนดค่าไว้ถูกปิดใช้งานหรือมีตัวกรอง ต้องตรวจสอบการกำหนดค่าก่อนติดตั้ง"
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "ตัวตนของแหล่งที่กำหนดค่าไว้แตกต่างจากการอ้างอิง"
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "กุญแจลงลายเซ็นของแหล่งที่กำหนดค่าไว้แตกต่างจากการอ้างอิง"
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "การกำหนดค่าแหล่งแตกต่างจากตัวอธิบายที่ให้มา"
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "การกำหนดค่าแหล่งเปลี่ยนไประหว่างการติดตั้ง โปรดลองอีกครั้ง"
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "ตัวอธิบายของแหล่งเดียวกันมีการกำหนดค่าที่เข้ากันไม่ได้"
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "การติดตั้งจะต้องมีการเปลี่ยนแปลงที่ไม่ได้รับอนุญาต"
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr "การติดตั้งพยายามรวมแอปพลิเคชันอื่นที่ไม่ได้รับอนุญาต"
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "แหล่งของแอปพลิเคชันเปลี่ยนไประหว่างการติดตั้ง"
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "แหล่งไม่มีกุญแจ GPG จึงหยุดการติดตั้ง"
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "มีแหล่งที่ใช้ชื่อนี้แต่มีตัวตนอื่นอยู่แล้ว: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak ไม่ได้ยืนยันการเพิ่มแหล่ง"
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(แหล่งไม่พร้อมใช้งาน)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "กำลังดำเนินการ…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "ธุรกรรมไม่เสร็จสมบูรณ์"
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "การอ้างอิงไม่มีการปรับใช้ที่ยืนยันแล้ว"
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "แหล่งที่ติดตั้งแตกต่างจากแหล่งของธุรกรรม"
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "การอ้างอิงที่เลือกมีการเปลี่ยนแปลง"
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "การอ้างอิงยังคงติดตั้งอยู่ในปลายทางที่เลือก"
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "การติดตั้งระดับระบบกำกวมหรือไม่พร้อมใช้งาน"
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "พาธของการติดตั้งที่เลือกมีการเปลี่ยนแปลง"
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak ไม่ได้ยืนยันการเปิดแอปพลิเคชัน"
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "การอนุญาตถูกปฏิเสธหรือยกเลิก"
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr "ไม่สามารถเข้าถึงแหล่ง โปรดตรวจสอบการเชื่อมต่อแล้วลองอีกครั้ง"
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "ไม่มีสิทธิ์สำหรับการดำเนินการนี้"
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "ไม่สามารถยืนยันตัวตนกับแหล่ง"
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "แหล่งไม่พร้อมใช้งาน"
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "ส่วนประกอบที่จำเป็นไม่พร้อมใช้งาน"
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "แอปพลิเคชันถูกติดตั้งโดยโปรเซสอื่นแล้ว โปรดลองอีกครั้ง"
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "มีการติดตั้งจากแหล่งอื่นในปลายทางนี้"
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "การอ้างอิง Flatpak ไม่ถูกต้อง"
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "มีพื้นที่ไม่เพียงพอสำหรับการติดตั้ง"
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "มีการติดตั้งอื่นกำลังดำเนินอยู่ โปรดลองอีกครั้ง"
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "ไม่สามารถเข้าถึงแหล่ง โปรดตรวจสอบการเชื่อมต่อและรายละเอียด"
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "ไม่สามารถดำเนินการให้เสร็จสิ้น โปรดดูรายละเอียด"
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "ตัวติดตั้ง Flatpak ของ Mainuan — ไฟล์ .flatpakref ในเครื่อง"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "ไฟล์ .flatpakref ในเครื่อง"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "การสาธิตด้านภาพ ไม่สามารถติดตั้งได้"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "ชื่อที่แสดงแบบข้อความธรรมดา ไม่เปลี่ยนตัวตน"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "เอาการอ้างอิงที่ตรงกันพอดีออก พร้อมการยืนยันแบบกราฟิก"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system หรือ system:ID จำเป็นสำหรับ --remove"
+
+# reviewed: nome do botão sem aspas fica ambíguo na frase sem espaços do
+# tailandês; aspas “ ” como em outras entradas
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies และ --do-install ถูกยกเลิกแล้ว เนื่องจากเป็นตัวช่วย Bash ภายใน "
+"ให้เปิดไฟล์ .flatpakref แล้วใช้ “ติดตั้ง” ไม่มีการดำเนินการใด ๆ"
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "ปลายทางไม่ถูกต้อง: ใช้ user, system หรือ system:ID"
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove ต้องใช้ไฟล์ .flatpakref และ --scope user|system|system:ID "
+"โดยตัวตนจะมาจากไฟล์"
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr "โปรดระบุไฟล์ .flatpakref ในเครื่อง ไม่รับ ID หรือ URL เดี่ยว ๆ จากตัวติดตั้งแบบเก่า"
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr "--demo เป็นแบบแยกเดี่ยว: ไม่รับไฟล์ ปลายทาง การเอาออก หรือชื่อที่แทนที่"
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr "เรียกใช้อินเทอร์เฟซในฐานะผู้ใช้ปกติ Flatpak/Polkit จะขอการอนุญาตเมื่อจำเป็น"
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "การขึ้นต่อกัน Qt ไม่พร้อมใช้งาน: {error} ดู README.md"
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr "แหล่งต้องใช้ HTTPS โดยไม่มีข้อมูลประจำตัวหรือแฟรกเมนต์ใน URL"
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "การอ้างอิงใหญ่เกินไปหรือมีไบต์ null"
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "กลุ่มการอ้างอิงไม่ถูกต้อง"
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "ไม่รับฟิลด์ที่มีหลายบรรทัด"
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "การอ้างอิง Flatpak ไม่ถูกต้อง"
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "กุญแจ GPG ไม่ถูกต้อง"
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "ไม่ได้ระบุไว้ในสัญญาณข้อเสนอของ libflatpak"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "ไม่มี — ปิดลายเซ็น GPG ไว้"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"แหล่ง: {url}\n"
+"ชื่อที่แนะนำ: {name}\n"
+"ตัวอธิบาย: {descriptor}\n"
+"SHA-256 ของกุญแจที่ให้มา: {fingerprint}\n"
+"HTTPS ปกป้องการส่งข้อมูล แต่ไม่ได้รับประกันว่าแหล่งนี้น่าเชื่อถือ การเพิ่มแหล่งจะเปลี่ยนการกำหนดค่า "
+"Flatpak ทันที และอาจยังคงอยู่แม้จะยกเลิกการติดตั้ง"
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "ไฟล์ในเครื่อง"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "ยังไม่รองรับรุ่นของการอ้างอิงนี้"
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "ยังไม่รองรับตัวเลือกของการอ้างอิง: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "ตัวระบุแอปพลิเคชันไม่ถูกต้อง"
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "อินเทอร์เฟซนี้มีไว้สำหรับแอปพลิเคชัน"
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "สาขาของแอปพลิเคชันไม่ถูกต้อง"
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "ฟิลด์ {key} มีการ escape ที่ไม่รองรับ"
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "เลือกไฟล์ .flatpakref"
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "เลือกไฟล์ปกติในเครื่อง"
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "ยังไม่รองรับรุ่นของตัวอธิบายแหล่ง"
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "ยังไม่รองรับตัวเลือกของแหล่ง: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream เกินขีดจำกัดการอ่าน"
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "การประกาศ XML ที่ไม่รองรับ"

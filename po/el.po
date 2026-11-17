@@ -1,0 +1,763 @@
+# Greek translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: el <https://github.com/mainuan>\n"
+"Language: el\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Εγκαταστάτης Flatpak του Mainuan"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Εγκατάσταση εφαρμογών από αρχεία αναφοράς Flatpak"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Επιλογή αρχείου Flatpak"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Αναφορά Flatpak (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "ΕΠΙΔΕΙΞΗ — δεν θα γίνει καμία αλλαγή"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "Εγκατάσταση του %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Επιλογή αρχείου"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Μόνο ο χρήστης σας"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Όλο το σύστημα"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Άλλη εγκατάσταση συστήματος: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Προορισμός: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Επιλέξτε μία από τις πηγές"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Πηγή της εφαρμογής ή της εξάρτησης"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Συνολική πρόοδος εγκατάστασης"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Ολοκληρώθηκε"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "Σε εξέλιξη"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Τρέχον βήμα: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Απόκρυψη λεπτομερειών"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Εμφάνιση λεπτομερειών"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Πηγή: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Θα προστεθεί, αν χρειαστεί, κατά την εγκατάσταση."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr ""
+"Η ακύρωση ζητά ασφαλή διακοπή. Οι αλλαγές που έχουν ήδη ολοκληρωθεί "
+"ενδέχεται να παραμείνουν."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Τεχνικές λεπτομέρειες εγκατάστασης"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Προετοιμασία"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "Πρόοδος"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Πηγή"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "Ακυρώθηκε"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Σφάλμα"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Επιτυχία"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "Προσομοίωση κατάστασης %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Δοκιμή ξανά"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Συνέχεια"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Εγκατάσταση άλλου αντιγράφου"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Απεγκατάσταση"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Άνοιγμα"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "Ακύρωση"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Κλείσιμο"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "Η απαιτούμενη πηγή δεν παρέχει κλειδί GPG. Η εγκατάσταση διακόπηκε."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Δεν υπάρχει διαθέσιμη συμβατή πηγή."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr ""
+"Υπάρχουν περισσότερες από μία συμβατές πηγές. Επιλέξτε ποια θα "
+"χρησιμοποιηθεί."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Μη έγκυρη επιλεγμένη πηγή."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "Η εξουσιοδοτημένη πηγή εξαφανίστηκε κατά την εγκατάσταση."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Εγκατάσταση…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Η προτεινόμενη πηγή δεν συνδέεται με την εφαρμογή που ζητήθηκε."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Πηγή εξάρτησης χωρίς επικυρωμένο περιγραφέα: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "Η εφαρμογή είναι ήδη εγκατεστημένη σε αυτόν τον προορισμό."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Αυτή η εφαρμογή είναι ήδη εγκατεστημένη. Θέλετε να εγκαταστήσετε άλλο "
+"αντίγραφο στον επιλεγμένο προορισμό;"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Προστέθηκε πηγή: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Η εγκατάσταση ολοκληρώθηκε."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr ""
+"Η εγκατάσταση ακυρώθηκε. Οι αλλαγές που έχουν ήδη ολοκληρωθεί ενδέχεται να "
+"παραμείνουν."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "Η λειτουργία ακυρώθηκε."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Δεν ήταν δυνατό το ερώτημα για την εγκατάσταση."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Καλώς ήρθατε"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Επιλέξτε ένα αρχείο .flatpakref για εγκατάσταση."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Έλεγχος εγκατάστασης…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "Μη έγκυρο αρχείο"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Δεν ήταν δυνατό το άνοιγμα αυτού του αρχείου .flatpakref."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Προετοιμασία εγκατάστασης…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "Υπάρχουν ασαφείς αναφορές στον προορισμό. Επιλέξτε μια ακριβή αναφορά."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Εγκαταστάσεις που βρέθηκαν: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Ήδη εγκατεστημένο"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Η εφαρμογή απεγκαταστάθηκε. Τα προσωπικά δεδομένα διατηρήθηκαν."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Εγκατάσταση"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Ενημέρωση"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Αφαίρεση"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Πηγή: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "Λήψη: {download} byte· μέγεθος εγκατάστασης: {installed} byte"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Δεν υπάρχουν εκκρεμείς λειτουργίες."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Η εφαρμογή άνοιξε."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "Ακύρωση… Περιμένετε να ολοκληρωθεί με ασφάλεια."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr ""
+"Απεγκατάσταση του {name} ({scope}); Τα προσωπικά δεδομένα θα διατηρηθούν."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Απεγκατάσταση…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "Άνοιγμα της εφαρμογής…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Μη έγκυρη κατάσταση επίδειξης."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Παράδειγμα εφαρμογής"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Παράδειγμα πηγής"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Προσομοιωμένο αποτέλεσμα: η εγκατάσταση ολοκληρώθηκε."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Προσομοιωμένο σφάλμα: δεν ήταν δυνατή η πρόσβαση στην πηγή."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr ""
+"Προσομοιωμένη ακύρωση. Οι λειτουργίες που ολοκληρώθηκαν ενδέχεται να "
+"παραμείνουν."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Επίδειξη χωρίς εγκαταστάσεις."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "Λήψη της τρέχουσας λειτουργίας (προσομοίωση)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr ""
+"Φανταστικές λεπτομέρειες για οπτική αξιολόγηση. Το πραγματικό σύστημα "
+"υποστήριξης είναι απενεργοποιημένο."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Επιλέξτε πού θα γίνει η εγκατάσταση."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (πηγή {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "η εφαρμογή απουσιάζει"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Πηγές: {list}"
+
+# reviewed: refers to 'Sources: none' (πηγές, feminine) —
+# flatpak_backend.py:53; 'κανένα' is wrong gender
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "καμία"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: δεν ήταν δυνατό το ερώτημα: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "Η πηγή δεν περιέχει έγκυρο κλειδί υπογραφής."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Δεν ήταν δυνατή η επαλήθευση των κλειδιών της πηγής."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "Η πηγή περιέχει μη έγκυρο, ανακληθέν ή ληγμένο κλειδί."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Η πηγή έχει απενεργοποιημένη την επαλήθευση GPG."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"Η ρυθμισμένη πηγή είναι απενεργοποιημένη ή έχει φίλτρο. Η διαμόρφωσή της "
+"πρέπει να ελεγχθεί πριν από την εγκατάσταση."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "Η ταυτότητα της ρυθμισμένης πηγής διαφέρει από την αναφορά."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "Το κλειδί υπογραφής της ρυθμισμένης πηγής διαφέρει από την αναφορά."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "Η διαμόρφωση της πηγής διαφέρει από τον παρεχόμενο περιγραφέα."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "Η διαμόρφωση της πηγής άλλαξε κατά την εγκατάσταση. Δοκιμάστε ξανά."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr "Οι περιγραφείς της ίδιας πηγής έχουν μη συμβατές διαμορφώσεις."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "Η εγκατάσταση θα απαιτούσε μια αλλαγή που δεν εξουσιοδοτήθηκε."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr ""
+"Η εγκατάσταση προσπάθησε να συμπεριλάβει μια άλλη μη εξουσιοδοτημένη "
+"εφαρμογή."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "Η πηγή της εφαρμογής άλλαξε κατά την εγκατάσταση."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "Η πηγή δεν παρέχει κλειδί GPG· η εγκατάσταση διακόπηκε."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Υπάρχει ήδη πηγή με αυτό το όνομα και άλλη ταυτότητα: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Το Flatpak δεν επιβεβαίωσε την προσθήκη της πηγής."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(η πηγή δεν είναι διαθέσιμη)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "Σε εξέλιξη…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "Η συναλλαγή δεν ολοκληρώθηκε."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "Η αναφορά δεν έχει επιβεβαιωμένη ανάπτυξη."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "Η εγκατεστημένη πηγή διαφέρει από την πηγή της συναλλαγής."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "Η επιλεγμένη αναφορά άλλαξε."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "Η αναφορά είναι ακόμη εγκατεστημένη στον επιλεγμένο προορισμό."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Ασαφής ή μη διαθέσιμη εγκατάσταση συστήματος."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Η διαδρομή της επιλεγμένης εγκατάστασης άλλαξε."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Το Flatpak δεν επιβεβαίωσε το άνοιγμα της εφαρμογής."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Η εξουσιοδότηση απορρίφθηκε ή ακυρώθηκε."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr ""
+"Δεν ήταν δυνατή η πρόσβαση στην πηγή. Ελέγξτε τη σύνδεση και δοκιμάστε ξανά."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Δεν επιτρέπεται η πρόσβαση για αυτή τη λειτουργία."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Δεν ήταν δυνατή η ταυτοποίηση στην πηγή."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "Η πηγή δεν είναι διαθέσιμη."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "Τα απαιτούμενα στοιχεία δεν είναι διαθέσιμα."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "Η εφαρμογή εγκαταστάθηκε ήδη από άλλη διεργασία. Δοκιμάστε ξανά."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "Υπάρχει εγκατάσταση από άλλη πηγή σε αυτόν τον προορισμό."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Η αναφορά Flatpak δεν είναι έγκυρη."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Δεν υπάρχει αρκετός χώρος για την εγκατάσταση."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "Μια άλλη εγκατάσταση βρίσκεται σε εξέλιξη. Δοκιμάστε ξανά."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr ""
+"Δεν ήταν δυνατή η πρόσβαση στην πηγή. Ελέγξτε τη σύνδεση και τις "
+"λεπτομέρειες."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "Δεν ήταν δυνατή η ολοκλήρωση της λειτουργίας. Δείτε τις λεπτομέρειες."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Εγκαταστάτης Flatpak του Mainuan — τοπικό αρχείο .flatpakref"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "ένα τοπικό αρχείο .flatpakref"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "οπτική επίδειξη, χωρίς δυνατότητα εγκατάστασης"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "εμφανιζόμενο όνομα σε απλό κείμενο· δεν αλλάζει την ταυτότητα"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "αφαίρεση της ακριβούς αναφοράς, με γραφική επιβεβαίωση"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system ή system:ID· απαιτείται για το --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"Τα --fetch-dependencies και --do-install καταργήθηκαν: ήταν εσωτερικά "
+"βοηθητικά Bash. Ανοίξτε ένα αρχείο .flatpakref και χρησιμοποιήστε την "
+"Εγκατάσταση. Δεν εκτελέστηκε καμία λειτουργία."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Μη έγκυρος προορισμός: χρησιμοποιήστε user, system ή system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"Το --remove απαιτεί αρχείο .flatpakref και --scope user|system|system:ID· η "
+"ταυτότητα προέρχεται από το αρχείο."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Δώστε ένα τοπικό αρχείο .flatpakref. Δεν γίνονται δεκτά μεμονωμένα "
+"αναγνωριστικά ή URL από τον παλιό εγκαταστάτη."
+
+# reviewed: 'παρακαμφθέν' means 'bypassed', not 'overridden'; the option sets
+# a custom display name
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"Το --demo είναι απομονωμένο: δεν δέχεται αρχείο, προορισμό, αφαίρεση ή "
+"προσαρμοσμένο όνομα."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Εκτελέστε τη διεπαφή ως κανονικός χρήστης. Το Flatpak/Polkit θα ζητήσει "
+"εξουσιοδότηση όταν χρειάζεται."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Η εξάρτηση Qt δεν είναι διαθέσιμη: {error}. Δείτε το README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr ""
+"Η πηγή πρέπει να χρησιμοποιεί HTTPS χωρίς διαπιστευτήρια ή τμήματα "
+"(fragments) στο URL."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Η αναφορά είναι πολύ μεγάλη ή περιέχει μηδενικά byte."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Μη έγκυρη ομάδα αναφοράς."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Δεν γίνονται δεκτά πεδία πολλών γραμμών."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Μη έγκυρη αναφορά Flatpak."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Μη έγκυρο κλειδί GPG."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "δεν παρέχεται από το σήμα πρότασης του libflatpak"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "απουσιάζει — η υπογραφή GPG είναι απενεργοποιημένη"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Πηγή: {url}\n"
+"Προτεινόμενο όνομα: {name}\n"
+"Περιγραφέας: {descriptor}\n"
+"SHA-256 του παρεχόμενου κλειδιού: {fingerprint}\n"
+"Το HTTPS προστατεύει τη μεταφορά· δεν εγγυάται ότι αυτή η πηγή είναι "
+"αξιόπιστη. Η προσθήκη της πηγής αλλάζει τώρα τη διαμόρφωση του Flatpak. "
+"Μπορεί να παραμείνει ακόμη και αν η εγκατάσταση ακυρωθεί."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "τοπικό αρχείο"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Η έκδοση της αναφοράς δεν υποστηρίζεται ακόμη."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Οι επιλογές της αναφοράς δεν υποστηρίζονται ακόμη: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Μη έγκυρο αναγνωριστικό εφαρμογής."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Αυτή η διεπαφή προορίζεται για εφαρμογές."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Μη έγκυρος κλάδος εφαρμογής."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "Το πεδίο {key} περιέχει μη υποστηριζόμενη ακολουθία διαφυγής."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Επιλέξτε ένα αρχείο .flatpakref."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Επιλέξτε ένα κανονικό τοπικό αρχείο."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Η έκδοση του περιγραφέα πηγής δεν υποστηρίζεται ακόμη."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Οι επιλογές της πηγής δεν υποστηρίζονται ακόμη: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "Το AppStream υπερβαίνει το όριο ανάγνωσης."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "Μη υποστηριζόμενες δηλώσεις XML."

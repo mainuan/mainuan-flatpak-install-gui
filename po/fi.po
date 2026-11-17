@@ -1,0 +1,750 @@
+# Finnish translations for mainuan-flatpak-install-gui package.
+# Copyright (C) 2026 Mainuan
+# This file is distributed under the same license as the mainuan-flatpak-install-gui package.
+# Automatically generated, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: mainuan-flatpak-install-gui 1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/mainuan/mainuan-flatpak-install-gui/"
+"issues\n"
+"POT-Creation-Date: 2026-11-16 12:38-0300\n"
+"PO-Revision-Date: 2026-11-16 12:38-0300\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: fi <https://github.com/mainuan>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: launcher:3 qt/Main.qml:22 qt/main.py:58
+msgid "Mainuan Flatpak Installer"
+msgstr "Mainuanin Flatpak-asennin"
+
+#: launcher:4
+msgid "Install applications from Flatpak reference files"
+msgstr "Asenna sovelluksia Flatpak-viitetiedostoista"
+
+#: qt/Main.qml:77
+msgid "Choose Flatpak File"
+msgstr "Valitse Flatpak-tiedosto"
+
+#: qt/Main.qml:78
+msgid "Flatpak reference (*.flatpakref)"
+msgstr "Flatpak-viite (*.flatpakref)"
+
+#: qt/Main.qml:99
+msgid "DEMONSTRATION — no changes will be made"
+msgstr "ESITTELY — muutoksia ei tehdä"
+
+#: qt/Main.qml:139
+msgid "Installing %1"
+msgstr "Asennetaan: %1"
+
+#: qt/Main.qml:178
+msgid "Choose File"
+msgstr "Valitse tiedosto"
+
+#: qt/Main.qml:192 qt/Main.qml:218
+msgid "Only your user"
+msgstr "Vain oma käyttäjäsi"
+
+#: qt/Main.qml:200 qt/Main.qml:218
+msgid "Entire system"
+msgstr "Koko järjestelmä"
+
+#: qt/Main.qml:212
+msgid "Other system installation: %1"
+msgstr "Muu järjestelmäasennus: %1"
+
+#: qt/Main.qml:218
+msgid "Destination: %1"
+msgstr "Kohde: %1"
+
+#: qt/Main.qml:237
+msgid "Select one of the sources"
+msgstr "Valitse yksi lähteistä"
+
+#: qt/Main.qml:239
+msgid "Source of the application or dependency"
+msgstr "Sovelluksen tai riippuvuuden lähde"
+
+#: qt/Main.qml:271
+msgid "Total installation progress"
+msgstr "Asennuksen kokonaisedistyminen"
+
+#: qt/Main.qml:272
+msgid "Completed"
+msgstr "Valmis"
+
+#: qt/Main.qml:272
+msgid "In progress"
+msgstr "Käynnissä"
+
+#: qt/Main.qml:277
+msgid "Current step: %1%"
+msgstr "Nykyinen vaihe: %1%"
+
+#: qt/Main.qml:285
+msgid "Hide Details"
+msgstr "Piilota yksityiskohdat"
+
+#: qt/Main.qml:285
+msgid "Show Details"
+msgstr "Näytä yksityiskohdat"
+
+#: qt/Main.qml:308
+msgid "Source: %1"
+msgstr "Lähde: %1"
+
+#: qt/Main.qml:309
+msgid "It will be added if needed when installing."
+msgstr "Se lisätään tarvittaessa asennuksen yhteydessä."
+
+#: qt/Main.qml:313
+msgid "Cancel requests a safe stop. Completed changes may remain."
+msgstr ""
+"Peru pyytää turvallista pysäytystä. Jo tehdyt muutokset voivat jäädä voimaan."
+
+#: qt/Main.qml:317
+msgid "Technical installation details"
+msgstr "Asennuksen tekniset yksityiskohdat"
+
+#: qt/Main.qml:329
+msgid "Preparation"
+msgstr "Valmistelu"
+
+#: qt/Main.qml:329
+msgid "Progress"
+msgstr "Edistyminen"
+
+#: qt/Main.qml:329
+msgid "Source"
+msgstr "Lähde"
+
+#: qt/Main.qml:330 qt/flatpak_backend.py:292
+msgid "Cancelled"
+msgstr "Peruttu"
+
+#: qt/Main.qml:330
+msgid "Error"
+msgstr "Virhe"
+
+#: qt/Main.qml:330
+msgid "Success"
+msgstr "Onnistui"
+
+#: qt/Main.qml:332
+msgid "Simulate state %1"
+msgstr "Simuloi tilaa %1"
+
+#: qt/Main.qml:356
+msgid "Install"
+msgstr "Asenna"
+
+#: qt/Main.qml:356
+msgid "Try Again"
+msgstr "Yritä uudelleen"
+
+#: qt/Main.qml:365
+msgid "Continue"
+msgstr "Jatka"
+
+#: qt/Main.qml:365
+msgid "Install Another Copy"
+msgstr "Asenna toinen kopio"
+
+#: qt/Main.qml:373 qt/Main.qml:380
+msgid "Uninstall"
+msgstr "Poista asennus"
+
+#: qt/Main.qml:388
+msgid "Open"
+msgstr "Avaa"
+
+#: qt/Main.qml:396
+msgid "Cancel"
+msgstr "Peru"
+
+#: qt/Main.qml:396
+msgid "Close"
+msgstr "Sulje"
+
+#: qt/backend.py:78
+msgid ""
+"The required source does not provide a GPG key. The installation was stopped."
+msgstr "Tarvittava lähde ei tarjoa GPG-avainta. Asennus keskeytettiin."
+
+#: qt/backend.py:85
+msgid "No compatible source is available."
+msgstr "Yhteensopivaa lähdettä ei ole saatavilla."
+
+#: qt/backend.py:89
+msgid "There is more than one compatible source. Choose which one to use."
+msgstr "Yhteensopivia lähteitä on useampi kuin yksi. Valitse, mitä käytetään."
+
+#: qt/backend.py:92
+msgid "Invalid selected source."
+msgstr "Virheellinen valittu lähde."
+
+#: qt/backend.py:114
+msgid "The authorized source disappeared during the installation."
+msgstr "Valtuutettu lähde katosi asennuksen aikana."
+
+#: qt/backend.py:120 qt/controller.py:214
+msgid "Installing…"
+msgstr "Asennetaan…"
+
+#: qt/backend.py:128
+msgid "Source proposal not bound to the requested application."
+msgstr "Lähde-ehdotus ei liity pyydettyyn sovellukseen."
+
+#: qt/backend.py:130
+#, python-brace-format
+msgid "Dependency source without a validated descriptor: {url}"
+msgstr "Riippuvuuden lähde ilman vahvistettua kuvaustiedostoa: {url}"
+
+#: qt/backend.py:158
+msgid "The application is already installed in this destination."
+msgstr "Sovellus on jo asennettu tähän kohteeseen."
+
+#: qt/backend.py:162
+msgid ""
+"This application is already installed. Do you want to install another copy "
+"in the selected destination?"
+msgstr ""
+"Tämä sovellus on jo asennettu. Haluatko asentaa toisen kopion valittuun "
+"kohteeseen?"
+
+#: qt/backend.py:184
+#, python-brace-format
+msgid "Source added: {name} — {url}"
+msgstr "Lähde lisätty: {name} — {url}"
+
+#: qt/backend.py:197
+msgid "Installation completed."
+msgstr "Asennus valmis."
+
+#: qt/backend.py:201
+msgid "Installation cancelled. Changes already completed may remain."
+msgstr "Asennus peruttiin. Jo tehdyt muutokset voivat jäädä voimaan."
+
+#: qt/controller.py:77
+msgid "Operation cancelled."
+msgstr "Toimenpide peruttiin."
+
+#: qt/controller.py:78
+msgid "Could not query the installation."
+msgstr "Asennuksen tietoja ei voitu hakea."
+
+#: qt/controller.py:95
+msgid "Welcome"
+msgstr "Tervetuloa"
+
+#: qt/controller.py:97
+msgid "Choose a .flatpakref file to install."
+msgstr "Valitse asennettava .flatpakref-tiedosto."
+
+#: qt/controller.py:139 qt/controller.py:153
+msgid "Checking installation…"
+msgstr "Tarkistetaan asennusta…"
+
+#: qt/controller.py:143
+msgid "Invalid file"
+msgstr "Virheellinen tiedosto"
+
+#: qt/controller.py:144
+msgid "Could not open this .flatpakref file."
+msgstr "Tätä .flatpakref-tiedostoa ei voitu avata."
+
+#: qt/controller.py:163 qt/controller.py:223 qt/controller.py:245
+msgid "Preparing installation…"
+msgstr "Valmistellaan asennusta…"
+
+#: qt/controller.py:180
+msgid ""
+"There are ambiguous references in the destination. Select an exact reference."
+msgstr "Kohteessa on monitulkintaisia viitteitä. Valitse tarkka viite."
+
+#: qt/controller.py:186
+#, python-brace-format
+msgid "Installations found: {list}"
+msgstr "Löydetyt asennukset: {list}"
+
+#: qt/controller.py:187
+msgid "Already installed"
+msgstr "Jo asennettu"
+
+#: qt/controller.py:192
+msgid "Application uninstalled. Personal data preserved."
+msgstr "Sovellus poistettiin. Henkilökohtaiset tiedot säilytettiin."
+
+#: qt/controller.py:203
+msgctxt "transaction operation"
+msgid "Install"
+msgstr "Asenna"
+
+#: qt/controller.py:204
+msgctxt "transaction operation"
+msgid "Update"
+msgstr "Päivitä"
+
+#: qt/controller.py:205
+msgctxt "transaction operation"
+msgid "Remove"
+msgstr "Poista"
+
+#. Translators: {operation} is Install/Update/Remove, {ref} a Flatpak reference.
+#: qt/controller.py:208
+#, python-brace-format
+msgid "{operation} {ref}"
+msgstr "{operation} {ref}"
+
+#: qt/controller.py:209
+#, python-brace-format
+msgid "Source: {remote} — {url}"
+msgstr "Lähde: {remote} — {url}"
+
+#: qt/controller.py:210
+#, python-brace-format
+msgid "Download: {download} bytes; installed size: {installed} bytes"
+msgstr "Lataus: {download} tavua, koko asennettuna: {installed} tavua"
+
+#: qt/controller.py:212
+msgid "No pending operations."
+msgstr "Ei odottavia toimenpiteitä."
+
+#: qt/controller.py:221
+msgid "Application opened."
+msgstr "Sovellus avattiin."
+
+#: qt/controller.py:251
+msgid "Cancelling… Wait for it to finish safely."
+msgstr "Perutaan… Odota, että peruminen päättyy turvallisesti."
+
+#: qt/controller.py:272
+#, python-brace-format
+msgid "Uninstall {name} ({scope})? Personal data will be preserved."
+msgstr ""
+"Poistetaanko sovellus {name} ({scope})? Henkilökohtaiset tiedot säilytetään."
+
+#: qt/controller.py:279
+msgid "Uninstalling…"
+msgstr "Poistetaan…"
+
+#: qt/controller.py:286
+msgid "Opening the application…"
+msgstr "Avataan sovellusta…"
+
+#: qt/demo.py:9
+msgid "Invalid demonstration state."
+msgstr "Virheellinen esittelytila."
+
+#: qt/demo.py:12
+msgid "Example app"
+msgstr "Esimerkkisovellus"
+
+#: qt/demo.py:15
+msgid "Example source"
+msgstr "Esimerkkilähde"
+
+#: qt/demo.py:16
+msgid "Simulated result: installation completed."
+msgstr "Simuloitu tulos: asennus valmis."
+
+#: qt/demo.py:17
+msgid "Simulated error: could not access the source."
+msgstr "Simuloitu virhe: lähteeseen ei saatu yhteyttä."
+
+#: qt/demo.py:18
+msgid "Simulated cancellation. Completed operations may remain."
+msgstr "Simuloitu peruminen. Valmiit toimenpiteet voivat jäädä voimaan."
+
+#: qt/demo.py:19
+msgid "Demonstration without installations."
+msgstr "Esittely ilman asennuksia."
+
+#: qt/demo.py:19
+msgid "Downloading the current operation (simulation)…"
+msgstr "Ladataan nykyistä toimenpidettä (simulaatio)…"
+
+#: qt/demo.py:20
+msgid "Fictitious details for visual evaluation. Real backend disabled."
+msgstr ""
+"Kuvitteelliset tiedot visuaalista arviointia varten. Todellinen taustaosa on "
+"poistettu käytöstä."
+
+#: qt/flatpak_backend.py:32
+msgid "Choose where to install."
+msgstr "Valitse asennuskohde."
+
+#: qt/flatpak_backend.py:48
+#, python-brace-format
+msgid "{ref} (source {origin})"
+msgstr "{ref} (lähde: {origin})"
+
+#: qt/flatpak_backend.py:52
+msgid "application absent"
+msgstr "sovellus puuttuu"
+
+#: qt/flatpak_backend.py:53
+#, python-brace-format
+msgid "Sources: {list}"
+msgstr "Lähteet: {list}"
+
+#: qt/flatpak_backend.py:53
+msgid "none"
+msgstr "ei mitään"
+
+#: qt/flatpak_backend.py:57
+#, python-brace-format
+msgid "{scope}: could not query: {error}"
+msgstr "{scope}: kysely epäonnistui: {error}"
+
+#: qt/flatpak_backend.py:86
+msgid "The source does not contain a valid signing key."
+msgstr "Lähde ei sisällä kelvollista allekirjoitusavainta."
+
+#: qt/flatpak_backend.py:92
+msgid "Could not verify the source keys."
+msgstr "Lähteen avaimia ei voitu tarkistaa."
+
+#: qt/flatpak_backend.py:100
+msgid "The source contains an invalid, revoked or expired key."
+msgstr "Lähde sisältää virheellisen, kumotun tai vanhentuneen avaimen."
+
+#: qt/flatpak_backend.py:120
+msgid "The source has GPG verification disabled."
+msgstr "Lähteen GPG-tarkistus on poistettu käytöstä."
+
+#: qt/flatpak_backend.py:122
+msgid ""
+"The configured source is disabled or has a filter. Its configuration must be "
+"checked before installing."
+msgstr ""
+"Määritetty lähde on poistettu käytöstä tai siinä on suodatin. Sen asetukset "
+"on tarkistettava ennen asentamista."
+
+#: qt/flatpak_backend.py:126
+msgid "The identity of the configured source differs from the reference."
+msgstr "Määritetyn lähteen identiteetti poikkeaa viitteestä."
+
+#: qt/flatpak_backend.py:128
+msgid "The signing key of the configured source differs from the reference."
+msgstr "Määritetyn lähteen allekirjoitusavain poikkeaa viitteestä."
+
+#: qt/flatpak_backend.py:130
+msgid "The source configuration differs from the provided descriptor."
+msgstr "Lähteen asetukset poikkeavat annetusta kuvaustiedostosta."
+
+#: qt/flatpak_backend.py:133
+msgid "The source configuration changed during the installation. Try again."
+msgstr "Lähteen asetukset muuttuivat asennuksen aikana. Yritä uudelleen."
+
+#: qt/flatpak_backend.py:162
+msgid "The descriptors of the same source have incompatible configurations."
+msgstr ""
+"Saman lähteen kuvaustiedostoissa on keskenään ristiriitaiset asetukset."
+
+#: qt/flatpak_backend.py:172
+msgid "The installation would require a change that was not authorized."
+msgstr "Asennus vaatisi muutoksen, jota ei ole valtuutettu."
+
+#: qt/flatpak_backend.py:174
+msgid "The installation tried to include another unauthorized application."
+msgstr ""
+"Asennus yritti sisällyttää toisen sovelluksen, jota ei ole valtuutettu."
+
+#: qt/flatpak_backend.py:178
+msgid "The application source changed during the installation."
+msgstr "Sovelluksen lähde muuttui asennuksen aikana."
+
+#: qt/flatpak_backend.py:262
+msgid "The source does not provide a GPG key; installation stopped."
+msgstr "Lähde ei tarjoa GPG-avainta. Asennus keskeytettiin."
+
+#: qt/flatpak_backend.py:268
+#, python-brace-format
+msgid "A source with this name and another identity already exists: {name}"
+msgstr "Samanniminen lähde, jolla on eri identiteetti, on jo olemassa: {name}"
+
+#: qt/flatpak_backend.py:281
+msgid "Flatpak did not confirm adding the source."
+msgstr "Flatpak ei vahvistanut lähteen lisäämistä."
+
+#: qt/flatpak_backend.py:319
+msgid "(source unavailable)"
+msgstr "(lähde ei saatavilla)"
+
+#: qt/flatpak_backend.py:328
+msgid "In progress…"
+msgstr "Käynnissä…"
+
+#: qt/flatpak_backend.py:335
+msgid "The transaction was not completed."
+msgstr "Tapahtumaa ei suoritettu loppuun."
+
+#: qt/flatpak_backend.py:340
+msgid "The reference has no confirmed deployment."
+msgstr "Viitteellä ei ole vahvistettua käyttöönottoa."
+
+#: qt/flatpak_backend.py:342
+msgid "The installed source differs from the transaction source."
+msgstr "Asennettu lähde poikkeaa tapahtuman lähteestä."
+
+#: qt/flatpak_backend.py:351
+msgid "The selected reference changed."
+msgstr "Valittu viite muuttui."
+
+#: qt/flatpak_backend.py:376
+msgid "The reference is still installed in the selected destination."
+msgstr "Viite on yhä asennettuna valitussa kohteessa."
+
+#: qt/flatpak_backend.py:387
+msgid "Ambiguous or unavailable system installation."
+msgstr "Monitulkintainen tai saatavilla olematon järjestelmäasennus."
+
+#: qt/flatpak_backend.py:390
+msgid "The path of the selected installation changed."
+msgstr "Valitun asennuksen polku muuttui."
+
+#: qt/flatpak_backend.py:399
+msgid "Flatpak did not confirm opening the application."
+msgstr "Flatpak ei vahvistanut sovelluksen avaamista."
+
+#: qt/flatpak_backend.py:413 qt/flatpak_backend.py:421
+msgid "Authorization was denied or cancelled."
+msgstr "Valtuutus evättiin tai peruttiin."
+
+#: qt/flatpak_backend.py:418
+msgid "Could not access the source. Check the connection and try again."
+msgstr ""
+"Lähteeseen ei saatu yhteyttä. Tarkista verkkoyhteys ja yritä uudelleen."
+
+#: qt/flatpak_backend.py:420
+msgid "Permission denied for this operation."
+msgstr "Tämän toimenpiteen käyttöoikeus evättiin."
+
+#: qt/flatpak_backend.py:422
+msgid "Could not authenticate with the source."
+msgstr "Lähteeseen tunnistautuminen epäonnistui."
+
+#: qt/flatpak_backend.py:423
+msgid "The source is not available."
+msgstr "Lähde ei ole saatavilla."
+
+#: qt/flatpak_backend.py:424
+msgid "The required components are not available."
+msgstr "Tarvittavat komponentit eivät ole saatavilla."
+
+#: qt/flatpak_backend.py:425
+msgid "The application was already installed by another process. Try again."
+msgstr "Toinen prosessi on jo asentanut sovelluksen. Yritä uudelleen."
+
+#: qt/flatpak_backend.py:426
+msgid "There is an installation from another source in this destination."
+msgstr "Tässä kohteessa on asennus toisesta lähteestä."
+
+#: qt/flatpak_backend.py:427
+msgid "The Flatpak reference is invalid."
+msgstr "Flatpak-viite on virheellinen."
+
+#: qt/flatpak_backend.py:428
+msgid "There is not enough space to install."
+msgstr "Asentamiseen ei ole tarpeeksi tilaa."
+
+#: qt/flatpak_backend.py:432
+msgid "Another installation is in progress. Try again."
+msgstr "Toinen asennus on käynnissä. Yritä uudelleen."
+
+#: qt/flatpak_backend.py:434
+msgid "Could not access the source. Check the connection and the details."
+msgstr "Lähteeseen ei saatu yhteyttä. Tarkista verkkoyhteys ja yksityiskohdat."
+
+#: qt/flatpak_backend.py:435
+msgid "Could not complete the operation. See the details."
+msgstr "Toimenpidettä ei voitu suorittaa loppuun. Katso yksityiskohdat."
+
+#: qt/main.py:11
+msgid "Mainuan Flatpak Installer — local .flatpakref file"
+msgstr "Mainuanin Flatpak-asennin — paikallinen .flatpakref-tiedosto"
+
+#: qt/main.py:12
+msgid "a local .flatpakref file"
+msgstr "paikallinen .flatpakref-tiedosto"
+
+#: qt/main.py:14
+msgid "visual demonstration, unable to install"
+msgstr "visuaalinen esittely, ei voi asentaa"
+
+#: qt/main.py:15
+msgid "plain-text display name; does not change the identity"
+msgstr "näyttönimi pelkkänä tekstinä, ei muuta identiteettiä"
+
+#: qt/main.py:16
+msgid "remove the exact reference, with graphical confirmation"
+msgstr "poista tarkka viite graafisella vahvistuksella"
+
+#: qt/main.py:17
+msgid "user, system or system:ID; required for --remove"
+msgstr "user, system tai system:ID; pakollinen valitsimelle --remove"
+
+#: qt/main.py:22
+msgid ""
+"--fetch-dependencies and --do-install were discontinued: they were internal "
+"Bash helpers. Open a .flatpakref file and use Install. No operation was "
+"performed."
+msgstr ""
+"--fetch-dependencies ja --do-install on poistettu: ne olivat sisäisiä Bash-"
+"apuohjelmia. Avaa .flatpakref-tiedosto ja valitse Asenna. Mitään "
+"toimenpidettä ei suoritettu."
+
+#: qt/main.py:27
+msgid "Invalid destination: use user, system or system:ID."
+msgstr "Virheellinen kohde: käytä arvoa user, system tai system:ID."
+
+#: qt/main.py:31
+msgid ""
+"--remove requires a .flatpakref file and --scope user|system|system:ID; the "
+"identity comes from the file."
+msgstr ""
+"--remove vaatii .flatpakref-tiedoston ja valitsimen --scope user|system|"
+"system:ID. Identiteetti saadaan tiedostosta."
+
+#: qt/main.py:33
+msgid ""
+"Provide a local .flatpakref file. Standalone IDs or URLs from the old "
+"installer are not accepted."
+msgstr ""
+"Anna paikallinen .flatpakref-tiedosto. Vanhan asentimen erillisiä "
+"tunnisteita tai URL-osoitteita ei hyväksytä."
+
+#: qt/main.py:35
+msgid ""
+"--demo is isolated: it does not accept a file, destination, removal or "
+"overridden name."
+msgstr ""
+"--demo on eristetty: se ei hyväksy tiedostoa, kohdetta, poistoa eikä "
+"korvattua nimeä."
+
+#: qt/main.py:42
+msgid ""
+"Run the interface as a normal user. Flatpak/Polkit will ask for "
+"authorization when needed."
+msgstr ""
+"Suorita käyttöliittymä tavallisena käyttäjänä. Flatpak/Polkit pyytää "
+"valtuutusta tarvittaessa."
+
+#: qt/main.py:53
+#, python-brace-format
+msgid "Qt dependency unavailable: {error}. See README.md."
+msgstr "Qt-riippuvuus ei ole saatavilla: {error}. Katso README.md."
+
+#: qt/metadata.py:24
+msgid "The source must use HTTPS without credentials or fragments in the URL."
+msgstr ""
+"Lähteen on käytettävä HTTPS:ää ilman tunnistetietoja tai fragmentteja URL-"
+"osoitteessa."
+
+#: qt/metadata.py:30
+msgid "Reference too large or with null bytes."
+msgstr "Viite on liian suuri tai sisältää nollatavuja."
+
+#: qt/metadata.py:37
+msgid "Invalid reference group."
+msgstr "Virheellinen viiteryhmä."
+
+#: qt/metadata.py:40
+msgid "Multi-line fields are not accepted."
+msgstr "Monirivisiä kenttiä ei hyväksytä."
+
+#: qt/metadata.py:43
+msgid "Invalid Flatpak reference."
+msgstr "Virheellinen Flatpak-viite."
+
+#: qt/metadata.py:50
+msgid "Invalid GPG key."
+msgstr "Virheellinen GPG-avain."
+
+#: qt/metadata.py:64
+msgid "not provided by the libflatpak proposal signal"
+msgstr "libflatpakin ehdotussignaali ei toimittanut tätä"
+
+#: qt/metadata.py:66
+msgid "absent — GPG signature disabled"
+msgstr "puuttuu — GPG-allekirjoitus poistettu käytöstä"
+
+#: qt/metadata.py:67
+#, python-brace-format
+msgid ""
+"Source: {url}\n"
+"Suggested name: {name}\n"
+"Descriptor: {descriptor}\n"
+"SHA-256 of the provided key: {fingerprint}\n"
+"HTTPS protects the transport; it does not guarantee that this source is "
+"trustworthy. Adding the source changes the Flatpak configuration now. It may "
+"remain even if the installation is cancelled."
+msgstr ""
+"Lähde: {url}\n"
+"Ehdotettu nimi: {name}\n"
+"Kuvaustiedosto: {descriptor}\n"
+"Annetun avaimen SHA-256: {fingerprint}\n"
+"HTTPS suojaa siirron, mutta se ei takaa, että lähde on luotettava. Lähteen "
+"lisääminen muuttaa Flatpakin asetuksia heti. Lähde voi jäädä voimaan, vaikka "
+"asennus peruttaisiin."
+
+#: qt/metadata.py:72
+msgid "local file"
+msgstr "paikallinen tiedosto"
+
+#: qt/metadata.py:109
+msgid "Reference version not supported yet."
+msgstr "Viitteen versiota ei vielä tueta."
+
+#: qt/metadata.py:115
+#, python-brace-format
+msgid "Reference options not supported yet: {options}"
+msgstr "Viitteen valintoja ei vielä tueta: {options}"
+
+#: qt/metadata.py:118
+msgid "Invalid application identifier."
+msgstr "Virheellinen sovelluksen tunniste."
+
+#: qt/metadata.py:120
+msgid "This interface is intended for applications."
+msgstr "Tämä käyttöliittymä on tarkoitettu sovelluksille."
+
+#: qt/metadata.py:123
+msgid "Invalid application branch."
+msgstr "Virheellinen sovelluksen haara."
+
+#: qt/metadata.py:127
+#, python-brace-format
+msgid "Field {key} contains an unsupported escape."
+msgstr "Kentässä {key} on ohjausmerkintä, jota ei tueta."
+
+#: qt/metadata.py:141
+msgid "Select a .flatpakref file."
+msgstr "Valitse .flatpakref-tiedosto."
+
+#: qt/metadata.py:145
+msgid "Select a regular local file."
+msgstr "Valitse tavallinen paikallinen tiedosto."
+
+#: qt/metadata.py:152
+msgid "Source descriptor version not supported yet."
+msgstr "Lähteen kuvaustiedoston versiota ei vielä tueta."
+
+#: qt/metadata.py:158
+#, python-brace-format
+msgid "Source options not supported yet: {options}"
+msgstr "Lähteen valintoja ei vielä tueta: {options}"
+
+#: qt/metadata.py:178
+msgid "AppStream exceeds the read limit."
+msgstr "AppStream ylittää lukurajan."
+
+#: qt/metadata.py:181
+msgid "Unsupported XML declarations."
+msgstr "XML-määrittelyjä ei tueta."
