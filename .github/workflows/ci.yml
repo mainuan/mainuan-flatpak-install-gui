@@ -1,0 +1,76 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ['v[0-9]*']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref_type != 'tag' }}
+
+jobs:
+  package:
+    permissions:
+      contents: write # only the release job uses it, and only for v* tags
+    uses: mainuan/.github/.github/workflows/debian-package.yml@2409a50535befe90ac3bbfc4db6eed7d65eac4e5
+    with:
+      package: mainuan-flatpak-install-gui
+      release-title: Mainuan Instalador Flatpak
+      # The unit tests run in debian/rules (dh_auto_test). Here: translation
+      # gates, the offscreen QML flow/presentation harnesses, and a
+      # reproducibility check (two builds in different paths, same .deb).
+      test-command: |
+        po/i18n.sh check-pot
+        po/i18n.sh validate
+        export QT_QUICK_CONTROLS_STYLE=Basic
+        python3 tests/qml_flow.py --output "$HOME/artifacts/flow"
+        python3 tests/qml_presentation.py --output "$HOME/artifacts/presentation"
+        for dir in "$HOME/repro-a/mainuan-flatpak-install-gui" "$HOME/repro-b/other-path"; do
+          mkdir -p "$(dirname "$dir")"
+          cp -a . "$dir"
+          (cd "$dir" && DEB_BUILD_OPTIONS=nocheck DEB_BUILD_PROFILES=nocheck \
+            dpkg-buildpackage -us -uc -b > ../build.log 2>&1) || { cat "$(dirname "$dir")/build.log"; exit 1; }
+        done
+        sha256sum "$HOME"/repro-a/*.deb "$HOME"/repro-b/*.deb
+        if ! cmp "$HOME"/repro-a/*.deb "$HOME"/repro-b/*.deb; then
+          for d in a b; do
+            dpkg-deb -e "$HOME"/repro-$d/*.deb "$HOME/ctrl-$d"
+            dpkg-deb --fsys-tarfile "$HOME"/repro-$d/*.deb | tar -tv --full-time > "$HOME/data-$d.txt"
+          done
+          diff -r "$HOME/ctrl-a" "$HOME/ctrl-b" || true
+          diff "$HOME/data-a.txt" "$HOME/data-b.txt" || true
+          exit 1
+        fi
+        rm -rf "$HOME/repro-a" "$HOME/repro-b"
+      smoke-command: |
+        test -x /usr/bin/mainuan-flatpak-install-gui
+        test -x /usr/bin/flatpak-install-gui
+        test -f /usr/share/man/man1/mainuan-flatpak-install-gui.1.gz
+        test -f /usr/share/mainuan-flatpak-install-gui/mainuan-mimeapps.list
+        test -f /usr/share/locale/pt_BR/LC_MESSAGES/mainuan-flatpak-install-gui.mo
+        desktop=/usr/share/applications/mainuan-flatpak-install-gui.desktop
+        desktop-file-validate "$desktop"
+        grep -q '^Name\[pt_BR\]=Mainuan Instalador Flatpak$' "$desktop"
+        grep -q '^MimeType=application/vnd.flatpak.ref;$' "$desktop"
+        LANGUAGE=en mainuan-flatpak-install-gui --help | tee "$HOME/help-en.txt"
+        grep -q 'a local .flatpakref file' "$HOME/help-en.txt"
+        LANGUAGE=pt_BR mainuan-flatpak-install-gui --help | grep -q 'um arquivo .flatpakref local'
+        flatpak-install-gui --help > /dev/null
+        # Discontinued Bash helpers fail without doing anything.
+        if out="$(LANGUAGE=pt_BR flatpak-install-gui --do-install /never.flatpakref 2>&1)"; then
+          echo "--do-install was accepted"; exit 1
+        fi
+        grep -q 'Nenhuma operação foi executada' <<<"$out"
+        # Start the real window offscreen (demo mode: no Flatpak operation);
+        # it must still be running when timeout stops it.
+        rc=0
+        LANGUAGE=pt_BR timeout 15 mainuan-flatpak-install-gui --demo ready > "$HOME/demo.log" 2>&1 || rc=$?
+        cat "$HOME/demo.log"
+        test "$rc" -eq 124
+        if grep -Eiq 'is not installed|failed to load|Traceback' "$HOME/demo.log"; then exit 1; fi

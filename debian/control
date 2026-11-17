@@ -1,0 +1,60 @@
+Source: mainuan-flatpak-install-gui
+Section: admin
+Priority: optional
+Maintainer: Mainuan Developers <dev@mainuan.com.br>
+Build-Depends: debhelper-compat (= 13),
+               gettext,
+               desktop-file-utils <!nocheck>,
+               flatpak <!nocheck>,
+               gir1.2-flatpak-1.0 (>= 1.16) <!nocheck>,
+               gir1.2-ostree-1.0 <!nocheck>,
+               libglib2.0-bin <!nocheck>,
+               python3,
+               python3-gi <!nocheck>,
+               python3-pyqt6 <!nocheck>,
+               python3-pyqt6.qtqml <!nocheck>,
+               python3-pyqt6.qtquick <!nocheck>,
+               qml6-module-org-kde-kirigami <!nocheck>,
+               qml6-module-qtqml-workerscript <!nocheck>,
+               qml6-module-qtquick <!nocheck>,
+               qml6-module-qtquick-controls <!nocheck>,
+               qml6-module-qtquick-dialogs <!nocheck>,
+               qml6-module-qtquick-layouts <!nocheck>,
+               qml6-module-qtquick-window <!nocheck>,
+               ubuntu-keyring <!nocheck>,
+               xdg-utils <!nocheck>
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Homepage: https://github.com/mainuan/mainuan-flatpak-install-gui
+Vcs-Browser: https://github.com/mainuan/mainuan-flatpak-install-gui
+Vcs-Git: https://github.com/mainuan/mainuan-flatpak-install-gui.git
+
+Package: mainuan-flatpak-install-gui
+Architecture: all
+Depends: ${misc:Depends},
+         desktop-file-utils,
+         flatpak (>= 1.16),
+         gir1.2-flatpak-1.0 (>= 1.16),
+         gir1.2-ostree-1.0,
+         python3,
+         python3-gi,
+         python3-pyqt6,
+         python3-pyqt6.qtqml,
+         python3-pyqt6.qtquick,
+         qml6-module-org-kde-kirigami,
+         qml6-module-qtqml-workerscript,
+         qml6-module-qtquick,
+         qml6-module-qtquick-controls,
+         qml6-module-qtquick-dialogs,
+         qml6-module-qtquick-layouts,
+         qml6-module-qtquick-window
+Provides: flatpak-install-gui
+Conflicts: flatpak-install-gui
+Replaces: flatpak-install-gui
+Description: Qt 6 and Kirigami installer for local Flatpak references
+ Install Flatpak apps in a user or system installation with one action,
+ authorizing required signed repositories with Install. Uses libflatpak
+ and the session authorization agent without running the interface as root.
+ .
+ The interface is translated and follows the language of the KDE Plasma
+ session. The legacy flatpak-install-gui command is kept as an alias.

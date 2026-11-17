@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+export QT_QPA_PLATFORM = offscreen
+export QT_QUICK_BACKEND = software
+export PYTHONDONTWRITEBYTECODE = 1
+
+PKG := debian/mainuan-flatpak-install-gui
+SHARE := $(PKG)/usr/share/mainuan-flatpak-install-gui
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	po/i18n.sh compile debian/build/locale
+	msgfmt --desktop --template=launcher -d po -o debian/build/mainuan-flatpak-install-gui.desktop
+
+override_dh_auto_test:
+ifeq (,$(filter nocheck,$(DEB_BUILD_OPTIONS)))
+	HOME=$(CURDIR)/debian/build/home XDG_RUNTIME_DIR= QT_QUICK_CONTROLS_STYLE=Basic \
+		python3 -m unittest discover -s tests -v
+endif
+
+override_dh_auto_install:
+	install -D -m 0755 packaging/mainuan-flatpak-install-gui $(PKG)/usr/bin/mainuan-flatpak-install-gui
+	install -D -m 0755 flatpak-install-gui $(PKG)/usr/bin/flatpak-install-gui
+	install -d $(SHARE)/qt
+	install -m 0644 qt/*.py qt/*.qml $(SHARE)/qt/
+	install -m 0644 packaging/mainuan-mimeapps.list $(SHARE)/mainuan-mimeapps.list
+	install -D -m 0644 debian/build/mainuan-flatpak-install-gui.desktop \
+		$(PKG)/usr/share/applications/mainuan-flatpak-install-gui.desktop
+	mkdir -p $(PKG)/usr/share/locale
+	cp -r debian/build/locale/. $(PKG)/usr/share/locale/
+
+override_dh_auto_clean:
+	rm -rf debian/build
+	find . -name __pycache__ -prune -exec rm -rf {} +
