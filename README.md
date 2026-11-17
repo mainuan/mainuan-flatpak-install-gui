@@ -17,6 +17,9 @@ Instala, abre e remove o aplicativo descrito num arquivo `.flatpakref` local, co
 
 ---
 
+<p align="center"><img src="docs/screenshots/flatpak-install-gui.png" width="520" alt="Instalador Flatpak em modo de demonstração"></p>
+
+
 ## O que é
 
 O Mainuan Instalador Flatpak é o programa que abre quando se clica num arquivo

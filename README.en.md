@@ -17,6 +17,9 @@ Installs, opens and removes the application described by a local `.flatpakref` f
 
 ---
 
+<p align="center"><img src="docs/screenshots/flatpak-install-gui.png" width="520" alt="Flatpak installer in demonstration mode"></p>
+
+
 ## About
 
 The installer opens when a `.flatpakref` file is clicked in Dolphin. It shows
